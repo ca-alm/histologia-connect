@@ -1,0 +1,230 @@
+export interface Summary {
+  icon: string;
+  title: string;
+  subtitle: string;
+  content: string[];
+}
+
+export const summaries: Summary[] = [
+  {
+    icon: "🔬",
+    title: "Introdução à Histologia",
+    subtitle: "Conceitos fundamentais, níveis de organização e métodos de estudo",
+    content: [
+      "A histologia é o estudo microscópico dos tecidos biológicos. Os quatro tecidos fundamentais são: epitelial, conjuntivo, muscular e nervoso, cada um com características morfológicas e funcionais específicas.",
+      "Os níveis de organização biológica relevantes para a histologia incluem: molecular (proteínas, lipídios), celular (organelas, citoesqueleto), tecidual (grupos de células especializadas) e de órgãos (combinação de tecidos).",
+      "A preparação histológica envolve fixação (formalina), desidratação (álcoois crescentes), diafanização (xilol), inclusão (parafina), microtomia (cortes de 3-7 μm), coloração e montagem.",
+    ],
+  },
+  {
+    icon: "🔭",
+    title: "Microscopia",
+    subtitle: "Tipos de microscópios, técnicas de coloração e processamento tecidual",
+    content: [
+      "O microscópio óptico (de luz) permite aumento de até ~1000x com resolução de 0,2 μm. A microscopia de fluorescência utiliza fluoróforos para detectar moléculas específicas em células e tecidos.",
+      "A microscopia eletrônica de transmissão (MET) atinge resolução de 0,1 nm, permitindo visualizar organelas e estruturas subcelulares. A microscopia eletrônica de varredura (MEV) fornece imagens tridimensionais da superfície celular.",
+      "A coloração de rotina H&E (hematoxilina-eosina) é a mais utilizada: hematoxilina (básica) cora estruturas ácidas em azul/roxo (núcleos), enquanto eosina (ácida) cora estruturas básicas em rosa/vermelho (citoplasma, colágeno).",
+      "Colorações especiais incluem: PAS (glicogênio e mucinas), tricrômico de Masson (colágeno em azul), Verhoeff (fibras elásticas), Weigert (fibras elásticas), prata (fibras reticulares) e azul de toluidina (metacromasia em mastócitos).",
+      "A imuno-histoquímica (IHQ) utiliza anticorpos para detectar antígenos específicos em cortes teciduais. Pode ser direta (anticorpo marcado) ou indireta (anticorpo primário + secundário marcado). Essencial no diagnóstico de neoplasias.",
+    ],
+  },
+  {
+    icon: "🔬",
+    title: "Tecido Epitelial",
+    subtitle: "Classificação, funções e especializações de membrana",
+    content: [
+      "Os tecidos epiteliais revestem superfícies corporais e cavidades, formando barreiras seletivas. São classificados pelo número de camadas (simples, estratificado, pseudoestratificado) e pela morfologia celular (pavimentoso, cúbico, cilíndrico).",
+      "Epitélio simples pavimentoso: endotélio (vasos), mesotélio (serosas), alvéolos. Epitélio simples cúbico: túbulos renais, superfície do ovário. Epitélio simples cilíndrico: intestino, endocérvice.",
+      "Epitélio estratificado pavimentoso: queratinizado (pele) e não-queratinizado (esôfago, vagina). Pseudoestratificado: vias aéreas. Epitélio de transição (urotélio): vias urinárias.",
+      "As especializações de membrana incluem microvilosidades (aumentam absorção), cílios (movimentam substâncias) e estereocílios (absorção no epidídimo). A lâmina basal ancora o epitélio ao conjuntivo.",
+      "As junções celulares (tight junctions, desmossomos, gap junctions, hemidesmossomos) garantem coesão, vedação e comunicação intercelular, sendo fundamentais para a função de barreira epitelial.",
+      "Epitélios glandulares: glândulas exócrinas (secretam para superfícies via ductos) e endócrinas (secretam hormônios para o sangue). Tipos de secreção: merócrina, apócrina e holócrina.",
+    ],
+  },
+  {
+    icon: "🧬",
+    title: "Tecido Conjuntivo",
+    subtitle: "Células, fibras e substância fundamental",
+    content: [
+      "O tecido conjuntivo é caracterizado pela abundância de matriz extracelular, composta por fibras (colágenas, elásticas e reticulares) e substância fundamental amorfa (GAGs e proteoglicanos).",
+      "As células residentes incluem fibroblastos (síntese de matriz), macrófagos (fagocitose e apresentação de antígenos), mastócitos (mediadores inflamatórios), adipócitos e plasmócitos (produção de anticorpos).",
+      "Fibras colágenas: tipo I (derme, tendões, osso — resistência), tipo II (cartilagem hialina), tipo III (reticulares — órgãos linfoides, fígado), tipo IV (lâmina basal).",
+      "Fibras elásticas: compostas por elastina e fibrilina, conferem distensibilidade a artérias, pulmões, pele e ligamentos. Fibras reticulares: colágeno tipo III, formam arcabouço de órgãos hematopoiéticos e linfoides.",
+      "TCPD frouxo: preenchimento, suporte, nutrição — localizado sob epitélios e ao redor de vasos. TCPD denso modelado: tendões e ligamentos. TCPD denso não-modelado: derme reticular e cápsulas de órgãos.",
+      "Tecido adiposo unilocular (branco): armazenamento energético, isolamento térmico. Tecido adiposo multilocular (marrom): termogênese via UCP1 mitocondrial, mais abundante em neonatos.",
+    ],
+  },
+  {
+    icon: "🦴",
+    title: "Tecido Cartilaginoso",
+    subtitle: "Cartilagem hialina, elástica e fibrosa",
+    content: [
+      "A cartilagem é um tecido conjuntivo especializado avascular, nutrido por difusão a partir do pericôndrio. A matriz é rica em colágeno e proteoglicanos (agrecano), conferindo resistência à compressão.",
+      "Cartilagem hialina: a mais abundante. Encontrada em vias aéreas (anéis traqueais), superfícies articulares, septo nasal e placa epifisária. Matriz homogênea com colágeno tipo II.",
+      "Cartilagem elástica: rica em fibras elásticas além do colágeno tipo II. Presente na orelha externa, epiglote e tuba auditiva. Confere flexibilidade e resistência mecânica.",
+      "Cartilagem fibrosa (fibrocartilagem): possui feixes densos de colágeno tipo I intercalados com condrócitos. Encontrada nos discos intervertebrais, meniscos e sínfise púbica. Resiste a forças compressivas e de tração.",
+      "Os condrócitos residem em lacunas na matriz. Grupos isógenos (ninhos celulares) representam células derivadas de um mesmo condroblasto. O crescimento pode ser intersticial (de dentro) ou aposicional (a partir do pericôndrio).",
+    ],
+  },
+  {
+    icon: "🦴",
+    title: "Tecido Ósseo",
+    subtitle: "Osso compacto, esponjoso e ossificação",
+    content: [
+      "O tecido ósseo é um conjuntivo mineralizado que provê suporte, proteção, reserva de cálcio e fósforo, e aloja a medula óssea. A matriz orgânica (osteóide) é composta por colágeno tipo I e proteoglicanos.",
+      "Células: osteoblastos (síntese de matriz), osteócitos (manutenção — residem em lacunas, comunicam-se por canalículos), osteoclastos (reabsorção — células multinucleadas derivadas de monócitos).",
+      "Osso compacto: organizado em ósteons (sistemas de Havers) com lamelas concêntricas ao redor de canais centrais contendo vasos. Canais de Volkmann conectam ósteons adjacentes.",
+      "Osso esponjoso (trabecular): formado por trabéculas interconectadas que delimitam espaços preenchidos por medula óssea. Predomina nas epífises dos ossos longos e no interior de ossos chatos.",
+      "Ossificação intramembranosa: diretamente a partir do mesênquima (ossos chatos do crânio). Ossificação endocondral: a partir de um molde cartilaginoso (ossos longos), com participação da placa epifisária no crescimento longitudinal.",
+      "A remodelação óssea contínua envolve o balanço entre osteoblastos e osteoclastos, regulada por PTH, calcitonina, vitamina D, e via RANK/RANKL/OPG.",
+    ],
+  },
+  {
+    icon: "💪",
+    title: "Tecido Muscular",
+    subtitle: "Esquelético, cardíaco e liso",
+    content: [
+      "O tecido muscular esquelético é formado por fibras multinucleadas com estriações transversais, organizadas em sarcômeros. A contração é voluntária e depende da interação actina-miosina mediada por cálcio.",
+      "O sarcômero é a unidade contrátil: limitado por linhas Z, contém banda A (filamentos grossos de miosina), banda I (filamentos finos de actina) e zona H. A contração encurta banda I e zona H.",
+      "O acoplamento excitação-contração envolve: potencial de ação → túbulos T → liberação de Ca²⁺ do retículo sarcoplasmático → ligação Ca²⁺-troponina C → exposição de sítios de ligação na actina → deslizamento de filamentos.",
+      "Tipos de fibras: tipo I (vermelhas, oxidativas, lentas, resistentes à fadiga) e tipo II (brancas, glicolíticas, rápidas, fatigáveis). A proporção varia conforme o músculo e o treinamento.",
+      "O músculo cardíaco possui células ramificadas com núcleo central e discos intercalares contendo gap junctions (comunicação elétrica) e desmossomos (adesão mecânica).",
+      "O músculo liso apresenta células fusiformes com núcleo central, sem estriações visíveis. Contração involuntária, lenta e sustentada, regulada por fosforilação da cadeia leve de miosina via calmodulina.",
+    ],
+  },
+  {
+    icon: "🧠",
+    title: "Tecido Nervoso",
+    subtitle: "Neurônios, glia e sinapses",
+    content: [
+      "Os neurônios são as unidades funcionais do sistema nervoso, compostos por corpo celular (pericário), dendritos (recepção) e axônio (transmissão). Classificam-se em multipolares, bipolares e pseudounipolares.",
+      "O pericário contém substância de Nissl (REG abundante para síntese proteica), aparelho de Golgi e citoesqueleto (neurofilamentos e microtúbulos). O axônio transporta vesículas por transporte axonal anterógrado e retrógrado.",
+      "Células da glia no SNC: astrócitos (suporte, barreira hematoencefálica, captação de neurotransmissores), oligodendrócitos (mielina), microglia (defesa imune), células ependimárias (revestimento ventricular, produção de LCR).",
+      "No SNP: células de Schwann (mielina — uma célula por internodo), células satélites (envolvem corpos neuronais nos gânglios).",
+      "As sinapses químicas envolvem liberação de neurotransmissores (acetilcolina, glutamato, GABA, dopamina) por exocitose de vesículas sinápticas na fenda sináptica, ligando-se a receptores pós-sinápticos.",
+      "A bainha de mielina (membrana plasmática enrolada) aumenta a velocidade de condução nervosa por condução saltatória nos nodos de Ranvier. Desmielinização causa doenças como esclerose múltipla.",
+    ],
+  },
+  {
+    icon: "🩸",
+    title: "Sangue e Hematopoiese",
+    subtitle: "Elementos figurados e formação",
+    content: [
+      "O sangue é um tecido conjuntivo especializado: plasma (55%) + elementos figurados (45%). O plasma contém água, proteínas (albumina, globulinas, fibrinogênio), eletrólitos, nutrientes e hormônios.",
+      "Eritrócitos: discos bicôncavos anucleados (7-8 μm), repletos de hemoglobina. Vida média de 120 dias. Eritropoiese estimulada por eritropoetina (EPO) renal.",
+      "Leucócitos granulócitos: neutrófilos (60-70%, fagocitose, núcleo multilobulado), eosinófilos (2-4%, parasitas e alergias, grânulos eosinofílicos), basófilos (0,5-1%, histamina e heparina).",
+      "Leucócitos agranulócitos: linfócitos (20-30% — T: imunidade celular, B: anticorpos, NK: citotoxicidade) e monócitos (3-8%, precursores de macrófagos teciduais).",
+      "Plaquetas (trombócitos): fragmentos citoplasmáticos anucleados dos megacariócitos (150-400 mil/μL). Essenciais para hemostasia primária: adesão, ativação, agregação e formação do tampão plaquetário.",
+      "A hematopoiese ocorre na medula óssea vermelha a partir de células-tronco hematopoiéticas (HSC) que se diferenciam nas linhagens mieloide (eritrócitos, granulócitos, monócitos, plaquetas) e linfoide (linfócitos T, B, NK).",
+    ],
+  },
+  {
+    icon: "❤️",
+    title: "Sistema Cardiovascular",
+    subtitle: "Artérias, veias, capilares e coração",
+    content: [
+      "As paredes vasculares possuem três túnicas: íntima (endotélio + subendotelial), média (músculo liso e fibras elásticas) e adventícia (tecido conjuntivo + vasa vasorum em vasos grandes).",
+      "Artérias elásticas (aorta, carótidas): túnica média rica em lâminas elásticas, absorvem pulsação cardíaca. Artérias musculares: túnica média com músculo liso predominante, regulam fluxo regional.",
+      "Arteríolas: principal sítio de regulação da pressão arterial, parede com 1-2 camadas de músculo liso. Capilares: parede de células endoteliais + lâmina basal; tipos contínuo, fenestrado e sinusoidal.",
+      "Veias: paredes mais finas que artérias correspondentes, luz mais ampla, presença de válvulas. Vênulas pós-capilares são sítio principal de diapedese leucocitária na inflamação.",
+      "Coração: endocárdio (endotélio + conjuntivo), miocárdio (músculo cardíaco estriado) e epicárdio (serosa). O sistema de condução inclui nó SA, nó AV, feixe de His e fibras de Purkinje.",
+    ],
+  },
+  {
+    icon: "🫁",
+    title: "Sistema Respiratório",
+    subtitle: "Vias aéreas, pulmões e trocas gasosas",
+    content: [
+      "As vias aéreas superiores (cavidade nasal, faringe, laringe) e inferiores (traqueia, brônquios) são revestidas por epitélio pseudoestratificado cilíndrico ciliado com células caliciformes (epitélio respiratório).",
+      "A traqueia possui anéis de cartilagem hialina em C e músculo traqueal posterior. Os brônquios apresentam placas irregulares de cartilagem e glândulas submucosas.",
+      "Bronquíolos: sem cartilagem nem glândulas, parede com músculo liso e epitélio cilíndrico simples ciliado. Bronquíolos terminais dão origem aos bronquíolos respiratórios (início das trocas gasosas).",
+      "Alvéolos: pneumócitos tipo I (pavimentosos, 95% da superfície, trocas gasosas), tipo II (cúbicos, 5% da superfície, produzem surfactante). Macrófagos alveolares removem partículas inaladas.",
+      "A barreira hematoaérea é formada por: citoplasma do pneumócito I + lâminas basais fundidas + endotélio capilar (espessura total ~0,5 μm), otimizando a difusão de O₂ e CO₂.",
+    ],
+  },
+  {
+    icon: "🍽️",
+    title: "Sistema Digestório",
+    subtitle: "Tubo digestivo, glândulas anexas e absorção",
+    content: [
+      "O tubo digestivo possui plano geral com 4 camadas: mucosa (epitélio + lâmina própria + muscular da mucosa), submucosa (conjuntivo com plexo de Meissner), muscular (circular interna + longitudinal externa + plexo de Auerbach) e serosa/adventícia.",
+      "Esôfago: epitélio estratificado pavimentoso não-queratinizado, glândulas mucosas. Estômago: epitélio cilíndrico simples mucossecretor, glândulas gástricas com células parietais (HCl), principais (pepsinogênio) e G (gastrina).",
+      "Intestino delgado: vilosidades + criptas de Lieberkühn, enterócitos com microvilosidades (borda em escova), células caliciformes, de Paneth (defensinas) e enteroendócrinas. Duodeno possui glândulas de Brunner na submucosa.",
+      "Intestino grosso: sem vilosidades, criptas profundas ricas em células caliciformes, absorção de água e eletrólitos. Apêndice possui tecido linfoide abundante na lâmina própria.",
+      "Fígado: lóbulos hepáticos com hepatócitos organizados em trabéculas ao redor da veia central. Espaço porta contém ramo da artéria hepática, veia porta e ducto biliar (tríade portal). Sinusoides com células de Kupffer.",
+      "Pâncreas exócrino: ácinos serosos produzem enzimas digestivas (tripsina, lipase, amilase). Ductos intercalares e estriados. Pâncreas endócrino: ilhotas de Langerhans com células α (glucagon), β (insulina), δ (somatostatina).",
+    ],
+  },
+  {
+    icon: "🧪",
+    title: "Sistema Urinário",
+    subtitle: "Rim, néfron e vias urinárias",
+    content: [
+      "O rim possui córtex (glomérulos e túbulos contorcidos) e medula (alças de Henle e ductos coletores organizados em pirâmides). A unidade funcional é o néfron (1-1,5 milhão por rim).",
+      "O corpúsculo renal (de Malpighi) é formado pelo glomérulo capilar envolvido pela cápsula de Bowman. O filtrado glomerular é produzido através da barreira de filtração: endotélio fenestrado + membrana basal + podócitos (pedicelos e fendas de filtração).",
+      "Túbulo contorcido proximal: epitélio cúbico simples com borda em escova, reabsorve ~65% do filtrado (glicose, aminoácidos, Na⁺, HCO₃⁻, água). Alça de Henle: ramo descendente fino (permeável à água), ramo ascendente (impermeável à água, transporta íons).",
+      "Túbulo contorcido distal: epitélio cúbico sem borda em escova, contém a mácula densa (parte do aparelho justaglomerular). Ducto coletor: regulado por ADH (aquaporinas) e aldosterona.",
+      "Vias urinárias (pelve renal, ureter, bexiga, uretra): revestidas por urotélio (epitélio de transição) com células em guarda-chuva contendo placas de uroplaquina impermeabilizantes.",
+    ],
+  },
+  {
+    icon: "🧴",
+    title: "Pele e Anexos",
+    subtitle: "Epiderme, derme, glândulas e folículos pilosos",
+    content: [
+      "A pele é o maior órgão do corpo, composta por epiderme (ectoderma) e derme (mesoderma). A hipoderme (subcutâneo) não faz parte da pele propriamente dita.",
+      "Epiderme: epitélio estratificado pavimentoso queratinizado. Camadas (da base ao topo): basal (germinativa), espinhosa, granulosa, lúcida (apenas pele espessa) e córnea.",
+      "Células da epiderme: queratinócitos (90%, produzem queratina), melanócitos (melanina, proteção UV), células de Langerhans (APCs, imunidade), células de Merkel (mecanorreceptores).",
+      "Derme papilar: conjuntivo frouxo com papilas dérmicas (aumento de adesão e nutrição da epiderme). Derme reticular: conjuntivo denso não-modelado com fibras colágenas e elásticas espessas.",
+      "Glândulas sudoríparas écrinas: merócrinas, termorregulação, distribuição ampla. Apócrinas: ducto desemboca no folículo piloso, axila e períneo. Glândulas sebáceas: secreção holócrina, produzem sebo.",
+      "Folículo piloso: invaginação epitelial com bulbo, papila dérmica, bainha radicular interna e externa. O pelo cresce em ciclos: anágena (crescimento), catágena (involução) e telógena (repouso).",
+    ],
+  },
+  {
+    icon: "🔴",
+    title: "Sistema Endócrino",
+    subtitle: "Glândulas endócrinas e regulação hormonal",
+    content: [
+      "Hipófise: adenohipófise (origem ectodérmica oral — bolsa de Rathke) com células acidófilas (GH, PRL), basófilas (FSH, LH, TSH, ACTH) e cromófobas. Neurohipófise: armazena e libera ADH e ocitocina produzidos no hipotálamo.",
+      "Tireoide: folículos revestidos por epitélio cúbico simples (células foliculares — T3/T4), coloide intraluminal (tireoglobulina). Células parafoliculares (C) produzem calcitonina.",
+      "Paratireoides: células principais (PTH — regulação do cálcio) e células oxífilas (função incerta, ricas em mitocôndrias). PTH aumenta calcemia via osteoclastos, reabsorção renal e ativação de vitamina D.",
+      "Adrenal: córtex (zonas glomerulosa — aldosterona, fasciculada — cortisol, reticular — andrógenos) e medula (células cromafins — adrenalina e noradrenalina, origem na crista neural).",
+      "Ilhotas de Langerhans: células β (insulina, 70%), α (glucagon, 20%), δ (somatostatina) e PP (polipeptídeo pancreático). A secreção é parácrina e endócrina.",
+    ],
+  },
+  {
+    icon: "🛡️",
+    title: "Sistema Linfático e Imunológico",
+    subtitle: "Órgãos linfoides, linfonodos e resposta imune",
+    content: [
+      "Órgãos linfoides primários: medula óssea (maturação de linfócitos B) e timo (maturação de linfócitos T — seleção positiva no córtex e negativa na medula). O timo involui progressivamente com a idade.",
+      "Linfonodos: córtex (folículos linfoides — linfócitos B, centros germinativos na resposta humoral), paracórtex (linfócitos T) e medula (cordões medulares com plasmócitos). Filtram a linfa.",
+      "Baço: polpa branca (tecido linfoide — bainha linfoide periarteriolar com linfócitos T, folículos com linfócitos B) e polpa vermelha (sinusoides esplênicos, cordões de Billroth — remoção de eritrócitos senescentes).",
+      "MALT (tecido linfoide associado a mucosas): placas de Peyer (íleo), tonsilas, apêndice. Células M capturam antígenos luminais e apresentam a linfócitos subjacentes.",
+      "Células dendríticas são as principais APCs (células apresentadoras de antígenos), capturando antígenos nos tecidos periféricos e migrando para linfonodos para ativar linfócitos T naive.",
+    ],
+  },
+  {
+    icon: "🧫",
+    title: "Sistema Reprodutor Masculino",
+    subtitle: "Testículo, espermatogênese e vias espermáticas",
+    content: [
+      "Testículo: túbulos seminíferos contêm células de Sertoli (suporte, barreira hematotesticular, ABP) e células germinativas em diferentes estágios da espermatogênese. Células de Leydig no interstício produzem testosterona.",
+      "Espermatogênese: espermatogônias (mitose) → espermatócitos I (meiose I) → espermatócitos II (meiose II) → espermátides → espermatozoides (espermiogênese — formação do acrossoma e flagelo).",
+      "Epidídimo: epitélio pseudoestratificado com estereocílios, local de maturação e armazenamento dos espermatozoides. Ducto deferente: parede muscular espessa com três camadas.",
+      "Próstata: glândulas tubuloalveolares em estroma fibromuscular, secreta fosfatase ácida e PSA. Vesículas seminais: epitélio pregueado, secretam frutose e prostaglandinas.",
+    ],
+  },
+  {
+    icon: "🌸",
+    title: "Sistema Reprodutor Feminino",
+    subtitle: "Ovário, útero e ciclo menstrual",
+    content: [
+      "Ovário: córtex contém folículos em diferentes estágios (primordial → primário → secundário → maduro/de Graaf). Folículos possuem oócito, células da granulosa e teca. Após ovulação, forma-se o corpo lúteo.",
+      "Tuba uterina: epitélio cilíndrico simples ciliado com células secretoras, mucosa pregueada. Cílios e peristaltismo transportam o óvulo/embrião. A fecundação ocorre geralmente na ampola.",
+      "Útero: endométrio (camada funcional — descama na menstruação; camada basal — regenera), miométrio (músculo liso espesso) e perimétrio (serosa).",
+      "Ciclo menstrual: fase proliferativa (estrogênio → proliferação endometrial), fase secretora (progesterona → glândulas tortuosas, edema estromal), fase menstrual (queda hormonal → isquemia e descamação).",
+      "Colo uterino: ectocérvice (epitélio estratificado pavimentoso), endocérvice (epitélio cilíndrico mucossecretor). A junção escamocolunar (JEC) é sítio frequente de neoplasia cervical.",
+    ],
+  },
+];
