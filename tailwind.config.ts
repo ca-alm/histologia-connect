@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['Merriweather', 'serif'],
+        sans: ['Source Sans 3', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +60,17 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        badge: {
+          nature: "hsl(var(--badge-nature))",
+          cell: "hsl(var(--badge-cell))",
+          nejm: "hsl(var(--badge-nejm))",
+          science: "hsl(var(--badge-science))",
+        },
+        quiz: {
+          correct: "hsl(var(--quiz-correct))",
+          incorrect: "hsl(var(--quiz-incorrect))",
+          selected: "hsl(var(--quiz-selected))",
         },
       },
       borderRadius: {
