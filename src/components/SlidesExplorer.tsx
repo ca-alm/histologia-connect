@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown, Eye } from "lucide-react";
 import { slides } from "@/data/slides";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const SlidesExplorer = () => {
   const [expandedId, setExpandedId] = useState<number | null>(null);
@@ -24,6 +25,20 @@ const SlidesExplorer = () => {
           {expandedId === slide.id && (
             <div className="px-5 pb-5 pt-0 animate-in fade-in slide-in-from-top-1 duration-300">
               <div className="border-t border-border pt-4 space-y-4">
+                {/* Slide image */}
+                {slide.imageUrl && (
+                  <div className="rounded-lg overflow-hidden border border-border">
+                    <AspectRatio ratio={4 / 3}>
+                      <img
+                        src={slide.imageUrl}
+                        alt={`Lâmina histológica: ${slide.tissue}`}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </AspectRatio>
+                  </div>
+                )}
+
                 <p className="text-sm text-foreground/80 leading-relaxed">{slide.description}</p>
 
                 {/* Structures */}

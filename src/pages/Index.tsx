@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Newspaper, Brain, BookOpen, Microscope, Bell, Eye, Stethoscope } from "lucide-react";
+import { Newspaper, Brain, BookOpen, Microscope, Bell, Eye, Stethoscope, CalendarDays } from "lucide-react";
 import heroImage from "@/assets/hero-histology.jpg";
 import ArticleCard from "@/components/ArticleCard";
 import QuizSection from "@/components/QuizSection";
@@ -7,6 +7,7 @@ import SummaryCard from "@/components/SummaryCard";
 import RemindersSection from "@/components/RemindersSection";
 import SlidesExplorer from "@/components/SlidesExplorer";
 import ClinicalCasesSection from "@/components/ClinicalCasesSection";
+import CalendarSection from "@/components/CalendarSection";
 import { articles } from "@/data/articles";
 import { summaries } from "@/data/summaries";
 
@@ -17,6 +18,7 @@ const tabs = [
   { id: "reminders", label: "Lembretes", icon: Bell },
   { id: "slides", label: "Lâminas", icon: Eye },
   { id: "cases", label: "Casos Clínicos", icon: Stethoscope },
+  { id: "calendar", label: "Calendário", icon: CalendarDays },
 ] as const;
 
 type TabId = (typeof tabs)[number]["id"];
@@ -117,6 +119,14 @@ const Index = () => {
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Casos Clínicos</h2>
             <p className="text-muted-foreground mb-8">Casos clínicos com correlação histopatológica para aplicação prática.</p>
             <ClinicalCasesSection />
+          </section>
+        )}
+
+        {activeTab === "calendar" && (
+          <section>
+            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Calendário</h2>
+            <p className="text-muted-foreground mb-8">Organize provas, aulas e entregas da disciplina de Histologia.</p>
+            <CalendarSection />
           </section>
         )}
       </main>
