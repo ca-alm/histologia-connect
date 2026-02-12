@@ -50,8 +50,8 @@ const Index = () => {
           <h1 className="font-serif text-3xl md:text-5xl font-black text-primary-foreground leading-tight mb-4">
             HistoApp
           </h1>
-          <p className="text-primary-foreground/80 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
-            Apoio pedagógico em Histologia — atualizações científicas, atividades interativas e resumos para a prática médica.
+          <p className="text-primary-foreground/80 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">Apoio pedagógico em Histologia — atualizações científicas, atividades interativas e resumos para a aplicação médica.
+
           </p>
         </div>
       </header>
