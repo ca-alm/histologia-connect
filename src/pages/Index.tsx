@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Newspaper, Brain, BookOpen, Microscope, Bell, Eye, Stethoscope, CalendarDays } from "lucide-react";
+import { Newspaper, Brain, BookOpen, Microscope, Bell, Eye, Stethoscope, CalendarDays, MessageCircle, Gamepad2, Library } from "lucide-react";
 import heroImage from "@/assets/hero-histology.jpg";
 import ArticleCard from "@/components/ArticleCard";
 import QuizSection from "@/components/QuizSection";
@@ -8,6 +8,9 @@ import RemindersSection from "@/components/RemindersSection";
 import SlidesExplorer from "@/components/SlidesExplorer";
 import ClinicalCasesSection from "@/components/ClinicalCasesSection";
 import CalendarSection from "@/components/CalendarSection";
+import QASection from "@/components/QASection";
+import GamesSection from "@/components/GamesSection";
+import ReferencesSection from "@/components/ReferencesSection";
 import { articles } from "@/data/articles";
 import { summaries } from "@/data/summaries";
 
@@ -18,7 +21,10 @@ const tabs = [
   { id: "reminders", label: "Lembretes", icon: Bell },
   { id: "slides", label: "Lâminas", icon: Eye },
   { id: "cases", label: "Casos Clínicos", icon: Stethoscope },
+  { id: "games", label: "Jogos", icon: Gamepad2 },
   { id: "calendar", label: "Calendário", icon: CalendarDays },
+  { id: "qa", label: "Dúvidas", icon: MessageCircle },
+  { id: "references", label: "Referências", icon: Library },
 ] as const;
 
 type TabId = (typeof tabs)[number]["id"];
@@ -122,11 +128,35 @@ const Index = () => {
           </section>
         )}
 
+        {activeTab === "games" && (
+          <section>
+            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Jogos Educativos</h2>
+            <p className="text-muted-foreground mb-8">Aprenda histologia de forma divertida com jogos interativos e desafios.</p>
+            <GamesSection />
+          </section>
+        )}
+
         {activeTab === "calendar" && (
           <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Calendário</h2>
             <p className="text-muted-foreground mb-8">Organize provas, aulas e entregas da disciplina de Histologia.</p>
             <CalendarSection />
+          </section>
+        )}
+
+        {activeTab === "qa" && (
+          <section>
+            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Tire suas Dúvidas</h2>
+            <p className="text-muted-foreground mb-8">Envie mensagens para os criadores do HistoApp — anônimas ou identificadas.</p>
+            <QASection />
+          </section>
+        )}
+
+        {activeTab === "references" && (
+          <section>
+            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Referências Bibliográficas</h2>
+            <p className="text-muted-foreground mb-8">Fontes científicas e acadêmicas nas quais o conteúdo deste aplicativo se baseia.</p>
+            <ReferencesSection />
           </section>
         )}
       </main>
