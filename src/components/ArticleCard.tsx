@@ -11,6 +11,7 @@ interface ArticleCardProps {
   summary: string;
   clinicalRelevance: string;
   doi?: string;
+  url?: string;
 }
 
 const journalColors: Record<JournalType, string> = {
@@ -20,7 +21,9 @@ const journalColors: Record<JournalType, string> = {
   science: "bg-badge-science",
 };
 
-const ArticleCard = ({ title, journal, journalType, date, summary, clinicalRelevance, doi }: ArticleCardProps) => {
+const ArticleCard = ({ title, journal, journalType, date, summary, clinicalRelevance, doi, url }: ArticleCardProps) => {
+  const articleUrl = url || (doi ? `https://doi.org/${doi}` : undefined);
+  
   return (
     <div className="group rounded-xl bg-card p-6 card-shadow transition-all duration-300 hover:card-shadow-hover hover:-translate-y-0.5 border border-border">
       <div className="flex items-start justify-between gap-4 mb-3">
@@ -42,9 +45,9 @@ const ArticleCard = ({ title, journal, journalType, date, summary, clinicalRelev
         <p className="text-sm font-semibold text-secondary-foreground mb-1">🏥 Relevância Clínica</p>
         <p className="text-sm text-secondary-foreground/80">{clinicalRelevance}</p>
       </div>
-      {doi && (
+      {articleUrl && (
         <a
-          href={`https://doi.org/${doi}`}
+          href={articleUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline transition-colors"
