@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, Eye } from "lucide-react";
+import { ChevronDown, Eye, ExternalLink } from "lucide-react";
 import { slides } from "@/data/slides";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -25,9 +25,14 @@ const SlidesExplorer = () => {
           {expandedId === slide.id && (
             <div className="px-5 pb-5 pt-0 animate-in fade-in slide-in-from-top-1 duration-300">
               <div className="border-t border-border pt-4 space-y-4">
-                {/* Slide image */}
+                {/* Slide image — clickable to open full resolution */}
                 {slide.imageUrl && (
-                  <div className="rounded-lg overflow-hidden border border-border">
+                  <a
+                    href={slide.imageUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-lg overflow-hidden border border-border hover:ring-2 hover:ring-primary/50 transition-all group relative"
+                  >
                     <AspectRatio ratio={4 / 3}>
                       <img
                         src={slide.imageUrl}
@@ -36,18 +41,22 @@ const SlidesExplorer = () => {
                         loading="lazy"
                       />
                     </AspectRatio>
-                  </div>
+                    <div className="absolute bottom-2 right-2 bg-background/80 backdrop-blur-sm rounded-md px-2 py-1 flex items-center gap-1 text-xs text-foreground opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ExternalLink className="w-3 h-3" />
+                      Abrir imagem
+                    </div>
+                  </a>
                 )}
 
                 <p className="text-sm text-foreground/80 leading-relaxed">{slide.description}</p>
 
-                {/* Structures */}
+                {/* Structures with color legend */}
                 <div>
                   <p className="text-sm font-semibold text-foreground mb-3">🏷️ Estruturas Identificadas</p>
                   <div className="space-y-3">
                     {slide.structures.map((s, i) => (
                       <div key={i} className="flex gap-3 items-start">
-                        <div className="w-3 h-3 rounded-full shrink-0 mt-1.5" style={{ backgroundColor: s.color }} />
+                        <div className="w-3 h-3 rounded-full shrink-0 mt-1.5 ring-2 ring-background shadow-sm" style={{ backgroundColor: s.color }} />
                         <div>
                           <p className="text-sm font-semibold text-foreground">{s.name}</p>
                           <p className="text-sm text-foreground/70 leading-relaxed">{s.description}</p>

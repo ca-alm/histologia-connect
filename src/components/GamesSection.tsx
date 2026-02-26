@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Gamepad2, RotateCcw, CheckCircle2, XCircle, Timer, Trophy, ArrowRight, Shuffle } from "lucide-react";
+import { Gamepad2, RotateCcw, CheckCircle2, XCircle, Timer, Trophy, ArrowRight, Shuffle, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { questions } from "@/data/quizQuestions";
 
@@ -59,6 +59,59 @@ const matchSets: { title: string; pairs: MatchPair[] }[] = [
       { term: "Células beta pancreáticas", definition: "Insulina" },
       { term: "Células parafoliculares (C)", definition: "Calcitonina" },
       { term: "Células parietais gástricas", definition: "HCl e fator intrínseco" },
+    ],
+  },
+  {
+    title: "Tumores e Células de Origem",
+    pairs: [
+      { term: "Seminoma", definition: "Célula germinativa" },
+      { term: "Meningioma", definition: "Células meningoteliais aracnoides" },
+      { term: "Schwannoma", definition: "Células de Schwann" },
+      { term: "Glioblastoma", definition: "Astrócitos" },
+      { term: "GIST", definition: "Células de Cajal" },
+      { term: "Feocromocitoma", definition: "Células cromafins da medula adrenal" },
+    ],
+  },
+  {
+    title: "Marcadores Imunohistoquímicos",
+    pairs: [
+      { term: "CD3", definition: "Linfócitos T (pan-T)" },
+      { term: "CD20", definition: "Linfócitos B maduros" },
+      { term: "S-100", definition: "Melanoma, Schwann, Langerhans" },
+      { term: "Desmina", definition: "Células musculares" },
+      { term: "GFAP", definition: "Astrócitos" },
+      { term: "Cromogranina A", definition: "Tumores neuroendócrinos" },
+    ],
+  },
+  {
+    title: "Doenças e Mutações Genéticas",
+    pairs: [
+      { term: "Síndrome de Marfan", definition: "Fibrilina-1 (FBN1)" },
+      { term: "Doença de Huntington", definition: "Huntingtina (HTT)" },
+      { term: "Fibrose cística", definition: "CFTR" },
+      { term: "Retinoblastoma", definition: "RB1" },
+      { term: "Li-Fraumeni", definition: "TP53" },
+      { term: "Policitemia vera", definition: "JAK2 V617F" },
+    ],
+  },
+  {
+    title: "Órgãos e Epitélios Revestidores",
+    pairs: [
+      { term: "Córnea", definition: "Estratificado pavimentoso não-queratinizado" },
+      { term: "Tuba uterina", definition: "Simples cilíndrico ciliado" },
+      { term: "Epidídimo", definition: "Pseudoestratificado com estereocílios" },
+      { term: "Vagina", definition: "Estratificado pavimentoso não-queratinizado" },
+      { term: "Vesícula biliar", definition: "Simples cilíndrico com microvilosidades" },
+    ],
+  },
+  {
+    title: "Necroses e Mecanismos",
+    pairs: [
+      { term: "Coagulação", definition: "Infarto cardíaco/renal (isquemia)" },
+      { term: "Liquefativa", definition: "Infarto cerebral, abscessos" },
+      { term: "Caseosa", definition: "Tuberculose (granulomas)" },
+      { term: "Gordurosa", definition: "Pancreatite aguda (lipase)" },
+      { term: "Fibrinoide", definition: "Vasculites e reações autoimunes" },
     ],
   },
 ];
@@ -196,6 +249,22 @@ const tfStatements: { statement: string; isTrue: boolean; explanation: string }[
   { statement: "A aldosterona é produzida pela zona fasciculada.", isTrue: false, explanation: "A aldosterona é produzida pela zona GLOMERULOSA. A fasciculada produz cortisol." },
   { statement: "O urotélio possui células em guarda-chuva com uroplaquinas.", isTrue: true, explanation: "As uroplaquinas nas células em guarda-chuva formam placas rígidas que impermeabilizam o urotélio." },
   { statement: "O surfactante pulmonar é produzido pelos pneumócitos tipo I.", isTrue: false, explanation: "O surfactante é produzido pelos pneumócitos tipo II (corpos lamelares). Os tipo I fazem trocas gasosas." },
+  // New statements
+  { statement: "A nefrina é a principal proteína do diafragma de fenda dos podócitos.", isTrue: true, explanation: "A nefrina forma o slit diaphragm entre pedicelos dos podócitos. Mutação causa síndrome nefrótica congênita." },
+  { statement: "O Ki-67 marca células em fase G0.", isTrue: false, explanation: "O Ki-67 é expresso em todas as fases ativas do ciclo celular (G1, S, G2, M), mas NÃO em G0 (quiescência)." },
+  { statement: "A coloração de Ziehl-Neelsen detecta fungos.", isTrue: false, explanation: "Ziehl-Neelsen detecta BAAR (micobactérias). Para fungos, usa-se GMS (Grocott-Gomori) ou PAS." },
+  { statement: "Os corpúsculos de Weibel-Palade contêm fator de von Willebrand.", isTrue: true, explanation: "Os corpos de Weibel-Palade são grânulos das células endoteliais contendo vWF e P-selectina." },
+  { statement: "O reticulócito é um leucócito imaturo.", isTrue: false, explanation: "O reticulócito é um ERITRÓCITO imaturo com restos de RNA ribossômico. Serve para avaliar atividade eritropoiética." },
+  { statement: "A degeneração walleriana ocorre proximal ao local da lesão.", isTrue: false, explanation: "A degeneração walleriana ocorre DISTAL ao local de lesão (axônio e mielina distais degeneram)." },
+  { statement: "O seminoma testicular marca OCT4 na imunohistoquímica.", isTrue: true, explanation: "O seminoma é OCT4+, PLAP+, c-KIT+, refletindo sua origem em células germinativas pluripotentes." },
+  { statement: "A apoptose causa inflamação intensa no tecido.", isTrue: false, explanation: "A apoptose é morte programada SEM inflamação. Corpos apoptóticos são fagocitados silenciosamente. A necrose causa inflamação." },
+  { statement: "As células de Clara (Club cells) produzem muco.", isTrue: false, explanation: "As Club cells secretam proteína CC16 (anti-inflamatória) e são células progenitoras do bronquíolo. Não produzem muco." },
+  { statement: "A troponina I cardíaca é marcador específico de lesão miocárdica.", isTrue: true, explanation: "A cTnI é específica do coração. Eleva-se no IAM e outras causas de lesão miocárdica (miocardite, embolia pulmonar)." },
+  { statement: "O pênfigo vulgar causa bolhas subepidérmicas.", isTrue: false, explanation: "O pênfigo vulgar causa bolhas INTRAepidérmicas (acantólise por anti-desmogleína). O penfigoide bolhoso causa bolhas SUBepidérmicas." },
+  { statement: "A mutação BRAF V600E é encontrada em ~50% dos melanomas.", isTrue: true, explanation: "BRAF V600E está presente em cerca de 50% dos melanomas cutâneos, sendo alvo de inibidores específicos (vemurafenibe, dabrafenibe)." },
+  { statement: "O GIST é positivo para CD117 (c-KIT) na imunohistoquímica.", isTrue: true, explanation: "Mais de 95% dos GISTs expressam CD117 (c-KIT), o que auxilia no diagnóstico e indica alvo para imatinibe." },
+  { statement: "O corpo lúteo da gravidez é mantido pelo FSH.", isTrue: false, explanation: "O corpo lúteo da gravidez é mantido pelo hCG (gonadotrofina coriônica humana) secretado pelo sinciciotrofoblasto." },
+  { statement: "A crista neural origina os melanócitos.", isTrue: true, explanation: "Os melanócitos derivam da crista neural e migram para a epiderme durante o desenvolvimento embrionário." },
 ];
 
 const TrueFalseGame = () => {
@@ -219,7 +288,7 @@ const TrueFalseGame = () => {
   if (!started) {
     return (
       <div className="text-center py-4">
-        <p className="text-sm text-muted-foreground mb-4">Leia cada afirmação e decida se é Verdadeira ou Falsa. Rápido e direto!</p>
+        <p className="text-sm text-muted-foreground mb-4">Leia cada afirmação e decida se é Verdadeira ou Falsa. Rápido e direto! ({tfStatements.length} afirmações no banco)</p>
         <Button onClick={start} className="gap-2"><Shuffle className="w-4 h-4" />Iniciar (10 afirmações)</Button>
       </div>
     );
@@ -286,18 +355,15 @@ const FlashQuiz = () => {
   const [gameQuestions, setGameQuestions] = useState<typeof questions>([]);
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(15);
   const [answered, setAnswered] = useState(false);
   const [selected, setSelected] = useState<number | null>(null);
   const [started, setStarted] = useState(false);
-  const [timerId, setTimerId] = useState<ReturnType<typeof setInterval> | null>(null);
 
   const start = () => {
     const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, 10);
     setGameQuestions(shuffled);
     setCurrent(0);
     setScore(0);
-    setTimeLeft(15);
     setAnswered(false);
     setSelected(null);
     setStarted(true);
@@ -315,7 +381,6 @@ const FlashQuiz = () => {
       setCurrent((c) => c + 1);
       setAnswered(false);
       setSelected(null);
-      setTimeLeft(15);
     } else {
       setStarted(false);
     }
@@ -335,7 +400,7 @@ const FlashQuiz = () => {
   if (!started) {
     return (
       <div className="text-center py-4">
-        <p className="text-sm text-muted-foreground mb-4">Responda 10 questões rápidas de histologia! Sem tempo limite, mas tente ser rápido!</p>
+        <p className="text-sm text-muted-foreground mb-4">Responda 10 questões rápidas de histologia! Banco com {questions.length} questões.</p>
         <Button onClick={start} className="gap-2"><Timer className="w-4 h-4" />Iniciar Flash Quiz</Button>
       </div>
     );
@@ -380,11 +445,113 @@ const FlashQuiz = () => {
   );
 };
 
+// ===== GAME 4: COMPLETE A FRASE =====
+const fillBlanks = [
+  { text: "O colágeno tipo ___ é o principal componente da lâmina basal.", answer: "IV", options: ["I", "II", "III", "IV"] },
+  { text: "As células ___ são os macrófagos residentes do fígado.", answer: "de Kupffer", options: ["de Langerhans", "de Kupffer", "de Sertoli", "de Leydig"] },
+  { text: "A ___ é a proteína motora do transporte axonal retrógrado.", answer: "dineína", options: ["cinesina", "dineína", "miosina", "actina"] },
+  { text: "O surfactante pulmonar é produzido pelos pneumócitos tipo ___.", answer: "II", options: ["I", "II", "III", "IV"] },
+  { text: "A ___ é a principal proteína do filamento intermediário dos astrócitos.", answer: "GFAP", options: ["vimentina", "desmina", "GFAP", "citoqueratina"] },
+  { text: "Os osteoclastos derivam da linhagem ___.", answer: "monocítica/hematopoiética", options: ["mesenquimal", "epitelial", "monocítica/hematopoiética", "neural"] },
+  { text: "A coloração ___ é usada para detectar fibras elásticas.", answer: "Verhoeff", options: ["PAS", "Verhoeff", "Masson", "Giemsa"] },
+  { text: "As tight junctions contêm proteínas transmembranares chamadas ___.", answer: "claudinas e ocludinas", options: ["caderinas", "integrinas", "claudinas e ocludinas", "conexinas"] },
+  { text: "O ___ é o tumor benigno mais comum do útero.", answer: "leiomioma (mioma)", options: ["adenomiose", "pólipo", "leiomioma (mioma)", "fibroma"] },
+  { text: "A via Wnt/β-catenina regula as células-tronco das criptas ___.", answer: "intestinais", options: ["gástricas", "esofágicas", "intestinais", "colônicas"] },
+  { text: "A ___ é a causa mais comum de glomerulonefrite no mundo.", answer: "nefropatia por IgA", options: ["GNPE", "nefropatia por IgA", "nefropatia membranosa", "GESF"] },
+  { text: "O carcinoma papilífero da tireoide apresenta núcleos em ___.", answer: "vidro fosco (Orphan Annie eyes)", options: ["relógio de areia", "vidro fosco (Orphan Annie eyes)", "sal e pimenta", "olhos de coruja"] },
+];
+
+const FillBlankGame = () => {
+  const [gameItems, setGameItems] = useState<typeof fillBlanks>([]);
+  const [current, setCurrent] = useState(0);
+  const [score, setScore] = useState(0);
+  const [selected, setSelected] = useState<string | null>(null);
+  const [started, setStarted] = useState(false);
+
+  const start = () => {
+    const shuffled = [...fillBlanks].sort(() => Math.random() - 0.5).slice(0, 10);
+    setGameItems(shuffled);
+    setCurrent(0);
+    setScore(0);
+    setSelected(null);
+    setStarted(true);
+  };
+
+  if (!started && gameItems.length > 0 && current >= gameItems.length) {
+    const pct = Math.round((score / gameItems.length) * 100);
+    return (
+      <div className="text-center py-4">
+        <div className="text-4xl mb-3">{pct >= 80 ? "🧠" : pct >= 60 ? "📝" : "📖"}</div>
+        <p className="text-lg font-bold text-foreground mb-1">Complete a Frase: {score}/{gameItems.length} ({pct}%)</p>
+        <Button onClick={start} variant="outline" className="gap-2 mt-3"><RotateCcw className="w-4 h-4" />Jogar novamente</Button>
+      </div>
+    );
+  }
+
+  if (!started) {
+    return (
+      <div className="text-center py-4">
+        <p className="text-sm text-muted-foreground mb-4">Complete a frase com a opção correta. Teste seus conhecimentos de histologia!</p>
+        <Button onClick={start} className="gap-2"><Brain className="w-4 h-4" />Iniciar</Button>
+      </div>
+    );
+  }
+
+  if (current >= gameItems.length) {
+    setStarted(false);
+    return null;
+  }
+
+  const item = gameItems[current];
+  const answered = selected !== null;
+  const isCorrect = selected === item.answer;
+
+  const next = () => {
+    if (isCorrect) setScore(s => s + 1);
+    setCurrent(c => c + 1);
+    setSelected(null);
+  };
+
+  return (
+    <div>
+      <div className="flex items-center justify-between mb-4">
+        <span className="text-sm text-muted-foreground">{current + 1}/{gameItems.length}</span>
+        <span className="text-sm font-semibold text-primary">🧠 {score} pontos</span>
+      </div>
+      <div className="bg-card border border-border rounded-xl p-6 mb-4">
+        <p className="font-serif text-lg font-bold text-foreground leading-relaxed">{item.text}</p>
+      </div>
+      <div className="grid grid-cols-2 gap-2 mb-4">
+        {item.options.map((opt) => {
+          let cls = "p-3 rounded-lg border-2 text-sm font-medium transition-all text-left ";
+          if (!answered) cls += "border-border hover:border-primary/50 cursor-pointer";
+          else if (opt === item.answer) cls += "border-quiz-correct bg-quiz-correct/10";
+          else if (opt === selected) cls += "border-quiz-incorrect bg-quiz-incorrect/10";
+          else cls += "border-border opacity-50";
+          return (
+            <button key={opt} className={cls} onClick={() => !answered && setSelected(opt)} disabled={answered}>
+              {opt}
+            </button>
+          );
+        })}
+      </div>
+      {answered && (
+        <div className="flex justify-end">
+          <Button onClick={next} className="gap-2">
+            {current < gameItems.length - 1 ? "Próxima" : "Ver Resultado"} <ArrowRight className="w-4 h-4" />
+          </Button>
+        </div>
+      )}
+    </div>
+  );
+};
+
 // ===== MAIN COMPONENT =====
 const games = [
-  { id: "match", title: "🔗 Jogo de Associação", description: "Associe termos histológicos às suas definições" },
-  { id: "tf", title: "✅ Verdadeiro ou Falso", description: "Julgue afirmações sobre histologia" },
-  { id: "flash", title: "⚡ Flash Quiz", description: "Quiz rápido com questões aleatórias" },
+  { id: "match", title: "🔗 Jogo de Associação", description: "Associe termos histológicos às suas definições (10 temas)" },
+  { id: "tf", title: "✅ Verdadeiro ou Falso", description: `Julgue afirmações sobre histologia (${tfStatements.length} afirmações)` },
+  { id: "flash", title: "⚡ Flash Quiz", description: "Quiz rápido com questões aleatórias do banco completo" },
+  { id: "fill", title: "🧠 Complete a Frase", description: "Preencha a lacuna com o termo correto" },
 ] as const;
 
 type GameId = (typeof games)[number]["id"];
@@ -419,6 +586,7 @@ const GamesSection = () => {
       {activeGame === "match" && <MatchGame />}
       {activeGame === "tf" && <TrueFalseGame />}
       {activeGame === "flash" && <FlashQuiz />}
+      {activeGame === "fill" && <FillBlankGame />}
     </div>
   );
 };
