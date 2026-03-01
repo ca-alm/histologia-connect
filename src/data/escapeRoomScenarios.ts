@@ -720,6 +720,7 @@ function generateRemainingScenarios(): EscapeScenario[] {
         theme: selected.th,
         diff: diffs[i % 4],
         time: [300, 360, 420, 480][i % 4],
+        description: `Explore os enigmas sobre ${selected.t.toLowerCase()} e teste seus conhecimentos em ${selected.th.toLowerCase()}.`,
         puzzles: selected.puzzles,
       };
     }),
@@ -732,7 +733,7 @@ function generateRemainingScenarios(): EscapeScenario[] {
       theme: s.theme,
       difficulty: s.diff,
       timeSeconds: s.time,
-      description: s.description,
+      description: "description" in s && typeof (s as any).description === "string" ? (s as any).description : `Desvende os enigmas sobre ${s.title.toLowerCase()} neste cenário de ${s.theme.toLowerCase()}.`,
       puzzles: s.puzzles,
     });
   }
