@@ -20,7 +20,7 @@ export interface EscapeScenario {
 export const escapeScenarios: EscapeScenario[] = [
   // ===== TECIDO EPITELIAL (1-12) =====
   {
-    id: 1, title: "Laboratório do Epitélio", theme: "Tecido Epitelial", difficulty: "Fácil", timeSeconds: 300,
+    id: 1, title: "Laboratório do Epitélio", theme: "Tecido Epitelial", difficulty: "Fácil", timeSeconds: 60,
     description: "Você está preso no laboratório de histologia. Para escapar, identifique corretamente os tecidos epiteliais nas lâminas.",
     puzzles: [
       { type: "multiple_choice", question: "Qual epitélio reveste a traqueia?", options: ["Simples pavimentoso", "Pseudoestratificado cilíndrico ciliado", "Estratificado pavimentoso", "Transição"], correctAnswer: 1, explanation: "Epitélio respiratório: pseudoestratificado cilíndrico ciliado com células caliciformes." },
@@ -31,7 +31,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 2, title: "Enigma das Junções Celulares", theme: "Tecido Epitelial", difficulty: "Médio", timeSeconds: 360,
+    id: 2, title: "Enigma das Junções Celulares", theme: "Tecido Epitelial", difficulty: "Médio", timeSeconds: 90,
     description: "As portas do laboratório só abrem decifrando os segredos das junções intercelulares.",
     puzzles: [
       { type: "multiple_choice", question: "Qual junção veda o espaço intercelular na porção mais apical?", options: ["Desmossomo", "Junção gap", "Zônula de oclusão (tight junction)", "Hemidesmossomo"], correctAnswer: 2, explanation: "Tight junctions: claudinas e ocludinas selam o espaço paracelular. Localizam-se na porção mais apical." },
@@ -42,7 +42,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 3, title: "Câmara das Glândulas", theme: "Tecido Epitelial", difficulty: "Médio", timeSeconds: 360,
+    id: 3, title: "Câmara das Glândulas", theme: "Tecido Epitelial", difficulty: "Médio", timeSeconds: 90,
     description: "Decifre os segredos das glândulas exócrinas e endócrinas para abrir o cofre do laboratório.",
     puzzles: [
       { type: "multiple_choice", question: "Qual o tipo de secreção em que a célula libera seu conteúdo por exocitose sem perda celular?", options: ["Holócrina", "Apócrina", "Merócrina (écrina)", "Parácrina"], correctAnswer: 2, explanation: "Secreção merócrina: exocitose sem perda de citoplasma. Ex: glândulas salivares, pâncreas exócrino." },
@@ -53,7 +53,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 4, title: "Mistério da Lâmina Basal", theme: "Tecido Epitelial", difficulty: "Difícil", timeSeconds: 420,
+    id: 4, title: "Mistério da Lâmina Basal", theme: "Tecido Epitelial", difficulty: "Difícil", timeSeconds: 120,
     description: "A saída está bloqueada por uma barreira molecular. Desvende a composição da lâmina basal.",
     puzzles: [
       { type: "multiple_choice", question: "Qual colágeno é o principal componente da lâmina basal?", options: ["Tipo I", "Tipo II", "Tipo III", "Tipo IV"], correctAnswer: 3, explanation: "Colágeno tipo IV: forma rede (não fibras) na lâmina basal. Associado a laminina, entactina e proteoglicanos." },
@@ -65,7 +65,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== TECIDO CONJUNTIVO (5-16) =====
   {
-    id: 5, title: "Floresta de Fibras", theme: "Tecido Conjuntivo", difficulty: "Fácil", timeSeconds: 300,
+    id: 5, title: "Floresta de Fibras", theme: "Tecido Conjuntivo", difficulty: "Fácil", timeSeconds: 60,
     description: "Navegue pela floresta de fibras conjuntivas identificando cada tipo para encontrar a saída.",
     puzzles: [
       { type: "multiple_choice", question: "Qual é a fibra conjuntiva mais abundante do corpo humano?", options: ["Elástica", "Reticular", "Colágena tipo I", "Oxitalânica"], correctAnswer: 2, explanation: "Colágeno tipo I: mais abundante, presente em osso, tendão, pele, dentina. Forma feixes espessos." },
@@ -76,7 +76,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 6, title: "Calabouço dos Fibroblastos", theme: "Tecido Conjuntivo", difficulty: "Médio", timeSeconds: 360,
+    id: 6, title: "Calabouço dos Fibroblastos", theme: "Tecido Conjuntivo", difficulty: "Médio", timeSeconds: 90,
     description: "Os fibroblastos guardam segredos sobre a matriz extracelular. Decifre-os.",
     puzzles: [
       { type: "multiple_choice", question: "Qual célula do tecido conjuntivo é responsável pela síntese de colágeno e matriz extracelular?", options: ["Mastócito", "Macrófago", "Fibroblasto", "Plasmócito"], correctAnswer: 2, explanation: "Fibroblasto: célula principal do TC, sintetiza colágeno, elastina, GAGs e glicoproteínas da matriz." },
@@ -87,7 +87,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 7, title: "Cripta do Tecido Adiposo", theme: "Tecido Conjuntivo", difficulty: "Médio", timeSeconds: 360,
+    id: 7, title: "Cripta do Tecido Adiposo", theme: "Tecido Conjuntivo", difficulty: "Médio", timeSeconds: 90,
     description: "No subsolo do laboratório, os segredos do tecido adiposo aguardam por você.",
     puzzles: [
       { type: "multiple_choice", question: "Qual proteína mitocondrial é exclusiva do tecido adiposo marrom?", options: ["Leptina", "Adiponectina", "UCP1 (termogenina)", "Resistina"], correctAnswer: 2, explanation: "UCP1: desacopla fosforilação oxidativa → gera calor em vez de ATP. Essencial para termogênese sem tremor em neonatos." },
@@ -98,7 +98,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 8, title: "Torre da Cartilagem", theme: "Tecido Conjuntivo", difficulty: "Difícil", timeSeconds: 420,
+    id: 8, title: "Torre da Cartilagem", theme: "Tecido Conjuntivo", difficulty: "Difícil", timeSeconds: 120,
     description: "Escale a torre respondendo sobre os três tipos de cartilagem.",
     puzzles: [
       { type: "multiple_choice", question: "Qual tipo de cartilagem NÃO possui pericôndrio?", options: ["Hialina articular", "Elástica", "Fibrosa (fibrocartilagem)", "Ambas A e C"], correctAnswer: 3, explanation: "Cartilagem articular (hialina) e fibrocartilagem não possuem pericôndrio. A articular é nutrida pelo líquido sinovial." },
@@ -110,7 +110,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== TECIDO ÓSSEO (9-12) =====
   {
-    id: 9, title: "Labirinto dos Ósteons", theme: "Tecido Ósseo", difficulty: "Médio", timeSeconds: 360,
+    id: 9, title: "Labirinto dos Ósteons", theme: "Tecido Ósseo", difficulty: "Médio", timeSeconds: 90,
     description: "Navegue pelo labirinto dos sistemas de Havers para encontrar a saída.",
     puzzles: [
       { type: "multiple_choice", question: "Qual célula é responsável pela reabsorção óssea?", options: ["Osteoblasto", "Osteócito", "Osteoclasto", "Osteoprogenitor"], correctAnswer: 2, explanation: "Osteoclasto: célula multinucleada derivada de monócitos, com borda em escova. Cria lacunas de Howship pela ação de H+ e catepsina K." },
@@ -121,7 +121,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 10, title: "Câmara do Crescimento Ósseo", theme: "Tecido Ósseo", difficulty: "Difícil", timeSeconds: 420,
+    id: 10, title: "Câmara do Crescimento Ósseo", theme: "Tecido Ósseo", difficulty: "Difícil", timeSeconds: 120,
     description: "Desvende os segredos da placa epifisária para abrir a porta da câmara.",
     puzzles: [
       { type: "order", question: "Ordene as zonas da placa epifisária (da epífise para diáfise): Repouso → Proliferação → Hipertrofia → Calcificação → Ossificação", correctAnswer: "Repouso,Proliferação,Hipertrofia,Calcificação,Ossificação", explanation: "Placa de crescimento: zona de repouso (reserva) → proliferação (colunas) → hipertrofia (células grandes) → calcificação (morte) → ossificação (invasão vascular + osteoblastos)." },
@@ -133,7 +133,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== TECIDO MUSCULAR (11-14) =====
   {
-    id: 11, title: "Arena dos Músculos", theme: "Tecido Muscular", difficulty: "Fácil", timeSeconds: 300,
+    id: 11, title: "Arena dos Músculos", theme: "Tecido Muscular", difficulty: "Fácil", timeSeconds: 60,
     description: "Identifique os três tipos musculares para vencer a arena.",
     puzzles: [
       { type: "multiple_choice", question: "Qual tipo muscular possui discos intercalares?", options: ["Esquelético", "Liso", "Cardíaco", "Todos"], correctAnswer: 2, explanation: "Músculo cardíaco: discos intercalares com gap junctions + desmossomos + fáscia aderente. Permitem sincício funcional." },
@@ -144,7 +144,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 12, title: "Enigma da Contração", theme: "Tecido Muscular", difficulty: "Difícil", timeSeconds: 420,
+    id: 12, title: "Enigma da Contração", theme: "Tecido Muscular", difficulty: "Difícil", timeSeconds: 120,
     description: "Desvende o mecanismo molecular da contração muscular para escapar.",
     puzzles: [
       { type: "order", question: "Ordene os eventos da contração muscular: Potencial de ação → Liberação de Ca²⁺ do RS → Ca²⁺ liga troponina C → Exposição do sítio de ligação → Ponte cruzada actina-miosina", correctAnswer: "Potencial de ação,Liberação de Ca²⁺ do RS,Ca²⁺ liga troponina C,Exposição do sítio de ligação,Ponte cruzada actina-miosina", explanation: "Acoplamento excitação-contração: PA → túbulos T → receptor DHP → RyR → Ca²⁺ → troponina C → tropomiosina desloca → miosina se liga à actina." },
@@ -156,7 +156,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== TECIDO NERVOSO (13-18) =====
   {
-    id: 13, title: "Labirinto Neural", theme: "Tecido Nervoso", difficulty: "Médio", timeSeconds: 360,
+    id: 13, title: "Labirinto Neural", theme: "Tecido Nervoso", difficulty: "Médio", timeSeconds: 90,
     description: "Navegue pelos axônios e dendritos para encontrar a sinapse de saída.",
     puzzles: [
       { type: "multiple_choice", question: "Qual célula glial forma a bainha de mielina no sistema nervoso central?", options: ["Célula de Schwann", "Oligodendrócito", "Astrócito", "Microglia"], correctAnswer: 1, explanation: "Oligodendrócitos: mielinizam múltiplos axônios no SNC. Schwann: mieliniza UM segmento no SNP." },
@@ -167,7 +167,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 14, title: "Sinapse Secreta", theme: "Tecido Nervoso", difficulty: "Difícil", timeSeconds: 420,
+    id: 14, title: "Sinapse Secreta", theme: "Tecido Nervoso", difficulty: "Difícil", timeSeconds: 120,
     description: "Decifre a transmissão sináptica para desbloquear o terminal nervoso.",
     puzzles: [
       { type: "multiple_choice", question: "Qual proteína é essencial para a fusão das vesículas sinápticas com a membrana pré-sináptica?", options: ["Clatrina", "SNARE (sinaptobrevina, sintaxina, SNAP-25)", "Dinamina", "Cinesina"], correctAnswer: 1, explanation: "Complexo SNARE: sinaptobrevina (vesícula) + sintaxina + SNAP-25 (membrana) → fusão Ca²⁺-dependente." },
@@ -179,7 +179,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== SANGUE E HEMATOPOIESE (15-18) =====
   {
-    id: 15, title: "Câmara do Sangue", theme: "Sangue", difficulty: "Fácil", timeSeconds: 300,
+    id: 15, title: "Câmara do Sangue", theme: "Sangue", difficulty: "Fácil", timeSeconds: 60,
     description: "Identifique as células sanguíneas no esfregaço para escapar da câmara.",
     puzzles: [
       { type: "multiple_choice", question: "Qual leucócito possui núcleo bilobulado e grânulos eosinofílicos?", options: ["Neutrófilo", "Eosinófilo", "Basófilo", "Monócito"], correctAnswer: 1, explanation: "Eosinófilo: núcleo bilobulado (óculos), grânulos com proteína básica maior (MBP) e peroxidase eosinofílica." },
@@ -190,7 +190,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 16, title: "Medula Óssea: Origem de Tudo", theme: "Sangue", difficulty: "Difícil", timeSeconds: 420,
+    id: 16, title: "Medula Óssea: Origem de Tudo", theme: "Sangue", difficulty: "Difícil", timeSeconds: 120,
     description: "Decifre a hematopoiese na medula óssea para abrir os portões.",
     puzzles: [
       { type: "multiple_choice", question: "A eritropoietina (EPO) é produzida principalmente por:", options: ["Fígado", "Medula óssea", "Células peritubulares renais", "Baço"], correctAnswer: 2, explanation: "EPO: 90% produzida pelas células peritubulares do córtex renal em resposta à hipóxia. HIF → transcrição de EPO." },
@@ -202,7 +202,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== SISTEMA DIGESTÓRIO (17-24) =====
   {
-    id: 17, title: "Túnel do Tubo Digestivo", theme: "Sistema Digestório", difficulty: "Fácil", timeSeconds: 300,
+    id: 17, title: "Túnel do Tubo Digestivo", theme: "Sistema Digestório", difficulty: "Fácil", timeSeconds: 60,
     description: "Percorra o trato gastrointestinal identificando cada camada para encontrar a saída.",
     puzzles: [
       { type: "order", question: "Ordene as camadas do tubo digestivo (lúmen → exterior): Mucosa → Submucosa → Muscular → Serosa/Adventícia", correctAnswer: "Mucosa,Submucosa,Muscular,Serosa/Adventícia", explanation: "4 camadas: mucosa (epitélio + lâmina própria + muscular da mucosa) → submucosa (TC denso, plexo de Meissner) → muscular (circular interna + longitudinal externa, plexo de Auerbach) → serosa." },
@@ -213,7 +213,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 18, title: "Fígado: O Labirinto Metabólico", theme: "Sistema Digestório", difficulty: "Médio", timeSeconds: 360,
+    id: 18, title: "Fígado: O Labirinto Metabólico", theme: "Sistema Digestório", difficulty: "Médio", timeSeconds: 90,
     description: "Navegue pelos sinusoides hepáticos para decifrar a arquitetura do fígado.",
     puzzles: [
       { type: "multiple_choice", question: "As células de Kupffer são:", options: ["Hepatócitos modificados", "Macrófagos residentes dos sinusoides hepáticos", "Células epiteliais biliares", "Fibroblastos portais"], correctAnswer: 1, explanation: "Células de Kupffer: macrófagos especializados que revestem os sinusoides. Fagocitam bactérias, eritrócitos velhos e debris." },
@@ -225,7 +225,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== SISTEMA RESPIRATÓRIO (19-22) =====
   {
-    id: 19, title: "Alvéolos em Perigo", theme: "Sistema Respiratório", difficulty: "Médio", timeSeconds: 360,
+    id: 19, title: "Alvéolos em Perigo", theme: "Sistema Respiratório", difficulty: "Médio", timeSeconds: 90,
     description: "O oxigênio está acabando! Responda sobre a barreira alvéolo-capilar para sobreviver.",
     puzzles: [
       { type: "multiple_choice", question: "A barreira hematogasosa (alvéolo-capilar) é composta por:", options: ["Epitélio estratificado + endotélio", "Pneumócito I + lâmina basal fundida + endotélio capilar", "Pneumócito II + surfactante", "Músculo liso + cartilagem"], correctAnswer: 1, explanation: "Barreira ar-sangue: pneumócito I (epitélio) + lâmina basal fundida + endotélio contínuo. ~0.2μm de espessura." },
@@ -237,7 +237,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== SISTEMA URINÁRIO (20-23) =====
   {
-    id: 20, title: "Néfron: A Unidade Filtradora", theme: "Sistema Urinário", difficulty: "Difícil", timeSeconds: 420,
+    id: 20, title: "Néfron: A Unidade Filtradora", theme: "Sistema Urinário", difficulty: "Difícil", timeSeconds: 120,
     description: "Percorra o néfron resolvendo enigmas sobre filtração, reabsorção e secreção.",
     puzzles: [
       { type: "multiple_choice", question: "Os podócitos são células epiteliais especializadas que envolvem:", options: ["Túbulo proximal", "Alça de Henle", "Capilares glomerulares", "Ducto coletor"], correctAnswer: 2, explanation: "Podócitos: revestem externamente os capilares glomerulares. Pedicelos formam fendas de filtração com nefrina." },
@@ -249,7 +249,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== SISTEMA ENDÓCRINO (21-26) =====
   {
-    id: 21, title: "Glândulas do Destino", theme: "Sistema Endócrino", difficulty: "Médio", timeSeconds: 360,
+    id: 21, title: "Glândulas do Destino", theme: "Sistema Endócrino", difficulty: "Médio", timeSeconds: 90,
     description: "Decifre as glândulas endócrinas e seus hormônios para libertar-se.",
     puzzles: [
       { type: "multiple_choice", question: "Qual zona do córtex da adrenal produz aldosterona?", options: ["Zona fasciculada", "Zona reticulada", "Zona glomerulosa", "Medula"], correctAnswer: 2, explanation: "Zona glomerulosa: mineralocorticoides (aldosterona). Fasciculada: cortisol. Reticulada: andrógenos." },
@@ -260,7 +260,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 22, title: "Hipófise: O Maestro", theme: "Sistema Endócrino", difficulty: "Difícil", timeSeconds: 420,
+    id: 22, title: "Hipófise: O Maestro", theme: "Sistema Endócrino", difficulty: "Difícil", timeSeconds: 120,
     description: "A hipófise controla todo o sistema endócrino. Desvende seus segredos.",
     puzzles: [
       { type: "multiple_choice", question: "Qual célula da adeno-hipófise produz GH e é corada por hematoxilina como acidófila?", options: ["Corticotrofo", "Somatotrofo", "Lactotrofo", "Tireotrofo"], correctAnswer: 1, explanation: "Somatotrofos: acidófilos, ~50% da adeno-hipófise. Produzem GH. Adenoma somatotrofo → acromegalia/gigantismo." },
@@ -272,7 +272,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== SISTEMA REPRODUTOR (23-30) =====
   {
-    id: 23, title: "Câmara Reprodutiva Masculina", theme: "Sistema Reprodutor", difficulty: "Médio", timeSeconds: 360,
+    id: 23, title: "Câmara Reprodutiva Masculina", theme: "Sistema Reprodutor", difficulty: "Médio", timeSeconds: 90,
     description: "Desvende a espermatogênese e as estruturas testiculares.",
     puzzles: [
       { type: "multiple_choice", question: "As células de Sertoli formam qual barreira importante no testículo?", options: ["Barreira hematoencefálica", "Barreira hemato-testicular", "Barreira hematoplacentária", "Barreira alvéolo-capilar"], correctAnswer: 1, explanation: "Barreira hemato-testicular: tight junctions entre células de Sertoli dividem o epitélio seminífero em compartimentos basal e adluminal. Protege espermatócitos da resposta imune." },
@@ -283,7 +283,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 24, title: "Labirinto do Ciclo Menstrual", theme: "Sistema Reprodutor", difficulty: "Difícil", timeSeconds: 420,
+    id: 24, title: "Labirinto do Ciclo Menstrual", theme: "Sistema Reprodutor", difficulty: "Difícil", timeSeconds: 120,
     description: "Decifre as fases do ciclo endometrial para escapar.",
     puzzles: [
       { type: "order", question: "Ordene as fases do ciclo endometrial: Menstrual → Proliferativa → Secretora", correctAnswer: "Menstrual,Proliferativa,Secretora", explanation: "Menstrual: descamação (dias 1-5). Proliferativa: estrógeno → crescimento (dias 5-14). Secretora: progesterona → glândulas tortuosas (dias 14-28)." },
@@ -295,7 +295,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== PELE E ANEXOS (25-28) =====
   {
-    id: 25, title: "Enigma da Epiderme", theme: "Pele", difficulty: "Fácil", timeSeconds: 300,
+    id: 25, title: "Enigma da Epiderme", theme: "Pele", difficulty: "Fácil", timeSeconds: 60,
     description: "Identifique as camadas e células da epiderme para escapar.",
     puzzles: [
       { type: "multiple_choice", question: "Qual célula da epiderme é responsável pela produção de melanina?", options: ["Queratinócito", "Melanócito", "Célula de Langerhans", "Célula de Merkel"], correctAnswer: 1, explanation: "Melanócitos: crista neural, localizados na camada basal. Produzem melanina em melanossomos → transferem para queratinócitos." },
@@ -306,7 +306,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 26, title: "Derme e Hipoderme Secretas", theme: "Pele", difficulty: "Médio", timeSeconds: 360,
+    id: 26, title: "Derme e Hipoderme Secretas", theme: "Pele", difficulty: "Médio", timeSeconds: 90,
     description: "Explore as camadas profundas da pele.",
     puzzles: [
       { type: "multiple_choice", question: "A derme papilar é composta por:", options: ["TC denso não modelado", "TC frouxo com papilas dérmicas", "Tecido adiposo", "Músculo liso"], correctAnswer: 1, explanation: "Derme papilar: TC frouxo, papilas dérmicas aumentam adesão com epiderme e contêm capilares (nutrição)." },
@@ -318,7 +318,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== SISTEMA LINFÁTICO E IMUNE (27-32) =====
   {
-    id: 27, title: "Fortaleza Imunológica", theme: "Sistema Imune", difficulty: "Médio", timeSeconds: 360,
+    id: 27, title: "Fortaleza Imunológica", theme: "Sistema Imune", difficulty: "Médio", timeSeconds: 90,
     description: "Defenda o organismo identificando as células e estruturas do sistema imune.",
     puzzles: [
       { type: "multiple_choice", question: "O timo é o local de maturação de:", options: ["Linfócitos B", "Linfócitos T", "Monócitos", "Neutrófilos"], correctAnswer: 1, explanation: "Timo: órgão linfoide primário para maturação de linfócitos T. Seleção positiva (córtex) e negativa (medula). Involui com a idade." },
@@ -329,7 +329,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 28, title: "Baço: O Filtro Sanguíneo", theme: "Sistema Imune", difficulty: "Difícil", timeSeconds: 420,
+    id: 28, title: "Baço: O Filtro Sanguíneo", theme: "Sistema Imune", difficulty: "Difícil", timeSeconds: 120,
     description: "Explore a polpa vermelha e branca do baço.",
     puzzles: [
       { type: "multiple_choice", question: "A polpa vermelha do baço é composta por:", options: ["Folículos linfoides", "Cordões esplênicos (de Billroth) e sinusoides", "Apenas eritrócitos", "Tecido adiposo"], correctAnswer: 1, explanation: "Polpa vermelha: cordões de Billroth (macrófagos entre sinusoides) + sinusoides esplênicos. Filtra eritrócitos velhos/anormais." },
@@ -341,7 +341,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== SISTEMA CARDIOVASCULAR (29-32) =====
   {
-    id: 29, title: "Artérias vs Veias", theme: "Sistema Cardiovascular", difficulty: "Fácil", timeSeconds: 300,
+    id: 29, title: "Artérias vs Veias", theme: "Sistema Cardiovascular", difficulty: "Fácil", timeSeconds: 60,
     description: "Diferencie artérias de veias em cortes histológicos.",
     puzzles: [
       { type: "multiple_choice", question: "Qual camada arterial é composta predominantemente por músculo liso?", options: ["Íntima", "Média", "Adventícia", "Subíntima"], correctAnswer: 1, explanation: "Túnica média: músculo liso + fibras elásticas. Mais espessa nas artérias musculares. Controla vasoconstrição/dilatação." },
@@ -352,7 +352,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 30, title: "Aterosclerose: A Ameaça Silenciosa", theme: "Sistema Cardiovascular", difficulty: "Difícil", timeSeconds: 420,
+    id: 30, title: "Aterosclerose: A Ameaça Silenciosa", theme: "Sistema Cardiovascular", difficulty: "Difícil", timeSeconds: 120,
     description: "Desvende a patogênese da aterosclerose para salvar o coração.",
     puzzles: [
       { type: "multiple_choice", question: "Qual é o evento inicial da aterosclerose?", options: ["Trombose", "Lesão/disfunção endotelial", "Ruptura da placa", "Calcificação"], correctAnswer: 1, explanation: "Disfunção endotelial → aumento de permeabilidade → acúmulo de LDL oxidado na íntima → recrutamento de monócitos → células espumosas." },
@@ -364,7 +364,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== PATOLOGIA GERAL (31-40) =====
   {
-    id: 31, title: "Sala da Inflamação", theme: "Patologia", difficulty: "Médio", timeSeconds: 360,
+    id: 31, title: "Sala da Inflamação", theme: "Patologia", difficulty: "Médio", timeSeconds: 90,
     description: "A sala está em chamas de inflamação! Responda para apagar o fogo.",
     puzzles: [
       { type: "multiple_choice", question: "Qual mediador vasoativo é o principal responsável pelo aumento de permeabilidade vascular na fase aguda?", options: ["Bradicinina", "Histamina", "Prostaglandina E2", "Leucotrieno B4"], correctAnswer: 1, explanation: "Histamina: mastócitos degranulam → vasodilatação + aumento de permeabilidade → edema. Efeito imediato e transitório." },
@@ -375,7 +375,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 32, title: "Neoplasias: O Desafio Final", theme: "Patologia", difficulty: "Extremo", timeSeconds: 480,
+    id: 32, title: "Neoplasias: O Desafio Final", theme: "Patologia", difficulty: "Extremo", timeSeconds: 120,
     description: "Enfrente as neoplasias e seus mecanismos moleculares no desafio mais difícil.",
     puzzles: [
       { type: "multiple_choice", question: "Qual gene supressor tumoral é mutado em mais de 50% dos cânceres humanos?", options: ["RB1", "APC", "TP53 (p53)", "BRCA1"], correctAnswer: 2, explanation: "TP53: 'guardião do genoma'. Mutado em >50% dos cânceres. Regula ciclo celular (p21), apoptose (BAX), reparo do DNA." },
@@ -388,7 +388,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // Continue with more scenarios...
   {
-    id: 33, title: "Sala das Colorações", theme: "Técnicas Histológicas", difficulty: "Fácil", timeSeconds: 300,
+    id: 33, title: "Sala das Colorações", theme: "Técnicas Histológicas", difficulty: "Fácil", timeSeconds: 60,
     description: "Identifique cada coloração especial e sua aplicação.",
     puzzles: [
       { type: "multiple_choice", question: "A coloração de PAS detecta:", options: ["Ácidos nucleicos", "Glicogênio, mucinas e membrana basal (glicoproteínas)", "Lipídios", "Fibras elásticas"], correctAnswer: 1, explanation: "PAS: ácido periódico oxida glicóis → reage com Schiff → cor magenta. Detecta MB, glicogênio, mucinas neutras." },
@@ -399,7 +399,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 34, title: "Olho: A Câmara Escura", theme: "Órgãos dos Sentidos", difficulty: "Médio", timeSeconds: 360,
+    id: 34, title: "Olho: A Câmara Escura", theme: "Órgãos dos Sentidos", difficulty: "Médio", timeSeconds: 90,
     description: "Explore as camadas da retina no escuro do escape room.",
     puzzles: [
       { type: "multiple_choice", question: "A retina possui quantas camadas histológicas?", options: ["5", "8", "10", "12"], correctAnswer: 2, explanation: "Retina: 10 camadas, desde o epitélio pigmentar (externo) até a membrana limitante interna." },
@@ -411,7 +411,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== MAIS CENÁRIOS VARIADOS (35-100+) =====
   {
-    id: 35, title: "Dentes e Periodonto", theme: "Sistema Digestório", difficulty: "Médio", timeSeconds: 360,
+    id: 35, title: "Dentes e Periodonto", theme: "Sistema Digestório", difficulty: "Médio", timeSeconds: 90,
     description: "Explore a histologia dental para escapar da cadeira do dentista.",
     puzzles: [
       { type: "multiple_choice", question: "Qual tecido dental é o mais mineralizado do corpo humano?", options: ["Dentina", "Cemento", "Esmalte", "Polpa"], correctAnswer: 2, explanation: "Esmalte: 96% mineral (hidroxiapatita), produzido por ameloblastos. Tecido mais duro do corpo. Ectoderme." },
@@ -422,7 +422,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 36, title: "Glândula Tireoide", theme: "Sistema Endócrino", difficulty: "Médio", timeSeconds: 360,
+    id: 36, title: "Glândula Tireoide", theme: "Sistema Endócrino", difficulty: "Médio", timeSeconds: 90,
     description: "Decifre os folículos tireoidianos e seus segredos hormonais.",
     puzzles: [
       { type: "multiple_choice", question: "O coloide dos folículos tireoidianos contém:", options: ["Insulina", "Tireoglobulina (precursor de T3/T4)", "Calcitonina", "PTH"], correctAnswer: 1, explanation: "Coloide: tireoglobulina iodada armazenada no lúmen folicular. TPO ioda tirosinas → MIT/DIT → T3/T4. TSH estimula captação." },
@@ -434,7 +434,7 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // IDs 37-55 - More diverse scenarios
   {
-    id: 37, title: "Rim: Filtro Molecular", theme: "Sistema Urinário", difficulty: "Difícil", timeSeconds: 420,
+    id: 37, title: "Rim: Filtro Molecular", theme: "Sistema Urinário", difficulty: "Difícil", timeSeconds: 120,
     description: "Decifre as glomerulopatias para escapar do néfron.",
     puzzles: [
       { type: "multiple_choice", question: "Na glomerulonefrite membranosa, os depósitos são:", options: ["Subendoteliais", "Subepiteliais difusos (espessamento da MB)", "Mesangiais", "Intramembranosos"], correctAnswer: 1, explanation: "GM membranosa: depósitos subepiteliais difusos de IgG e C3 → MB espessada com 'spikes' (Prata de Jones). Causa #1 de síndrome nefrótica em adultos brancos." },
@@ -445,7 +445,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 38, title: "Mama: Anatomia e Patologia", theme: "Sistema Reprodutor", difficulty: "Médio", timeSeconds: 360,
+    id: 38, title: "Mama: Anatomia e Patologia", theme: "Sistema Reprodutor", difficulty: "Médio", timeSeconds: 90,
     description: "Explore a histologia mamária e suas patologias mais frequentes.",
     puzzles: [
       { type: "multiple_choice", question: "A unidade funcional da mama é:", options: ["Ácino", "Unidade ductal terminal lobular (UDLT)", "Folículo", "Alvéolo"], correctAnswer: 1, explanation: "UDLT: ductos terminais + lóbulos. Local de origem da maioria dos carcinomas mamários (ductal e lobular)." },
@@ -456,7 +456,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 39, title: "Pulmão: Ameaça Tumoral", theme: "Sistema Respiratório", difficulty: "Difícil", timeSeconds: 420,
+    id: 39, title: "Pulmão: Ameaça Tumoral", theme: "Sistema Respiratório", difficulty: "Difícil", timeSeconds: 120,
     description: "Identifique os tumores pulmonares para salvar o paciente.",
     puzzles: [
       { type: "multiple_choice", question: "Qual é o tipo mais comum de câncer de pulmão?", options: ["Carcinoma de pequenas células", "Adenocarcinoma", "Carcinoma escamoso", "Carcinoma de grandes células"], correctAnswer: 1, explanation: "Adenocarcinoma: mais comum (40%+), periférico, mais frequente em não-fumantes e mulheres. Formação glandular, TTF-1+." },
@@ -467,7 +467,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 40, title: "Fígado: Hepatites e Cirrose", theme: "Sistema Digestório", difficulty: "Extremo", timeSeconds: 480,
+    id: 40, title: "Fígado: Hepatites e Cirrose", theme: "Sistema Digestório", difficulty: "Extremo", timeSeconds: 120,
     description: "Enfrente as doenças hepáticas no cenário mais desafiador.",
     puzzles: [
       { type: "multiple_choice", question: "Na hepatite viral crônica, qual padrão histológico é característico?", options: ["Necrose coagulativa", "Hepatite de interface (piecemeal necrosis) com infiltrado portal linfoplasmocitário", "Granulomas não-caseosos", "Esteatose macrovesicular"], correctAnswer: 1, explanation: "Hepatite crônica: infiltrado portal → hepatite de interface → fibrose em ponte → cirrose. Classificação: METAVIR (atividade A0-A3, fibrose F0-F4)." },
@@ -480,21 +480,21 @@ export const escapeScenarios: EscapeScenario[] = [
   },
   // ===== CENÁRIOS 41-60: Temas específicos =====
   ...generateBatchScenarios(41, [
-    { title: "Placenta e Membranas", theme: "Embriologia", diff: "Médio", time: 360, puzzles: [
+    { title: "Placenta e Membranas", theme: "Embriologia", diff: "Médio", time: 90, puzzles: [
       { type: "multiple_choice", question: "As vilosidades coriônicas são revestidas por:", options: ["Epitélio simples", "Sinciciotrofoblasto + citotrofoblasto", "Endotélio", "Mesotélio"], correctAnswer: 1, explanation: "Vilosidades: sinciciotrofoblasto (multinucleado, em contato com sangue materno) + citotrofoblasto (células de Langhans). hCG, hPL." },
       { type: "true_false", question: "A mola hidatiforme completa tem cariótipo 46,XX de origem exclusivamente paterna.", correctAnswer: "Verdadeiro", explanation: "Mola completa: diploidia androgenética (46,XX todo paterno). Sem embrião. Vilosidades edemaciadas com cisterna. Risco de coriocarcinoma." },
       { type: "fill_blank", question: "O ___ é a camada funcional do endométrio que, na gravidez, se transforma em decídua.", correctAnswer: "endométrio funcional", explanation: "Decidualização: sob progesterona, células estromais → células deciduais (grandes, poligonais, ricas em glicogênio/lipídios). Decídua basal → placenta.", options: ["endométrio funcional", "miométrio", "perimétrio", "endocérvice"] },
       { type: "multiple_choice", question: "O cordão umbilical contém:", options: ["3 artérias e 1 veia", "2 artérias e 1 veia na geleia de Wharton", "1 artéria e 2 veias", "2 artérias e 2 veias"], correctAnswer: 1, explanation: "Cordão umbilical: 2 artérias (sangue desoxigenado) + 1 veia (sangue oxigenado) em geleia de Wharton (TC mucoso)." },
       { type: "true_false", question: "A pré-eclâmpsia está associada a defeito na remodelação das artérias espiraladas pelo trofoblasto.", correctAnswer: "Verdadeiro", explanation: "Pré-eclâmpsia: falha na invasão trofoblástica → artérias espiraladas não remodeladas → hipoperfusão placentária → fatores antiangiogênicos (sFlt-1)." },
     ]},
-    { title: "Ouvido Interno", theme: "Órgãos dos Sentidos", diff: "Médio", time: 360, puzzles: [
+    { title: "Ouvido Interno", theme: "Órgãos dos Sentidos", diff: "Médio", time: 90, puzzles: [
       { type: "multiple_choice", question: "O órgão de Corti está localizado em:", options: ["Vestíbulo", "Canais semicirculares", "Cóclea (ducto coclear)", "Ouvido médio"], correctAnswer: 2, explanation: "Órgão de Corti: sobre a membrana basilar no ducto coclear. Células ciliadas internas (transdução) e externas (amplificação)." },
       { type: "fill_blank", question: "A ___ é a endolinfa rica em K⁺ que banha as células ciliadas do órgão de Corti.", correctAnswer: "endolinfa", explanation: "Endolinfa: alta [K⁺], baixa [Na⁺], produzida pela estria vascular. Perilinfa: composição semelhante ao LCR.", options: ["endolinfa", "perilinfa", "LCR", "plasma"] },
       { type: "true_false", question: "As células ciliadas externas amplificam o sinal mecânico pela proteína prestina.", correctAnswer: "Verdadeiro", explanation: "Prestina: proteína motora das CCE. Eletromotilidade → amplificação seletiva de frequências. Perdida na ototoxicidade." },
       { type: "multiple_choice", question: "A doença de Ménière é causada por:", options: ["Otosclerose", "Hidropsia endolinfática (excesso de endolinfa)", "Neuroma acústico", "Perfuração timpânica"], correctAnswer: 1, explanation: "Ménière: distensão do labirinto membranoso por excesso de endolinfa. Tríade: vertigem, hipoacusia flutuante, zumbido." },
       { type: "true_false", question: "As células ciliadas do ouvido interno não se regeneram em mamíferos.", correctAnswer: "Verdadeiro", explanation: "Perda de células ciliadas → surdez neurossensorial permanente. Ototoxicidade (aminoglicosídeos, cisplatina) e ruído causam dano irreversível." },
     ]},
-    { title: "Glândulas Salivares", theme: "Sistema Digestório", diff: "Fácil", time: 300, puzzles: [
+    { title: "Glândulas Salivares", theme: "Sistema Digestório", diff: "Fácil", time: 60, puzzles: [
       { type: "multiple_choice", question: "A glândula parótida é predominantemente:", options: ["Mucosa", "Serosa", "Mista", "Endócrina"], correctAnswer: 1, explanation: "Parótida: puramente serosa. Submandibular: mista (predominantemente serosa). Sublingual: mista (predominantemente mucosa)." },
       { type: "fill_blank", question: "As semiluas ___ são serosas e envolvem parcialmente ácinos mucosos em glândulas mistas.", correctAnswer: "serosas (de Ebner/von Ebner)", explanation: "Semiluas serosas: células serosas formando capuz sobre ácinos mucosos. Visíveis em submandibular e sublingual.", options: ["serosas (de Ebner/von Ebner)", "mucosas", "mioepiteliais", "endócrinas"] },
       { type: "true_false", question: "O tumor mais comum das glândulas salivares é o adenoma pleomórfico.", correctAnswer: "Verdadeiro", explanation: "Adenoma pleomórfico: tumor misto benigno. Componente epitelial + mesenquimal (condroide/mixoide). Parótida mais comum." },
@@ -504,7 +504,7 @@ export const escapeScenarios: EscapeScenario[] = [
   ]),
   // ===== CENÁRIOS 44-60 =====
   {
-    id: 44, title: "Cicatrização de Feridas", theme: "Patologia", difficulty: "Médio", timeSeconds: 360,
+    id: 44, title: "Cicatrização de Feridas", theme: "Patologia", difficulty: "Médio", timeSeconds: 90,
     description: "Guie o processo de reparo tecidual para escapar.",
     puzzles: [
       { type: "multiple_choice", question: "Na cicatrização por primeira intenção:", options: ["Há grande perda tecidual", "Bordas estão próximas e alinhadas (incisão cirúrgica)", "Forma-se tecido de granulação abundante", "Há infecção"], correctAnswer: 1, explanation: "Primeira intenção: ferida limpa, bordas aproximadas, mínimo tecido de granulação, cicatriz estreita. Ex: sutura cirúrgica." },
@@ -515,7 +515,7 @@ export const escapeScenarios: EscapeScenario[] = [
     ],
   },
   {
-    id: 45, title: "Apoptose vs Necrose", theme: "Patologia", difficulty: "Difícil", timeSeconds: 420,
+    id: 45, title: "Apoptose vs Necrose", theme: "Patologia", difficulty: "Difícil", timeSeconds: 120,
     description: "Diferencie morte celular programada de acidental.",
     puzzles: [
       { type: "multiple_choice", question: "A apoptose é caracterizada por:", options: ["Tumefação celular e inflamação", "Retração celular, condensação da cromatina e formação de corpos apoptóticos", "Lise celular com liberação de conteúdo", "Calcificação"], correctAnswer: 1, explanation: "Apoptose: morte silenciosa. Caspases → condensação nuclear → fragmentação → corpos apoptóticos → fagocitose sem inflamação." },
@@ -546,21 +546,21 @@ function generateRemainingScenarios(): EscapeScenario[] {
   const scenarios: EscapeScenario[] = [];
   
   const moreData: { id: number; title: string; theme: string; diff: EscapeScenario["difficulty"]; time: number; puzzles: Puzzle[] }[] = [
-    { id: 46, title: "Hipersensibilidade Tipo I", theme: "Imunologia", diff: "Médio", time: 360, puzzles: [
+    { id: 46, title: "Hipersensibilidade Tipo I", theme: "Imunologia", diff: "Médio", time: 90, puzzles: [
       { type: "multiple_choice", question: "A hipersensibilidade tipo I é mediada por:", options: ["IgG", "IgM", "IgE", "IgA"], correctAnswer: 2, explanation: "Tipo I (imediata): IgE + mastócitos/basófilos → degranulação → histamina. Anafilaxia, asma alérgica, rinite." },
       { type: "true_false", question: "A anafilaxia é uma reação de hipersensibilidade tipo III.", correctAnswer: "Falso", explanation: "Anafilaxia: tipo I (imediata). Tipo III: imunocomplexos (doença do soro, LES, GNPE)." },
       { type: "fill_blank", question: "A ___ é o autoinjetor usado no tratamento emergencial da anafilaxia.", correctAnswer: "epinefrina (adrenalina)", explanation: "Epinefrina IM: tratamento de primeira linha. Vasoconstritora, broncodilatadora, reduz edema. Auto-injetor (EpiPen).", options: ["epinefrina (adrenalina)", "anti-histamínico", "corticoide", "aminofilina"] },
       { type: "multiple_choice", question: "A degranulação dos mastócitos na alergia é desencadeada por:", options: ["Antígeno ligando-se diretamente ao mastócito", "Ligação cruzada de IgE na superfície do mastócito pelo antígeno", "Complemento", "IgG opsonizante"], correctAnswer: 1, explanation: "IgE liga-se ao FcεRI no mastócito → reexposição ao antígeno → cross-linking → degranulação (histamina, leucotrienos, prostaglandinas)." },
       { type: "true_false", question: "Os leucotrienos C4, D4, E4 causam broncoespasmo prolongado na asma.", correctAnswer: "Verdadeiro", explanation: "SRS-A (slow-reacting substance of anaphylaxis) = leucotrienos C4/D4/E4. Broncoconstrição > histamina. Alvo: montelucaste." },
     ]},
-    { id: 47, title: "Autoimunidade", theme: "Imunologia", diff: "Difícil", time: 420, puzzles: [
+    { id: 47, title: "Autoimunidade", theme: "Imunologia", diff: "Difícil", time: 120, puzzles: [
       { type: "multiple_choice", question: "O LES (lúpus) é caracterizado por anticorpos contra:", options: ["Antígenos de superfície celular", "DNA de dupla fita (anti-dsDNA) e outros antígenos nucleares", "Mitocôndrias", "Receptor de TSH"], correctAnswer: 1, explanation: "LES: anti-dsDNA (específico, correlaciona com nefrite), anti-Smith (mais específico), ANA (sensível mas não específico). Depósito de imunocomplexos." },
       { type: "true_false", question: "Na artrite reumatoide, o fator reumatoide (FR) é um anticorpo IgM contra IgG.", correctAnswer: "Verdadeiro", explanation: "FR: IgM anti-Fc da IgG. Presente em ~80% da AR, mas não é específico. Anti-CCP (anti-peptídeo citrulinado cíclico) é mais específico." },
       { type: "fill_blank", question: "O anticorpo anti-___ é altamente específico para colangite biliar primária.", correctAnswer: "mitocôndria (AMA)", explanation: "AMA (anti-mitocôndria): anti-PDC-E2 (piruvato desidrogenase). >95% dos pacientes com CBP. Destruição de ductos biliares interlobulares.", options: ["mitocôndria (AMA)", "centrômero", "topoisomerase", "histona"] },
       { type: "multiple_choice", question: "A miastenia gravis é causada por anticorpos contra:", options: ["Canais de cálcio", "Receptores de acetilcolina na placa motora", "Mielina do SNP", "Receptores de glutamato"], correctAnswer: 1, explanation: "MG: anti-AChR (85%) ou anti-MuSK. Fraqueza flutuante, ptose, diplopia. Timoma associado em ~15%. Edrofônio (teste diagnóstico)." },
       { type: "true_false", question: "O diabetes tipo 1 envolve destruição autoimune das células beta pancreáticas.", correctAnswer: "Verdadeiro", explanation: "DM1: destruição autoimune (células T + anticorpos anti-GAD65, anti-IA2, anti-insulina). Insulite: infiltrado linfocítico nas ilhotas." },
     ]},
-    { id: 48, title: "Neoplasias Hematológicas", theme: "Hematologia", diff: "Extremo", time: 480, puzzles: [
+    { id: 48, title: "Neoplasias Hematológicas", theme: "Hematologia", diff: "Extremo", time: 120, puzzles: [
       { type: "multiple_choice", question: "A célula de Reed-Sternberg é patognomônica de:", options: ["Linfoma de Burkitt", "Linfoma de Hodgkin", "LLC", "Mieloma múltiplo"], correctAnswer: 1, explanation: "Reed-Sternberg: célula grande bilobulada ('olhos de coruja'), CD15+, CD30+, em background de células inflamatórias reativas." },
       { type: "fill_blank", question: "O linfoma de Burkitt apresenta translocação t(8;14) envolvendo o gene ___.", correctAnswer: "MYC", explanation: "t(8;14): MYC (8q24) → promotor de IgH. Proliferação extrema ('starry sky'). Endêmico (EBV+), esporádico (EBV-), HIV-associado.", options: ["MYC", "BCL-2", "BCL-6", "CCND1"] },
       { type: "true_false", question: "O mieloma múltiplo produz paraproteína monoclonal (pico M) detectável na eletroforese.", correctAnswer: "Verdadeiro", explanation: "Mieloma: neoplasia de plasmócitos → proteína M (IgG ou IgA). CRAB: Cálcio↑, Renal, Anemia, Bone (lesões líticas). Rouleaux no esfregaço." },
@@ -568,14 +568,14 @@ function generateRemainingScenarios(): EscapeScenario[] {
       { type: "true_false", question: "Na leucemia promielocítica aguda (LMA-M3), a t(15;17) envolve PML-RARα e responde a ATRA.", correctAnswer: "Verdadeiro", explanation: "LPA: t(15;17) PML-RARα. Promielócitos com grânulos azurofílicos → CIVD. ATRA + ATO → diferenciação → remissão em >90%. Cura." },
       { type: "multiple_choice", question: "O linfoma de manto apresenta t(11;14) com superexpressão de:", options: ["BCL-2", "MYC", "Ciclina D1 (CCND1)", "BCL-6"], correctAnswer: 2, explanation: "Linfoma de manto: t(11;14) CCND1/IgH → ciclina D1 → proliferação. CD5+, CD23-, SOX11+. Intermediário entre indolente e agressivo." },
     ]},
-    { id: 49, title: "Parede do Trato GI", theme: "Sistema Digestório", diff: "Fácil", time: 300, puzzles: [
+    { id: 49, title: "Parede do Trato GI", theme: "Sistema Digestório", diff: "Fácil", time: 60, puzzles: [
       { type: "multiple_choice", question: "As células enteroendócrinas do TGI produzem:", options: ["Apenas muco", "Hormônios como serotonina, gastrina, colecistoquinina", "Enzimas digestivas", "Anticorpos"], correctAnswer: 1, explanation: "Células enteroendócrinas: APUD. Serotonina (EC cells), gastrina (G cells), CCK (I cells), secretina (S cells), GIP (K cells)." },
       { type: "true_false", question: "As células M (microfold) estão sobre as placas de Peyer e captam antígenos luminais.", correctAnswer: "Verdadeiro", explanation: "Células M: epitélio associado ao folículo. Transcitose de antígenos do lúmen → apresentação a células imunes subepiteliais." },
       { type: "fill_blank", question: "O plexo de ___ na submucosa controla secreção e fluxo sanguíneo.", correctAnswer: "Meissner (submucoso)", explanation: "Plexo de Meissner: submucoso, parassimpático. Regula secreção glandular e fluxo sanguíneo. Auerbach: motilidade.", options: ["Meissner (submucoso)", "Auerbach (mioentérico)", "Henle", "Broca"] },
       { type: "multiple_choice", question: "O apêndice cecal é rico em:", options: ["Glândulas de Brunner", "Tecido linfoide (GALT)", "Células parietais", "Vilosidades"], correctAnswer: 1, explanation: "Apêndice: abundante tecido linfoide na submucosa e lâmina própria. Função imunológica (GALT). Apendicite: obstrução → infecção." },
       { type: "true_false", question: "A doença de Crohn pode afetar qualquer parte do TGI, da boca ao ânus.", correctAnswer: "Verdadeiro", explanation: "Crohn: transmural, granulomatosa, segmentar (skip lesions). Qualquer parte do TGI (mais comum: íleo terminal e cólon). Fístulas, estenoses." },
     ]},
-    { id: 50, title: "Adrenal: Córtex e Medula", theme: "Sistema Endócrino", diff: "Médio", time: 360, puzzles: [
+    { id: 50, title: "Adrenal: Córtex e Medula", theme: "Sistema Endócrino", diff: "Médio", time: 90, puzzles: [
       { type: "order", question: "Ordene as zonas do córtex adrenal (externa → interna): Glomerulosa → Fasciculada → Reticulada", correctAnswer: "Glomerulosa,Fasciculada,Reticulada", explanation: "GFR: 'salt, sugar, sex' → glomerulosa (aldosterona), fasciculada (cortisol), reticulada (DHEA/andrógenos)." },
       { type: "multiple_choice", question: "A síndrome de Cushing é causada por excesso de:", options: ["Aldosterona", "Cortisol", "Andrógenos", "Catecolaminas"], correctAnswer: 1, explanation: "Cushing: hipercortisolismo. Causas: iatrogênica (#1), adenoma hipofisário (doença de Cushing), adenoma adrenal, ACTH ectópico." },
       { type: "true_false", question: "A doença de Addison é insuficiência adrenal primária, geralmente autoimune.", correctAnswer: "Verdadeiro", explanation: "Addison: destruição do córtex adrenal (autoimune, TB, metástases). Hipocortisolismo + hipoaldosteronismo + hiperpigmentação (ACTH↑→MSH↑)." },
@@ -583,14 +583,14 @@ function generateRemainingScenarios(): EscapeScenario[] {
       { type: "multiple_choice", question: "O neuroblastoma pediátrico surge de:", options: ["Córtex adrenal", "Medula adrenal e gânglios simpáticos (células da crista neural)", "Córtex renal", "Timo"], correctAnswer: 1, explanation: "Neuroblastoma: tumor sólido extracraniano mais comum na infância. Crista neural → medula adrenal/simpáticos. N-MYC amplificado → pior prognóstico." },
     ]},
     // Continue with IDs 51-100
-    { id: 51, title: "Próstata e Patologias", theme: "Sistema Reprodutor", diff: "Médio", time: 360, puzzles: [
+    { id: 51, title: "Próstata e Patologias", theme: "Sistema Reprodutor", diff: "Médio", time: 90, puzzles: [
       { type: "multiple_choice", question: "A hiperplasia prostática benigna (HPB) afeta predominantemente qual zona?", options: ["Zona periférica", "Zona de transição (periuretral)", "Zona central", "Zona anterior"], correctAnswer: 1, explanation: "HPB: zona de transição → compressão uretral → sintomas obstrutivos (jato fraco, noctúria). Ca próstata: zona periférica (70%)." },
       { type: "fill_blank", question: "O PSA (antígeno prostático específico) é uma ___ produzida pelo epitélio prostático.", correctAnswer: "serina protease (calicreína)", explanation: "PSA (KLK3): serina protease que liquefaz o sêmen. Elevado no Ca, HPB, prostatite. Não é específico para câncer.", options: ["serina protease (calicreína)", "fosfatase ácida", "lipase", "amilase"] },
       { type: "true_false", question: "O adenocarcinoma de próstata é graduado pelo sistema de Gleason.", correctAnswer: "Verdadeiro", explanation: "Gleason: soma dos 2 padrões mais prevalentes (1-5 cada). Score 6 (3+3): baixo grau. 7: intermediário. 8-10: alto grau." },
       { type: "multiple_choice", question: "Qual é a via de metástase mais comum do câncer de próstata?", options: ["Hematogênica para pulmão", "Hematogênica para osso (metástases osteoblásticas)", "Linfática para mediastino", "Transcavitária"], correctAnswer: 1, explanation: "Ca próstata: metástase óssea osteoBLÁSTICA (formadora de osso) → PSA e fosfatase alcalina elevados. Plexo de Batson." },
       { type: "true_false", question: "A neoplasia intraepitelial prostática de alto grau (PIN) é precursora do adenocarcinoma.", correctAnswer: "Verdadeiro", explanation: "PIN alto grau: displasia no epitélio glandular com camada basal preservada. Fator de risco para Ca invasivo." },
     ]},
-    { id: 52, title: "SNC: Tumores", theme: "Neuropatologia", diff: "Extremo", time: 480, puzzles: [
+    { id: 52, title: "SNC: Tumores", theme: "Neuropatologia", diff: "Extremo", time: 120, puzzles: [
       { type: "multiple_choice", question: "Qual é o tumor primário do SNC mais comum em adultos?", options: ["Meningioma", "Glioblastoma (GBM)", "Schwannoma", "Ependimoma"], correctAnswer: 1, explanation: "GBM (astrocitoma grau IV): mais maligno e mais comum glioma. IDH-wildtype, MGMT metilação prediz resposta a temozolomida. Sobrevida ~15 meses." },
       { type: "fill_blank", question: "O meduloblastoma é o tumor maligno do SNC mais comum em ___.", correctAnswer: "crianças", explanation: "Meduloblastoma: tumor embrionário do cerebelo (vermis em crianças, hemisférios em adultos). Drop metastases pelo LCR.", options: ["crianças", "adultos", "idosos", "neonatos"] },
       { type: "true_false", question: "Os meningiomas são tipicamente benignos e mostram corpos psamomatosos.", correctAnswer: "Verdadeiro", explanation: "Meningioma: benigno (~80%), células meningoteliais em espiral (whorls) + calcificações concêntricas (corpos psamomatosos). Extra-axial, dura-máter." },
@@ -598,21 +598,21 @@ function generateRemainingScenarios(): EscapeScenario[] {
       { type: "true_false", question: "A mutação IDH1/2 é um fator prognóstico favorável em gliomas.", correctAnswer: "Verdadeiro", explanation: "IDH mutado: melhor prognóstico que IDH-wildtype. Astrocitoma IDH-mutado e oligodendroglioma (1p/19q codeletado) respondem melhor ao tratamento." },
       { type: "fill_blank", question: "O schwannoma vestibular (neuroma acústico) surge do nervo ___.", correctAnswer: "vestibulococlear (VIII)", explanation: "Schwannoma: benigno, origem nas células de Schwann do VIII par (divisão vestibular). Ângulo pontocerebelar. NF2: bilateral.", options: ["vestibulococlear (VIII)", "trigêmeo (V)", "facial (VII)", "glossofaríngeo (IX)"] },
     ]},
-    { id: 53, title: "Transplante e Rejeição", theme: "Imunologia", diff: "Difícil", time: 420, puzzles: [
+    { id: 53, title: "Transplante e Rejeição", theme: "Imunologia", diff: "Difícil", time: 120, puzzles: [
       { type: "multiple_choice", question: "A rejeição hiperaguda de transplante é mediada por:", options: ["Linfócitos T citotóxicos", "Anticorpos pré-formados contra o enxerto", "Macrófagos", "NK cells"], correctAnswer: 1, explanation: "Hiperaguda: minutos-horas. Anticorpos pré-formados (anti-HLA ou ABO) → ativação complemento → trombose microvascular → necrose." },
       { type: "true_false", question: "A rejeição aguda ocorre em dias a semanas e é mediada principalmente por células T.", correctAnswer: "Verdadeiro", explanation: "Aguda: T CD8+ citotóxicos + T CD4+ → destruição do enxerto. Também componente humoral (anticorpos anti-HLA donor-specific)." },
       { type: "fill_blank", question: "A rejeição ___ é insidiosa, ocorre em meses-anos, com fibrose e arteriosclerose do enxerto.", correctAnswer: "crônica", explanation: "Rejeição crônica: progressiva, sem tratamento efetivo. Fibrose intersticial, atrofia tubular (rim), arteriosclerose. Principal causa de perda tardia do enxerto.", options: ["crônica", "aguda", "hiperaguda", "subaguda"] },
       { type: "multiple_choice", question: "A doença enxerto-versus-hospedeiro (DECH/GVHD) ocorre em:", options: ["Transplante de rim", "Transplante de medula óssea/CTH", "Transplante de coração", "Todos igualmente"], correctAnswer: 1, explanation: "GVHD: linfócitos T do doador atacam tecidos do receptor (pele, fígado, TGI). Principal complicação do TMO alogênico." },
       { type: "true_false", question: "O tacrolimus e a ciclosporina inibem a calcineurina, bloqueando a ativação de linfócitos T.", correctAnswer: "Verdadeiro", explanation: "Inibidores de calcineurina: bloqueiam NFAT → ↓ IL-2 → ↓ proliferação de T. Base da imunossupressão em transplantes." },
     ]},
-    { id: 54, title: "Líquido Cefalorraquidiano", theme: "Tecido Nervoso", diff: "Médio", time: 360, puzzles: [
+    { id: 54, title: "Líquido Cefalorraquidiano", theme: "Tecido Nervoso", diff: "Médio", time: 90, puzzles: [
       { type: "multiple_choice", question: "O LCR é produzido principalmente pelo:", options: ["Aracnoide", "Plexo coroide nos ventrículos", "Parênquima cerebral", "Meninges"], correctAnswer: 1, explanation: "Plexo coroide: epitélio ependimário modificado nos ventrículos (laterais, III e IV). Produz ~500mL/dia de LCR." },
       { type: "true_false", question: "A hidrocefalia obstrutiva é causada por bloqueio da circulação do LCR.", correctAnswer: "Verdadeiro", explanation: "Obstrutiva (não-comunicante): obstrução dentro do sistema ventricular (aqueduto de Sylvius, foramen de Monro). Comunicante: falha na absorção." },
       { type: "fill_blank", question: "O LCR é absorvido pelas granulações ___ que se projetam no seio sagital superior.", correctAnswer: "aracnoides (de Pacchioni)", explanation: "Granulações aracnoides: vilosidades que drenam LCR para o sangue venoso. Obstrução → hidrocefalia comunicante.", options: ["aracnoides (de Pacchioni)", "coroidais", "ependimárias", "durais"] },
       { type: "multiple_choice", question: "As meninges, da mais externa para interna, são:", options: ["Aracnoide → Pia → Dura", "Dura-máter → Aracnoide → Pia-máter", "Pia → Dura → Aracnoide", "Dura → Pia → Aracnoide"], correctAnswer: 1, explanation: "Dura-máter (espessa, fibrosa) → aracnoide (avascular, espaço subaracnoideo com LCR) → pia-máter (aderida ao SNC, vascular)." },
       { type: "true_false", question: "A meningite bacteriana mostra LCR turvo com predomínio de neutrófilos.", correctAnswer: "Verdadeiro", explanation: "Meningite bacteriana: LCR purulento, neutrófilos↑, proteína↑, glicose↓. Viral: linfócitos, proteína normal/↑, glicose normal." },
     ]},
-    { id: 55, title: "Testículo: Tumores", theme: "Sistema Reprodutor", diff: "Difícil", time: 420, puzzles: [
+    { id: 55, title: "Testículo: Tumores", theme: "Sistema Reprodutor", diff: "Difícil", time: 120, puzzles: [
       { type: "multiple_choice", question: "Os tumores testiculares mais comuns são:", options: ["Linfomas", "Tumores de células germinativas (>90%)", "Tumores de células de Leydig", "Sarcomas"], correctAnswer: 1, explanation: "TCG: >90% dos tumores testiculares. Seminomas (~55%) e não-seminomatosos (carcinoma embrionário, teratoma, coriocarcinoma, tumor do saco vitelino)." },
       { type: "true_false", question: "O coriocarcinoma testicular produz níveis muito elevados de hCG.", correctAnswer: "Verdadeiro", explanation: "Coriocarcinoma: sinciciotrofoblasto → hCG↑↑↑. Altamente maligno, metástases hematogênicas precoces (pulmão). Ginecomastia por hCG." },
       { type: "fill_blank", question: "O tumor de ___ é o TCG não-seminomatoso mais comum em crianças (< 3 anos).", correctAnswer: "saco vitelino (Yolk sac)", explanation: "Tumor do saco vitelino: AFP↑↑. Corpos de Schiller-Duval (glomérulo-like). Mais comum em crianças. Bom prognóstico.", options: ["saco vitelino (Yolk sac)", "teratoma", "coriocarcinoma", "carcinoma embrionário"] },
@@ -719,7 +719,7 @@ function generateRemainingScenarios(): EscapeScenario[] {
         title: `${selected.t} ${Math.ceil((i + 1) / themesList.length)}`,
         theme: selected.th,
         diff: diffs[i % 4],
-        time: [300, 360, 420, 480][i % 4],
+        time: [60, 90, 120, 120][i % 4],
         description: `Explore os enigmas sobre ${selected.t.toLowerCase()} e teste seus conhecimentos em ${selected.th.toLowerCase()}.`,
         puzzles: selected.puzzles,
       };
