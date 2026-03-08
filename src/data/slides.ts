@@ -350,7 +350,7 @@ export const slides: HistologySlide[] = [
     tissue: "Timo",
     stain: "H&E",
     description: "Timo mostrando lóbulos com córtex denso e medula clara contendo corpúsculos de Hassall.",
-    imageUrl: "https://histologyguide.com/slidebox/09-thymus.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-079-thymus/10-slide-1.html",
     structures: [
       { name: "Córtex", description: "Densamente povoado por timócitos (linfócitos T imaturos) em maturação", color: "#6366f1" },
       { name: "Medula", description: "Menos densa, com timócitos maduros e células epiteliais reticulares", color: "#22c55e" },
