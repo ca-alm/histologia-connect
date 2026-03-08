@@ -116,7 +116,7 @@ const Index = () => {
 
         {activeTab === "slides" &&
         <section>
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Explorando Lâminas</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Explorando Lâminas</h2>
             <p className="text-muted-foreground mb-8">Visualização detalhada de lâminas histológicas com identificação de estruturas.</p>
             <SlidesExplorer />
           </section>
