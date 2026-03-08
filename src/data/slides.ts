@@ -250,7 +250,7 @@ export const slides: HistologySlide[] = [
     tissue: "Pâncreas",
     stain: "H&E",
     description: "Corte do pâncreas mostrando ácinos serosos exócrinos e ilhotas de Langerhans endócrinas.",
-    imageUrl: "https://histologyguide.com/slidebox/12-pancreas.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-131-pancreas/12-slide-1.html",
     structures: [
       { name: "Ácinos pancreáticos", description: "Ácinos serosos com grânulos de zimogênio apicais (enzimas digestivas)", color: "#6366f1" },
       { name: "Células centroacinares", description: "Células pálidas no centro do ácino, início do sistema ductal", color: "#22c55e" },
