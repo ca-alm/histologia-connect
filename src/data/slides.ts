@@ -122,7 +122,7 @@ export const slides: HistologySlide[] = [
     tissue: "Músculo Cardíaco",
     stain: "H&E",
     description: "Corte longitudinal do miocárdio mostrando células ramificadas com núcleos centrais e discos intercalares.",
-    imageUrl: "https://histologyguide.com/slidebox/07-cardiac-muscle.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-054-cardiac-muscle/04-slide-1.html",
     structures: [
       { name: "Cardiomiócitos", description: "Células ramificadas com 1-2 núcleos centrais, estriações transversais", color: "#6366f1" },
       { name: "Discos intercalares", description: "Junções especializadas: gap junctions + desmossomos + fáscia aderente", color: "#ef4444" },
