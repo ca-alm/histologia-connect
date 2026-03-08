@@ -100,7 +100,7 @@ const Index = () => {
 
         {activeTab === "summaries" &&
         <section>
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Resumos</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Resumos</h2>
             <p className="text-muted-foreground mb-8">Sínteses dos principais temas abordados na disciplina.</p>
             <div className="space-y-4">{summaries.map((summary, i) => <SummaryCard key={i} {...summary} />)}</div>
           </section>
