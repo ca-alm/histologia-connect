@@ -155,7 +155,7 @@ export const summaries: Summary[] = [
     ],
   },
   {
-    icon: "🫁",
+    icon: "🌬️",
     title: "Sistema Respiratório",
     subtitle: "Vias aéreas, pulmões e trocas gasosas",
     source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
