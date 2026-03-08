@@ -132,7 +132,7 @@ const Index = () => {
 
         {activeTab === "games" &&
         <section>
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Jogos Educativos</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Jogos Educativos</h2>
             <p className="text-muted-foreground mb-8">Aprenda histologia de forma divertida com jogos interativos e desafios.</p>
             <GamesSection />
           </section>
