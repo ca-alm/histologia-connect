@@ -180,7 +180,7 @@ export const reminders: Reminder[] = [
     id: 12,
     title: "Intestino Delgado vs Grosso",
     category: "Sistema Digestório",
-    emoji: "🔄",
+    emoji: "🚽",
     source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Delgado: VILOSIDADES + criptas, enterócitos com microvilosidades, células de Paneth",
