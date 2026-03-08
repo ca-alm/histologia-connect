@@ -12,6 +12,7 @@ import QASection from "@/components/QASection";
 import GamesSection from "@/components/GamesSection";
 import EscapeRoomSection from "@/components/EscapeRoomSection";
 import ReferencesSection from "@/components/ReferencesSection";
+import AboutSection from "@/components/AboutSection";
 import { articles } from "@/data/articles";
 import { summaries } from "@/data/summaries";
 
