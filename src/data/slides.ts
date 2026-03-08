@@ -107,7 +107,7 @@ export const slides: HistologySlide[] = [
     tissue: "Músculo Esquelético — Corte longitudinal",
     stain: "H&E",
     description: "Fibras musculares estriadas em corte longitudinal mostrando estriações transversais e núcleos periféricos.",
-    imageUrl: "https://histologyguide.com/slidebox/07-skeletal-muscle.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-055a-skeletal-muscle/04-slide-1.html",
     structures: [
       { name: "Fibra muscular", description: "Célula cilíndrica multinucleada, pode ter centímetros de comprimento", color: "#6366f1" },
       { name: "Estriações transversais", description: "Bandas A (escuras, miosina) e I (claras, actina) refletem sarcômeros", color: "#22c55e" },
