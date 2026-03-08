@@ -50,7 +50,7 @@ export const slides: HistologySlide[] = [
     tissue: "Tecido Conjuntivo Frouxo — Mesentério",
     stain: "H&E",
     description: "Espalhado de mesentério mostrando os componentes do tecido conjuntivo frouxo em uma preparação total.",
-    imageUrl: "https://histologyguide.com/slidebox/04-loose-connective-tissue.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-024-mesentery/03-slide-2.html",
     structures: [
       { name: "Fibras colágenas", description: "Feixes espessos ondulados, coram em rosa pela eosina, colágeno tipo I", color: "#ef4444" },
       { name: "Fibras elásticas", description: "Finas, ramificadas, refringentes; melhor visualizadas com Verhoeff ou orceína", color: "#3b82f6" },
