@@ -35,7 +35,7 @@ export const slides: HistologySlide[] = [
     tissue: "Epitélio Estratificado Pavimentoso — Esôfago",
     stain: "H&E",
     description: "Corte do esôfago mostrando epitélio estratificado pavimentoso não-queratinizado protegendo contra abrasão mecânica do bolo alimentar.",
-    imageUrl: "https://histologyguide.com/slidebox/10-esophagus.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-109-esophagus/14-slide-1.html",
     structures: [
       { name: "Camada basal", description: "Células cuboides/cilíndricas com alta atividade mitótica (renovação epitelial)", color: "#6366f1" },
       { name: "Camada espinhosa", description: "Células poligonais unidas por desmossomos, progressivamente achatadas", color: "#22c55e" },
