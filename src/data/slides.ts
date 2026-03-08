@@ -424,7 +424,7 @@ export const slides: HistologySlide[] = [
     tissue: "Útero — Endométrio (fase secretora)",
     stain: "H&E",
     description: "Endométrio na fase secretora mostrando glândulas tortuosas com secreção.",
-    imageUrl: "https://histologyguide.com/slidebox/17-uterus-secretory.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-254-uterus/18-slide-1.html",
     structures: [
       { name: "Glândulas endometriais", description: "Tortuosas, com secreção glicoprotéica no lúmen (pós-ovulação)", color: "#6366f1" },
       { name: "Estroma edemaciado", description: "Células decidualizadas (pré-deciduais) no estroma", color: "#22c55e" },
