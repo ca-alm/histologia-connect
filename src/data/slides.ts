@@ -336,7 +336,7 @@ export const slides: HistologySlide[] = [
     tissue: "Baço",
     stain: "H&E",
     description: "Parênquima esplênico mostrando polpa branca (nódulos) e polpa vermelha.",
-    imageUrl: "https://histologyguide.com/slidebox/09-spleen.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-MHS-spleen/10-slide-1.html",
     structures: [
       { name: "Polpa branca", description: "PALS (bainha linfoide periarteriolar com células T) + folículos (células B)", color: "#6366f1" },
       { name: "Polpa vermelha", description: "Cordões de Billroth (macrófagos) e sinusoides esplênicos", color: "#ef4444" },
