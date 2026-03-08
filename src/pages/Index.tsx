@@ -108,7 +108,7 @@ const Index = () => {
 
         {activeTab === "reminders" &&
         <section>
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Lembretes</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Lembretes</h2>
             <p className="text-muted-foreground mb-8">Resumos rápidos e mnemônicos para revisão antes das provas.</p>
             <RemindersSection />
           </section>
