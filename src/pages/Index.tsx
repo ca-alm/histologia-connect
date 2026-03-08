@@ -156,7 +156,7 @@ const Index = () => {
 
         {activeTab === "qa" &&
         <section>
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Tire suas Dúvidas</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Tire suas Dúvidas</h2>
             <p className="text-muted-foreground mb-8">Envie mensagens para os criadores do HistoApp — anônimas ou identificadas.</p>
             <QASection />
           </section>
