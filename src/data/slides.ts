@@ -163,7 +163,7 @@ export const slides: HistologySlide[] = [
     tissue: "Cerebelo",
     stain: "H&E",
     description: "Corte do cerebelo mostrando as três camadas do córtex cerebelar e a substância branca.",
-    imageUrl: "https://histologyguide.com/slidebox/06-cerebellum.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-284-brain/06-slide-1.html",
     structures: [
       { name: "Camada molecular", description: "Camada externa com poucos corpos celulares, rica em fibras e sinapses", color: "#6366f1" },
       { name: "Células de Purkinje", description: "Neurônios piriformes gigantes com árvore dendrítica rica na camada molecular", color: "#ef4444" },
