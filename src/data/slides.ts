@@ -264,7 +264,7 @@ export const slides: HistologySlide[] = [
     tissue: "Rim — Córtex",
     stain: "H&E",
     description: "Córtex renal mostrando glomérulos, túbulos proximais e distais.",
-    imageUrl: "https://histologyguide.com/slidebox/15-kidney-cortex.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-141a-kidney/16-slide-1.html",
     structures: [
       { name: "Glomérulo (corpúsculo renal)", description: "Tufo capilar envolvido pela cápsula de Bowman; local de filtração", color: "#6366f1" },
       { name: "Túbulo contorcido proximal", description: "Epitélio cúbico com borda em escova, citoplasma eosinofílico; reabsorção", color: "#22c55e" },
