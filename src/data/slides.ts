@@ -438,7 +438,7 @@ export const slides: HistologySlide[] = [
     tissue: "Glândula Mamária Lactante",
     stain: "H&E",
     description: "Glândula mamária durante a lactação com alvéolos secretores distendidos.",
-    imageUrl: "https://histologyguide.com/slidebox/17-lactating-mammary-gland.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-174a-mammary-gland/18-slide-1.html",
     structures: [
       { name: "Alvéolos secretores", description: "Ácinos distendidos com secreção lipídica apócrina e proteica merócrina", color: "#6366f1" },
       { name: "Células mioepiteliais", description: "Células contráteis ao redor dos alvéolos, respondem à ocitocina (ejeção do leite)", color: "#22c55e" },
