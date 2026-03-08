@@ -27,7 +27,8 @@ const tabs = [
 { id: "escape", label: "Escape Room", icon: KeyRound },
 { id: "calendar", label: "Calendário", icon: CalendarDays },
 { id: "qa", label: "Dúvidas", icon: MessageCircle },
-{ id: "references", label: "Referências", icon: Library }] as
+{ id: "references", label: "Referências", icon: Library },
+{ id: "about", label: "Saiba Mais", icon: Info }] as
 const;
 
 type TabId = (typeof tabs)[number]["id"];
