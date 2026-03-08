@@ -235,7 +235,7 @@ export const slides: HistologySlide[] = [
     tissue: "Fígado",
     stain: "H&E",
     description: "Parênquima hepático mostrando os lóbulos hepáticos com trabéculas de hepatócitos e espaços porta.",
-    imageUrl: "https://histologyguide.com/slidebox/12-liver.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-126b-liver/15-slide-1.html",
     structures: [
       { name: "Hepatócitos", description: "Células poligonais com núcleo central, citoplasma eosinofílico, em trabéculas", color: "#6366f1" },
       { name: "Sinusoides hepáticos", description: "Capilares fenestrados com células de Kupffer (macrófagos)", color: "#22c55e" },
