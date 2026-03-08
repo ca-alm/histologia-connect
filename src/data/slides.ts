@@ -20,7 +20,7 @@ export const slides: HistologySlide[] = [
     tissue: "Epitélio Pseudoestratificado — Traqueia",
     stain: "H&E",
     description: "Corte transversal da traqueia mostrando o epitélio respiratório com células caliciformes, lâmina própria e cartilagem hialina.",
-    imageUrl: "https://histologyguide.com/slidebox/02-respiratory-epithelium.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-136-trachea/17-slide-1.html",
     structures: [
       { name: "Células ciliadas", description: "Células cilíndricas com cílios apicais que movimentam o muco em direção à faringe", color: "#6366f1" },
       { name: "Células caliciformes", description: "Células secretoras de muco (glicoproteínas), aparecem claras na H&E", color: "#22c55e" },
