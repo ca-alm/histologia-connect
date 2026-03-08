@@ -466,7 +466,7 @@ export const slides: HistologySlide[] = [
     tissue: "Medula Óssea Vermelha",
     stain: "H&E",
     description: "Biópsia de medula óssea mostrando o tecido hematopoiético ativo entre trabéculas ósseas.",
-    imageUrl: "https://histologyguide.com/slidebox/05-bone-marrow.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-304-bone-marrow/08-slide-1.html",
     structures: [
       { name: "Trabéculas ósseas", description: "Espículas de osso esponjoso que servem de arcabouço para a medula", color: "#6366f1" },
       { name: "Série granulocítica", description: "Precursores de neutrófilos em diferentes estágios de maturação", color: "#22c55e" },
