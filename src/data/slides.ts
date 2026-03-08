@@ -65,7 +65,7 @@ export const slides: HistologySlide[] = [
     tissue: "Cartilagem Hialina — Traqueia",
     stain: "H&E",
     description: "Detalhe dos anéis cartilaginosos traqueais mostrando a organização da cartilagem hialina com pericôndrio.",
-    imageUrl: "https://histologyguide.com/slidebox/04-hyaline-cartilage.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-136-trachea/05-slide-1.html",
     structures: [
       { name: "Pericôndrio", description: "Tecido conjuntivo denso que reveste a cartilagem; camada fibrosa e condrogênica", color: "#6366f1" },
       { name: "Condrócitos", description: "Células em lacunas na matriz; grupos isógenos representam divisões de um condroblasto", color: "#22c55e" },
