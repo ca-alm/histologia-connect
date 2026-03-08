@@ -148,7 +148,7 @@ const Index = () => {
 
         {activeTab === "calendar" &&
         <section>
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Calendário</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Calendário</h2>
             <p className="text-muted-foreground mb-8">Organize provas, aulas e entregas da disciplina de Histologia.</p>
             <CalendarSection />
           </section>
