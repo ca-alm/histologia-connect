@@ -11,6 +11,17 @@ const topicSources: Record<string, string> = {
   "Tecido Cartilaginoso": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
   "Tecido Ósseo": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
   "Sangue e Hematopoiese": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Introdução à Histologia": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
+  "Microscopia e Técnicas Histológicas": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
+  "Sistema Cardiovascular": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
+  "Sistema Respiratório": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
+  "Sistema Digestório": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
+  "Sistema Urinário": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
+  "Pele e Anexos": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
+  "Sistema Endócrino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
+  "Sistema Linfático e Imunológico": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
+  "Sistema Reprodutor Masculino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
+  "Sistema Reprodutor Feminino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
 };
 
 function shuffleArray<T>(arr: T[]): T[] {
