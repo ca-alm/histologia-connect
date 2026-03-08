@@ -221,7 +221,7 @@ export const slides: HistologySlide[] = [
     tissue: "Estômago — Corpo gástrico",
     stain: "H&E",
     description: "Corte da mucosa gástrica do corpo/fundo mostrando glândulas gástricas com seus diferentes tipos celulares.",
-    imageUrl: "https://histologyguide.com/slidebox/10-stomach-fundus.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-112-fundic-stomach/14-slide-1.html",
     structures: [
       { name: "Células mucosas superficiais", description: "Epitélio cilíndrico mucossecretor que reveste toda a superfície gástrica", color: "#6366f1" },
       { name: "Células parietais (oxínticas)", description: "Grandes, eosinófilas, arredondadas — produzem HCl e fator intrínseco", color: "#ef4444" },
