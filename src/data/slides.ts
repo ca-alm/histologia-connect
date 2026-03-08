@@ -20,7 +20,7 @@ export const slides: HistologySlide[] = [
     tissue: "Epitélio Pseudoestratificado — Traqueia",
     stain: "H&E",
     description: "Corte transversal da traqueia mostrando o epitélio respiratório com células caliciformes, lâmina própria e cartilagem hialina.",
-    imageUrl: "https://histologyguide.com/slidebox/02-respiratory-epithelium.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-136-trachea/17-slide-1.html",
     structures: [
       { name: "Células ciliadas", description: "Células cilíndricas com cílios apicais que movimentam o muco em direção à faringe", color: "#6366f1" },
       { name: "Células caliciformes", description: "Células secretoras de muco (glicoproteínas), aparecem claras na H&E", color: "#22c55e" },
@@ -35,7 +35,7 @@ export const slides: HistologySlide[] = [
     tissue: "Epitélio Estratificado Pavimentoso — Esôfago",
     stain: "H&E",
     description: "Corte do esôfago mostrando epitélio estratificado pavimentoso não-queratinizado protegendo contra abrasão mecânica do bolo alimentar.",
-    imageUrl: "https://histologyguide.com/slidebox/10-esophagus.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-109-esophagus/14-slide-1.html",
     structures: [
       { name: "Camada basal", description: "Células cuboides/cilíndricas com alta atividade mitótica (renovação epitelial)", color: "#6366f1" },
       { name: "Camada espinhosa", description: "Células poligonais unidas por desmossomos, progressivamente achatadas", color: "#22c55e" },
@@ -50,7 +50,7 @@ export const slides: HistologySlide[] = [
     tissue: "Tecido Conjuntivo Frouxo — Mesentério",
     stain: "H&E",
     description: "Espalhado de mesentério mostrando os componentes do tecido conjuntivo frouxo em uma preparação total.",
-    imageUrl: "https://histologyguide.com/slidebox/04-loose-connective-tissue.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-024-mesentery/03-slide-2.html",
     structures: [
       { name: "Fibras colágenas", description: "Feixes espessos ondulados, coram em rosa pela eosina, colágeno tipo I", color: "#ef4444" },
       { name: "Fibras elásticas", description: "Finas, ramificadas, refringentes; melhor visualizadas com Verhoeff ou orceína", color: "#3b82f6" },
@@ -65,7 +65,7 @@ export const slides: HistologySlide[] = [
     tissue: "Cartilagem Hialina — Traqueia",
     stain: "H&E",
     description: "Detalhe dos anéis cartilaginosos traqueais mostrando a organização da cartilagem hialina com pericôndrio.",
-    imageUrl: "https://histologyguide.com/slidebox/04-hyaline-cartilage.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-136-trachea/05-slide-1.html",
     structures: [
       { name: "Pericôndrio", description: "Tecido conjuntivo denso que reveste a cartilagem; camada fibrosa e condrogênica", color: "#6366f1" },
       { name: "Condrócitos", description: "Células em lacunas na matriz; grupos isógenos representam divisões de um condroblasto", color: "#22c55e" },
@@ -79,7 +79,7 @@ export const slides: HistologySlide[] = [
     tissue: "Cartilagem Elástica — Orelha",
     stain: "Verhoeff + H&E",
     description: "Cartilagem elástica do pavilhão auricular mostrando fibras elásticas coradas em preto na matriz.",
-    imageUrl: "https://histologyguide.com/slidebox/04-elastic-cartilage.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-038-039-epiglottis/05-slide-1.html",
     structures: [
       { name: "Fibras elásticas", description: "Fibras coradas em preto (Verhoeff) abundantes na matriz, conferem flexibilidade", color: "#6366f1" },
       { name: "Condrócitos", description: "Células em lacunas, similares à cartilagem hialina", color: "#22c55e" },
@@ -92,7 +92,7 @@ export const slides: HistologySlide[] = [
     tissue: "Tecido Ósseo Compacto — Diáfise",
     stain: "Desgaste (preparação por desgaste)",
     description: "Corte por desgaste de osso compacto mostrando os sistemas de Havers e lamelas.",
-    imageUrl: "https://histologyguide.com/slidebox/05-compact-bone.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-044-ground-bone/05-slide-1.html",
     structures: [
       { name: "Ósteon (Sistema de Havers)", description: "Unidade funcional: lamelas concêntricas ao redor do canal de Havers central", color: "#6366f1" },
       { name: "Canal de Havers", description: "Canal central contendo vasos sanguíneos e nervos", color: "#ef4444" },
@@ -107,7 +107,7 @@ export const slides: HistologySlide[] = [
     tissue: "Músculo Esquelético — Corte longitudinal",
     stain: "H&E",
     description: "Fibras musculares estriadas em corte longitudinal mostrando estriações transversais e núcleos periféricos.",
-    imageUrl: "https://histologyguide.com/slidebox/07-skeletal-muscle.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-055a-skeletal-muscle/04-slide-1.html",
     structures: [
       { name: "Fibra muscular", description: "Célula cilíndrica multinucleada, pode ter centímetros de comprimento", color: "#6366f1" },
       { name: "Estriações transversais", description: "Bandas A (escuras, miosina) e I (claras, actina) refletem sarcômeros", color: "#22c55e" },
@@ -122,7 +122,7 @@ export const slides: HistologySlide[] = [
     tissue: "Músculo Cardíaco",
     stain: "H&E",
     description: "Corte longitudinal do miocárdio mostrando células ramificadas com núcleos centrais e discos intercalares.",
-    imageUrl: "https://histologyguide.com/slidebox/07-cardiac-muscle.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-054-cardiac-muscle/04-slide-1.html",
     structures: [
       { name: "Cardiomiócitos", description: "Células ramificadas com 1-2 núcleos centrais, estriações transversais", color: "#6366f1" },
       { name: "Discos intercalares", description: "Junções especializadas: gap junctions + desmossomos + fáscia aderente", color: "#ef4444" },
@@ -136,7 +136,7 @@ export const slides: HistologySlide[] = [
     tissue: "Músculo Liso — Intestino",
     stain: "H&E",
     description: "Corte transversal e longitudinal do músculo liso da parede intestinal mostrando células fusiformes com núcleo central.",
-    imageUrl: "https://histologyguide.com/slidebox/07-smooth-muscle.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-053-smooth-muscle/04-slide-1.html",
     structures: [
       { name: "Células fusiformes (corte longitudinal)", description: "Células alongadas com núcleo central ovoide, sem estriações visíveis", color: "#6366f1" },
       { name: "Núcleo central", description: "Único, alongado, pode apresentar aspecto de 'saca-rolhas' quando contraído", color: "#22c55e" },
@@ -149,7 +149,7 @@ export const slides: HistologySlide[] = [
     tissue: "Nervo Periférico — Corte transversal",
     stain: "H&E e Azul de toluidina",
     description: "Corte transversal de nervo periférico mostrando fascículos de axônios mielinizados envolvidos por tecido conjuntivo.",
-    imageUrl: "https://histologyguide.com/slidebox/06-peripheral-nerve.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-052-peripheral-nerve/06-slide-1.html",
     structures: [
       { name: "Fibras nervosas mielinizadas", description: "Axônios envoltos por bainha de mielina (anel claro ao redor do axônio)", color: "#6366f1" },
       { name: "Endoneuro", description: "Conjuntivo frouxo entre fibras nervosas individuais", color: "#22c55e" },
@@ -163,7 +163,7 @@ export const slides: HistologySlide[] = [
     tissue: "Cerebelo",
     stain: "H&E",
     description: "Corte do cerebelo mostrando as três camadas do córtex cerebelar e a substância branca.",
-    imageUrl: "https://histologyguide.com/slidebox/06-cerebellum.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-284-brain/06-slide-1.html",
     structures: [
       { name: "Camada molecular", description: "Camada externa com poucos corpos celulares, rica em fibras e sinapses", color: "#6366f1" },
       { name: "Células de Purkinje", description: "Neurônios piriformes gigantes com árvore dendrítica rica na camada molecular", color: "#ef4444" },
@@ -177,7 +177,7 @@ export const slides: HistologySlide[] = [
     tissue: "Sangue — Esfregaço",
     stain: "May-Grünwald-Giemsa",
     description: "Esfregaço sanguíneo mostrando os elementos figurados do sangue periférico.",
-    imageUrl: "https://histologyguide.com/slidebox/05-blood-smear.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-033-blood-smear/07-slide-1.html",
     structures: [
       { name: "Eritrócitos", description: "Discos bicôncavos anucleados (7-8 μm), acidófilos, repletos de hemoglobina", color: "#ef4444" },
       { name: "Neutrófilo", description: "Núcleo multilobulado (3-5 lobos), grânulos finos neutrofílicos, 12-15 μm", color: "#6366f1" },
@@ -192,7 +192,7 @@ export const slides: HistologySlide[] = [
     tissue: "Intestino Delgado — Jejuno",
     stain: "H&E",
     description: "Corte mostrando as vilosidades intestinais e criptas de Lieberkühn.",
-    imageUrl: "https://histologyguide.com/slidebox/11-small-intestine-jejunum.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-219-jejunum/14-slide-1.html",
     structures: [
       { name: "Vilosidades intestinais", description: "Projeções digitiformes da mucosa cobertas por epitélio absortivo", color: "#6366f1" },
       { name: "Enterócitos", description: "Células cilíndricas com borda em escova (microvilosidades), núcleo basal", color: "#22c55e" },
@@ -207,7 +207,7 @@ export const slides: HistologySlide[] = [
     tissue: "Intestino Grosso — Cólon",
     stain: "H&E",
     description: "Corte do cólon mostrando criptas profundas ricas em células caliciformes e ausência de vilosidades.",
-    imageUrl: "https://histologyguide.com/slidebox/11-large-intestine-colon.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-123-colon/14-slide-1.html",
     structures: [
       { name: "Criptas de Lieberkühn", description: "Longas e retas, ricas em células caliciformes (muco protetor)", color: "#6366f1" },
       { name: "Células caliciformes", description: "Abundantes, conferindo aspecto claro ao epitélio críptico", color: "#22c55e" },
@@ -221,7 +221,7 @@ export const slides: HistologySlide[] = [
     tissue: "Estômago — Corpo gástrico",
     stain: "H&E",
     description: "Corte da mucosa gástrica do corpo/fundo mostrando glândulas gástricas com seus diferentes tipos celulares.",
-    imageUrl: "https://histologyguide.com/slidebox/10-stomach-fundus.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-112-fundic-stomach/14-slide-1.html",
     structures: [
       { name: "Células mucosas superficiais", description: "Epitélio cilíndrico mucossecretor que reveste toda a superfície gástrica", color: "#6366f1" },
       { name: "Células parietais (oxínticas)", description: "Grandes, eosinófilas, arredondadas — produzem HCl e fator intrínseco", color: "#ef4444" },
@@ -235,7 +235,7 @@ export const slides: HistologySlide[] = [
     tissue: "Fígado",
     stain: "H&E",
     description: "Parênquima hepático mostrando os lóbulos hepáticos com trabéculas de hepatócitos e espaços porta.",
-    imageUrl: "https://histologyguide.com/slidebox/12-liver.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-126b-liver/15-slide-1.html",
     structures: [
       { name: "Hepatócitos", description: "Células poligonais com núcleo central, citoplasma eosinofílico, em trabéculas", color: "#6366f1" },
       { name: "Sinusoides hepáticos", description: "Capilares fenestrados com células de Kupffer (macrófagos)", color: "#22c55e" },
@@ -250,7 +250,7 @@ export const slides: HistologySlide[] = [
     tissue: "Pâncreas",
     stain: "H&E",
     description: "Corte do pâncreas mostrando ácinos serosos exócrinos e ilhotas de Langerhans endócrinas.",
-    imageUrl: "https://histologyguide.com/slidebox/12-pancreas.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-131-pancreas/12-slide-1.html",
     structures: [
       { name: "Ácinos pancreáticos", description: "Ácinos serosos com grânulos de zimogênio apicais (enzimas digestivas)", color: "#6366f1" },
       { name: "Células centroacinares", description: "Células pálidas no centro do ácino, início do sistema ductal", color: "#22c55e" },
@@ -264,7 +264,7 @@ export const slides: HistologySlide[] = [
     tissue: "Rim — Córtex",
     stain: "H&E",
     description: "Córtex renal mostrando glomérulos, túbulos proximais e distais.",
-    imageUrl: "https://histologyguide.com/slidebox/15-kidney-cortex.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-141a-kidney/16-slide-1.html",
     structures: [
       { name: "Glomérulo (corpúsculo renal)", description: "Tufo capilar envolvido pela cápsula de Bowman; local de filtração", color: "#6366f1" },
       { name: "Túbulo contorcido proximal", description: "Epitélio cúbico com borda em escova, citoplasma eosinofílico; reabsorção", color: "#22c55e" },
@@ -278,7 +278,7 @@ export const slides: HistologySlide[] = [
     tissue: "Pulmão — Parênquima",
     stain: "H&E",
     description: "Parênquima pulmonar mostrando alvéolos, bronquíolos e vasos.",
-    imageUrl: "https://histologyguide.com/slidebox/13-lung-parenchyma.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-138-lung/17-slide-1.html",
     structures: [
       { name: "Alvéolos", description: "Espaços aéreos delimitados por septos finos com pneumócitos I e II", color: "#6366f1" },
       { name: "Pneumócitos tipo I", description: "Células achatadas que formam 95% da superfície alveolar; trocas gasosas", color: "#22c55e" },
@@ -293,7 +293,7 @@ export const slides: HistologySlide[] = [
     tissue: "Tireoide",
     stain: "H&E",
     description: "Parênquima tireoidiano mostrando folículos preenchidos por coloide.",
-    imageUrl: "https://histologyguide.com/slidebox/14-thyroid.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-151-thyroid/13-slide-1.html",
     structures: [
       { name: "Folículos tireoidianos", description: "Unidades esféricas revestidas por epitélio simples cúbico/cilíndrico", color: "#6366f1" },
       { name: "Coloide", description: "Material eosinofílico (tireoglobulina) armazenado na luz dos folículos", color: "#22c55e" },
@@ -307,7 +307,7 @@ export const slides: HistologySlide[] = [
     tissue: "Adrenal (Suprarrenal)",
     stain: "H&E",
     description: "Corte da glândula adrenal mostrando córtex (3 zonas) e medula.",
-    imageUrl: "https://histologyguide.com/slidebox/14-adrenal-gland.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-155a-adrenal/13-slide-1.html",
     structures: [
       { name: "Zona glomerulosa", description: "Células em arcos, produzem aldosterona (mineralocorticoide)", color: "#6366f1" },
       { name: "Zona fasciculada", description: "Células claras (espongiócitos) em cordões, produzem cortisol", color: "#22c55e" },
@@ -321,7 +321,7 @@ export const slides: HistologySlide[] = [
     tissue: "Linfonodo",
     stain: "H&E",
     description: "Corte de linfonodo mostrando córtex com folículos e medula com cordões medulares.",
-    imageUrl: "https://histologyguide.com/slidebox/09-lymph-node.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-076-077-078-lymph-node/10-slide-1.html",
     structures: [
       { name: "Folículos linfoides (córtex)", description: "Folículos primários (sem centro germinativo) e secundários (com centro germinativo)", color: "#6366f1" },
       { name: "Centro germinativo", description: "Área clara no folículo com linfócitos B em proliferação e seleção", color: "#22c55e" },
@@ -336,7 +336,7 @@ export const slides: HistologySlide[] = [
     tissue: "Baço",
     stain: "H&E",
     description: "Parênquima esplênico mostrando polpa branca (nódulos) e polpa vermelha.",
-    imageUrl: "https://histologyguide.com/slidebox/09-spleen.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-MHS-spleen/10-slide-1.html",
     structures: [
       { name: "Polpa branca", description: "PALS (bainha linfoide periarteriolar com células T) + folículos (células B)", color: "#6366f1" },
       { name: "Polpa vermelha", description: "Cordões de Billroth (macrófagos) e sinusoides esplênicos", color: "#ef4444" },
@@ -350,7 +350,7 @@ export const slides: HistologySlide[] = [
     tissue: "Timo",
     stain: "H&E",
     description: "Timo mostrando lóbulos com córtex denso e medula clara contendo corpúsculos de Hassall.",
-    imageUrl: "https://histologyguide.com/slidebox/09-thymus.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-079-thymus/10-slide-1.html",
     structures: [
       { name: "Córtex", description: "Densamente povoado por timócitos (linfócitos T imaturos) em maturação", color: "#6366f1" },
       { name: "Medula", description: "Menos densa, com timócitos maduros e células epiteliais reticulares", color: "#22c55e" },
@@ -364,7 +364,7 @@ export const slides: HistologySlide[] = [
     tissue: "Pele Fina (Delgada)",
     stain: "H&E",
     description: "Corte de pele fina mostrando epiderme delgada e anexos cutâneos na derme.",
-    imageUrl: "https://histologyguide.com/slidebox/08-thin-skin.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-090-thin-skin/11-slide-1.html",
     structures: [
       { name: "Epiderme", description: "Epitélio estratificado pavimentoso queratinizado fino com poucas camadas", color: "#6366f1" },
       { name: "Derme papilar", description: "Conjuntivo frouxo com papilas dérmicas, capilares e corpúsculos de Meissner", color: "#22c55e" },
@@ -379,7 +379,7 @@ export const slides: HistologySlide[] = [
     tissue: "Pele Espessa (Grossa)",
     stain: "H&E",
     description: "Corte de pele espessa da palma da mão mostrando todas as cinco camadas epidérmicas.",
-    imageUrl: "https://histologyguide.com/slidebox/08-thick-skin.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-091-thick-skin/11-slide-1.html",
     structures: [
       { name: "Camada córnea", description: "Espessa, com células mortas anucleadas repletas de queratina", color: "#6366f1" },
       { name: "Camada granulosa", description: "Grânulos de querato-hialina; corpos lamelares (impermeabilização)", color: "#22c55e" },
@@ -394,7 +394,7 @@ export const slides: HistologySlide[] = [
     tissue: "Testículo",
     stain: "H&E",
     description: "Corte do testículo mostrando túbulos seminíferos com espermatogênese e tecido intersticial.",
-    imageUrl: "https://histologyguide.com/slidebox/16-testis.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-267-testis-and-epididymis/19-slide-1.html",
     structures: [
       { name: "Túbulos seminíferos", description: "Túbulos com epitélio germinativo estratificado: espermatogônias → espermatozoides", color: "#6366f1" },
       { name: "Células de Sertoli", description: "Células de suporte com núcleo claro e nucléolo; barreira hematotesticular", color: "#22c55e" },
@@ -409,7 +409,7 @@ export const slides: HistologySlide[] = [
     tissue: "Ovário",
     stain: "H&E",
     description: "Córtex ovariano mostrando folículos em diferentes estágios de desenvolvimento.",
-    imageUrl: "https://histologyguide.com/slidebox/16-ovary.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-259-ovary/18-slide-1.html",
     structures: [
       { name: "Folículo primordial", description: "Oócito pequeno com camada simples de células foliculares achatadas", color: "#6366f1" },
       { name: "Folículo primário", description: "Células foliculares cuboides (granulosa), zona pelúcida em formação", color: "#22c55e" },
@@ -424,7 +424,7 @@ export const slides: HistologySlide[] = [
     tissue: "Útero — Endométrio (fase secretora)",
     stain: "H&E",
     description: "Endométrio na fase secretora mostrando glândulas tortuosas com secreção.",
-    imageUrl: "https://histologyguide.com/slidebox/17-uterus-secretory.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-254-uterus/18-slide-1.html",
     structures: [
       { name: "Glândulas endometriais", description: "Tortuosas, com secreção glicoprotéica no lúmen (pós-ovulação)", color: "#6366f1" },
       { name: "Estroma edemaciado", description: "Células decidualizadas (pré-deciduais) no estroma", color: "#22c55e" },
@@ -438,7 +438,7 @@ export const slides: HistologySlide[] = [
     tissue: "Glândula Mamária Lactante",
     stain: "H&E",
     description: "Glândula mamária durante a lactação com alvéolos secretores distendidos.",
-    imageUrl: "https://histologyguide.com/slidebox/17-lactating-mammary-gland.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-174a-mammary-gland/18-slide-1.html",
     structures: [
       { name: "Alvéolos secretores", description: "Ácinos distendidos com secreção lipídica apócrina e proteica merócrina", color: "#6366f1" },
       { name: "Células mioepiteliais", description: "Células contráteis ao redor dos alvéolos, respondem à ocitocina (ejeção do leite)", color: "#22c55e" },
@@ -452,7 +452,7 @@ export const slides: HistologySlide[] = [
     tissue: "Esôfago-Estômago — Transição (Cárdia)",
     stain: "H&E",
     description: "Junção esofagogástrica mostrando a transição abrupta entre epitélio estratificado pavimentoso e epitélio colunar gástrico.",
-    imageUrl: "https://histologyguide.com/slidebox/10-gastroesophageal-junction.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-111a-cardioesophageal-junction/14-slide-1.html",
     structures: [
       { name: "Epitélio escamoso esofágico", description: "Estratificado pavimentoso não-queratinizado, rosa-claro", color: "#6366f1" },
       { name: "Epitélio colunar gástrico", description: "Simples cilíndrico mucossecretor, mais escuro", color: "#22c55e" },
@@ -466,7 +466,7 @@ export const slides: HistologySlide[] = [
     tissue: "Medula Óssea Vermelha",
     stain: "H&E",
     description: "Biópsia de medula óssea mostrando o tecido hematopoiético ativo entre trabéculas ósseas.",
-    imageUrl: "https://histologyguide.com/slidebox/05-bone-marrow.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-304-bone-marrow/08-slide-1.html",
     structures: [
       { name: "Trabéculas ósseas", description: "Espículas de osso esponjoso que servem de arcabouço para a medula", color: "#6366f1" },
       { name: "Série granulocítica", description: "Precursores de neutrófilos em diferentes estágios de maturação", color: "#22c55e" },
