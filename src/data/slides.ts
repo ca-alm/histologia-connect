@@ -452,7 +452,7 @@ export const slides: HistologySlide[] = [
     tissue: "Esôfago-Estômago — Transição (Cárdia)",
     stain: "H&E",
     description: "Junção esofagogástrica mostrando a transição abrupta entre epitélio estratificado pavimentoso e epitélio colunar gástrico.",
-    imageUrl: "https://histologyguide.com/slidebox/10-gastroesophageal-junction.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-111a-cardioesophageal-junction/14-slide-1.html",
     structures: [
       { name: "Epitélio escamoso esofágico", description: "Estratificado pavimentoso não-queratinizado, rosa-claro", color: "#6366f1" },
       { name: "Epitélio colunar gástrico", description: "Simples cilíndrico mucossecretor, mais escuro", color: "#22c55e" },
