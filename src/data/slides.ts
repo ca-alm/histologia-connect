@@ -307,7 +307,7 @@ export const slides: HistologySlide[] = [
     tissue: "Adrenal (Suprarrenal)",
     stain: "H&E",
     description: "Corte da glândula adrenal mostrando córtex (3 zonas) e medula.",
-    imageUrl: "https://histologyguide.com/slidebox/14-adrenal-gland.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-155a-adrenal/13-slide-1.html",
     structures: [
       { name: "Zona glomerulosa", description: "Células em arcos, produzem aldosterona (mineralocorticoide)", color: "#6366f1" },
       { name: "Zona fasciculada", description: "Células claras (espongiócitos) em cordões, produzem cortisol", color: "#22c55e" },
