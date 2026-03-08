@@ -214,7 +214,7 @@ export const summaries: Summary[] = [
     ],
   },
   {
-    icon: "🔴",
+    icon: "🖊️",
     title: "Sistema Endócrino",
     subtitle: "Glândulas endócrinas e regulação hormonal",
     source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
