@@ -79,7 +79,7 @@ export const slides: HistologySlide[] = [
     tissue: "Cartilagem Elástica — Orelha",
     stain: "Verhoeff + H&E",
     description: "Cartilagem elástica do pavilhão auricular mostrando fibras elásticas coradas em preto na matriz.",
-    imageUrl: "https://histologyguide.com/slidebox/04-elastic-cartilage.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-038-039-epiglottis/05-slide-1.html",
     structures: [
       { name: "Fibras elásticas", description: "Fibras coradas em preto (Verhoeff) abundantes na matriz, conferem flexibilidade", color: "#6366f1" },
       { name: "Condrócitos", description: "Células em lacunas, similares à cartilagem hialina", color: "#22c55e" },
