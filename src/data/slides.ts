@@ -92,7 +92,7 @@ export const slides: HistologySlide[] = [
     tissue: "Tecido Ósseo Compacto — Diáfise",
     stain: "Desgaste (preparação por desgaste)",
     description: "Corte por desgaste de osso compacto mostrando os sistemas de Havers e lamelas.",
-    imageUrl: "https://histologyguide.com/slidebox/05-compact-bone.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-044-ground-bone/05-slide-1.html",
     structures: [
       { name: "Ósteon (Sistema de Havers)", description: "Unidade funcional: lamelas concêntricas ao redor do canal de Havers central", color: "#6366f1" },
       { name: "Canal de Havers", description: "Canal central contendo vasos sanguíneos e nervos", color: "#ef4444" },
