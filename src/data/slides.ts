@@ -409,7 +409,7 @@ export const slides: HistologySlide[] = [
     tissue: "Ovário",
     stain: "H&E",
     description: "Córtex ovariano mostrando folículos em diferentes estágios de desenvolvimento.",
-    imageUrl: "https://histologyguide.com/slidebox/16-ovary.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-259-ovary/18-slide-1.html",
     structures: [
       { name: "Folículo primordial", description: "Oócito pequeno com camada simples de células foliculares achatadas", color: "#6366f1" },
       { name: "Folículo primário", description: "Células foliculares cuboides (granulosa), zona pelúcida em formação", color: "#22c55e" },
