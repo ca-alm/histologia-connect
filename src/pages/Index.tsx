@@ -48,7 +48,7 @@ const Index = () => {
 
             </span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black text-primary-foreground leading-tight mb-4 font-sans">
+          <h1 className="text-3xl md:text-5xl font-black text-primary leading-tight mb-4 font-sans">
             HistoFMBRU
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed font-sans">
