@@ -140,7 +140,7 @@ const Index = () => {
 
         {activeTab === "escape" &&
         <section>
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">🔒 Escape Room</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">🔒 Escape Room</h2>
             <p className="text-muted-foreground mb-8">Resolva enigmas cronometrados sobre histologia e patologia para escapar! Mais de 100 cenários interativos.</p>
             <EscapeRoomSection />
           </section>
