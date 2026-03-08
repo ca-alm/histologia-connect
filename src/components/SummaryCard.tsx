@@ -1,14 +1,15 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, BookOpen } from "lucide-react";
 
 interface SummaryCardProps {
   icon: string;
   title: string;
   subtitle: string;
   content: string[];
+  source?: string;
 }
 
-const SummaryCard = ({ icon, title, subtitle, content }: SummaryCardProps) => {
+const SummaryCard = ({ icon, title, subtitle, content, source }: SummaryCardProps) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -36,6 +37,12 @@ const SummaryCard = ({ icon, title, subtitle, content }: SummaryCardProps) => {
                 {paragraph}
               </p>
             ))}
+            {source && (
+              <p className="text-xs text-muted-foreground/70 mt-4 flex items-center gap-1.5 italic pt-2 border-t border-border">
+                <BookOpen className="w-3 h-3 shrink-0" />
+                Fonte: {source}
+              </p>
+            )}
           </div>
         </div>
       )}

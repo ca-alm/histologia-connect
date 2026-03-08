@@ -1,7 +1,26 @@
 import { useState } from "react";
-import { CheckCircle2, XCircle, RotateCcw, ChevronRight, Shuffle } from "lucide-react";
+import { CheckCircle2, XCircle, RotateCcw, ChevronRight, Shuffle, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { questions, type Question } from "@/data/quizQuestions";
+
+const topicSources: Record<string, string> = {
+  "Tecido Epitelial": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
+  "Tecido Conjuntivo": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
+  "Tecido Muscular": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
+  "Tecido Nervoso": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
+  "Sangue e Hematopoiese": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Tecido Cartilaginoso": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
+  "Tecido Ósseo": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Sistema Cardiovascular": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Sistema Respiratório": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Sistema Digestório": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Sistema Urinário": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Pele e Anexos": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Sistema Endócrino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Sistema Linfático": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Abbas, Imunologia Celular e Molecular, 10ª ed.",
+  "Sistema Reprodutor Masculino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Sistema Reprodutor Feminino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+};
 
 function shuffleArray<T>(arr: T[]): T[] {
   const shuffled = [...arr];
@@ -168,6 +187,12 @@ const QuizSection = () => {
         <div className="bg-secondary rounded-xl p-4 mb-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
           <p className="text-sm font-semibold text-secondary-foreground mb-1">💡 Explicação</p>
           <p className="text-sm text-secondary-foreground/80 leading-relaxed">{q.explanation}</p>
+          {topicSources[q.topic] && (
+            <p className="text-xs text-secondary-foreground/60 mt-3 flex items-center gap-1.5 italic">
+              <BookOpen className="w-3 h-3 shrink-0" />
+              Fonte: {topicSources[q.topic]}
+            </p>
+          )}
         </div>
       )}
 

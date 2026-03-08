@@ -3,6 +3,7 @@ export interface Summary {
   title: string;
   subtitle: string;
   content: string[];
+  source: string;
 }
 
 export const summaries: Summary[] = [
@@ -10,6 +11,7 @@ export const summaries: Summary[] = [
     icon: "🔬",
     title: "Introdução à Histologia",
     subtitle: "Conceitos fundamentais, níveis de organização e métodos de estudo",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     content: [
       "A histologia é o estudo microscópico dos tecidos biológicos. Os quatro tecidos fundamentais são: epitelial, conjuntivo, muscular e nervoso, cada um com características morfológicas e funcionais específicas.",
       "Os níveis de organização biológica relevantes incluem: molecular (proteínas, lipídios), celular (organelas, citoesqueleto), tecidual (grupos de células especializadas) e de órgãos (combinação de tecidos).",
@@ -22,6 +24,7 @@ export const summaries: Summary[] = [
     icon: "🔭",
     title: "Microscopia e Técnicas Histológicas",
     subtitle: "Tipos de microscópios, colorações e técnicas avançadas",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     content: [
       "Microscópio óptico (de luz): aumento de até ~1000x com resolução de 0,2 μm. Componentes: fonte de luz, condensador, objetivas, oculares. Microscopia de fluorescência utiliza fluoróforos para detectar moléculas específicas.",
       "Microscopia eletrônica de transmissão (MET): resolução de 0,1-0,2 nm, feixe de elétrons atravessa cortes ultrafinos (50-100 nm). Visualiza organelas, membranas e estruturas macromoleculares. Fixação com glutaraldeído + ósmio, inclusão em resina.",
@@ -37,6 +40,7 @@ export const summaries: Summary[] = [
     icon: "🔬",
     title: "Tecido Epitelial",
     subtitle: "Classificação, funções, especializações e glândulas",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     content: [
       "Os tecidos epiteliais revestem superfícies e cavidades, formando barreiras seletivas. São classificados pelo número de camadas (simples, estratificado, pseudoestratificado) e pela morfologia (pavimentoso, cúbico, cilíndrico).",
       "Epitélio simples pavimentoso: endotélio (vasos), mesotélio (serosas), alvéolos. Cúbico: túbulos renais, superfície do ovário, ductos glandulares. Cilíndrico: intestino, endocérvice, tuba uterina.",
@@ -51,6 +55,7 @@ export const summaries: Summary[] = [
     icon: "🧬",
     title: "Tecido Conjuntivo",
     subtitle: "Células, fibras, substância fundamental e variedades",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     content: [
       "O tecido conjuntivo é caracterizado pela abundância de matriz extracelular (MEC), composta por fibras (colágenas, elásticas e reticulares) e substância fundamental amorfa (GAGs, proteoglicanos, glicoproteínas).",
       "Células residentes: fibroblastos (síntese de MEC), macrófagos (fagocitose, APCs — derivados de monócitos), mastócitos (histamina, heparina — mediadores inflamatórios), adipócitos, plasmócitos (anticorpos), pericitos (ao redor de capilares).",
@@ -65,6 +70,7 @@ export const summaries: Summary[] = [
     icon: "🦴",
     title: "Tecido Cartilaginoso",
     subtitle: "Cartilagem hialina, elástica e fibrosa",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     content: [
       "A cartilagem é um TC especializado AVASCULAR, nutrido por difusão a partir do pericôndrio. A matriz é rica em colágeno e proteoglicanos (agrecano → resistência à compressão).",
       "Cartilagem hialina: mais abundante. Anéis traqueais, superfícies articulares, septo nasal, placa epifisária. Matriz homogênea azulada (H&E) com colágeno tipo II. Pode calcificar com a idade.",
@@ -78,6 +84,7 @@ export const summaries: Summary[] = [
     icon: "🦴",
     title: "Tecido Ósseo",
     subtitle: "Osso compacto, esponjoso, ossificação e remodelação",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
     content: [
       "O tecido ósseo é um TC mineralizado (hidroxiapatita — fosfato de cálcio) que provê suporte mecânico, proteção, reserva mineral (Ca/P), aloja medula óssea e participa da homeostase do cálcio.",
       "Matriz orgânica (osteóide): 90% colágeno tipo I + proteoglicanos + glicoproteínas (osteocalcina, osteopontina). Fração mineral: cristais de hidroxiapatita [Ca₁₀(PO₄)₆(OH)₂] depositados nas fibras colágenas.",
@@ -92,6 +99,7 @@ export const summaries: Summary[] = [
     icon: "💪",
     title: "Tecido Muscular",
     subtitle: "Esquelético, cardíaco e liso — contração e regeneração",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     content: [
       "Músculo esquelético: fibras multinucleadas cilíndricas com estriações transversais. Núcleos periféricos. Contração voluntária, rápida e forte. Organização: endomísio (fibra) → perimísio (fascículo) → epimísio (músculo).",
       "Sarcômero (unidade contrátil): limitado por linhas Z. Banda A (miosina ± actina, escura), banda I (actina, clara), zona H (só miosina), linha M (centro). Contração: encurta banda I e zona H, banda A permanece constante.",
@@ -106,6 +114,7 @@ export const summaries: Summary[] = [
     icon: "🧠",
     title: "Tecido Nervoso",
     subtitle: "Neurônios, glia, sinapses e mielina",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     content: [
       "Neurônios: corpo celular (pericário — substância de Nissl/REG, Golgi, neurofilamentos), dendritos (recepção — espinhos dendríticos), axônio (transmissão — cone de implantação, sem Nissl). Classificação: multipolar, bipolar, pseudounipolar.",
       "Substância de Nissl: REG abundante, reflete intensa síntese proteica. Presente no pericário e dendritos, AUSENTE no cone de implantação e axônio. Cromatólise (dispersão do Nissl) ocorre após lesão axonal.",
@@ -120,6 +129,7 @@ export const summaries: Summary[] = [
     icon: "🩸",
     title: "Sangue e Hematopoiese",
     subtitle: "Elementos figurados, hemograma e formação",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     content: [
       "Sangue: plasma (55%) + elementos figurados (45%). Plasma: água, proteínas (albumina, globulinas, fibrinogênio), eletrólitos, nutrientes, hormônios, gases dissolvidos.",
       "Eritrócitos: discos bicôncavos anucleados (7-8 μm), repletos de hemoglobina. Vida: 120 dias, removidos no baço. Eritropoiese: proeritroblasto → eritroblasto basófilo → policromático → ortocromático → reticulócito → eritrócito. EPO renal estimula produção.",
@@ -133,6 +143,7 @@ export const summaries: Summary[] = [
     icon: "❤️",
     title: "Sistema Cardiovascular",
     subtitle: "Artérias, veias, capilares e coração",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     content: [
       "Paredes vasculares: 3 túnicas: íntima (endotélio + subendotelial), média (músculo liso + fibras elásticas), adventícia (TC + vasa vasorum em vasos grandes). Lâminas elásticas interna e externa delimitam a média.",
       "Artérias elásticas (aorta, carótidas): 40-70 lâminas elásticas na média — função de reservatório elástico (absorvem pulsação, mantêm fluxo na diástole — efeito Windkessel).",
@@ -147,6 +158,7 @@ export const summaries: Summary[] = [
     icon: "🫁",
     title: "Sistema Respiratório",
     subtitle: "Vias aéreas, pulmões e trocas gasosas",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     content: [
       "Vias aéreas superiores (cavidade nasal, faringe, laringe) e inferiores (traqueia, brônquios) são revestidas por epitélio respiratório (pseudoestratificado cilíndrico ciliado com caliciformes).",
       "Traqueia: anéis de cartilagem hialina em C + músculo traqueal posterior (liso). Glândulas seromucosas na submucosa. A membrana basal é espessa e visível em H&E.",
@@ -161,6 +173,7 @@ export const summaries: Summary[] = [
     icon: "🍽️",
     title: "Sistema Digestório",
     subtitle: "Tubo digestivo, fígado, pâncreas e absorção",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     content: [
       "Plano geral: 4 camadas: mucosa (epitélio + lâmina própria + muscular da mucosa), submucosa (TC com plexo de Meissner), muscular (circular interna + longitudinal externa + plexo de Auerbach), serosa/adventícia.",
       "Esôfago: epitélio estratificado pavimentoso não-queratinizado. Terço superior: músculo esquelético; médio: misto; inferior: liso. Glândulas mucosas na submucosa. Barrett: metaplasia intestinal → risco de adenocarcinoma.",
@@ -175,6 +188,7 @@ export const summaries: Summary[] = [
     icon: "🧪",
     title: "Sistema Urinário",
     subtitle: "Rim, néfron, filtração e vias urinárias",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     content: [
       "Rim: córtex (glomérulos, TCP, TCD) e medula (alça de Henle, ductos coletores em pirâmides). 1-1,5 milhão de néfrons/rim. Cápsula conjuntiva. Vascularização: artéria renal → interlobares → arqueadas → interlobulares → aferentes → glomérulo → eferentes → capilares peritubulares/vasa recta.",
       "Corpúsculo renal: glomérulo (capilares fenestrados) + cápsula de Bowman (folheto parietal — pavimentoso; visceral — podócitos). Mesângio: células e matriz entre alças capilares — suporte, contração, fagocitose.",
@@ -189,6 +203,7 @@ export const summaries: Summary[] = [
     icon: "🧴",
     title: "Pele e Anexos",
     subtitle: "Epiderme, derme, glândulas e folículos pilosos",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     content: [
       "Pele = maior órgão do corpo. Epiderme (ectoderma) + derme (mesoderma). Hipoderme NÃO faz parte da pele propriamente dita. Funções: barreira, termorregulação, proteção UV, sensorial, imunológica, vitamina D.",
       "Epiderme: epitélio estratificado pavimentoso queratinizado. Camadas (base→superfície): basal (germinativa, mitoses, melanócitos, Merkel), espinhosa (desmossomos, Langerhans), granulosa (grânulos de querato-hialina, corpos lamelares), lúcida (só pele espessa), córnea (corneócitos mortos).",
@@ -202,6 +217,7 @@ export const summaries: Summary[] = [
     icon: "🔴",
     title: "Sistema Endócrino",
     subtitle: "Glândulas endócrinas e regulação hormonal",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     content: [
       "Hipófise: adenohipófise (bolsa de Rathke — ectoderma oral): acidófilas (somatotrofos = GH, lactotrofos = PRL), basófilas (gonadotrofos = FSH/LH, tireotrofos = TSH, corticotrofos = ACTH), cromófobas. Neurohipófise: axônios do hipotálamo → armazena/libera ADH e ocitocina (corpúsculos de Herring).",
       "Tireoide: folículos = epitélio cúbico + coloide (tireoglobulina iodada). Síntese: NIS → TPO iodação → acoplamento → endocitose → proteólise → T3/T4. Células parafoliculares (C): calcitonina (↓Ca²⁺ sérico, inibe osteoclastos). Hiperfunção → epitélio alto, coloide escasso. Hipofunção → epitélio achatado, coloide abundante.",
@@ -215,6 +231,7 @@ export const summaries: Summary[] = [
     icon: "🛡️",
     title: "Sistema Linfático e Imunológico",
     subtitle: "Órgãos linfoides, linfonodos e resposta imune",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Abbas, Imunologia Celular e Molecular, 10ª ed.",
     content: [
       "Órgãos linfoides primários: medula óssea (maturação de linfócitos B) e timo (maturação de T). Timo: seleção positiva no córtex (reconhecimento de MHC self), seleção negativa na medula (eliminação de autorreativos). Involui com idade → substituição por tecido adiposo.",
       "Linfonodos: filtram linfa. Córtex: folículos linfoides (B) — primários (repouso) e secundários (centro germinativo ativo: hipermutação somática, troca de classe, seleção). Paracórtex: zona T com HEV (endotélio alto — entrada de linfócitos). Medula: cordões (plasmócitos) e seios (linfa → eferente).",
@@ -227,6 +244,7 @@ export const summaries: Summary[] = [
     icon: "🧫",
     title: "Sistema Reprodutor Masculino",
     subtitle: "Testículo, espermatogênese e vias espermáticas",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     content: [
       "Testículo: túbulos seminíferos (epitélio germinativo + Sertoli) + interstício (Leydig). Túnica albugínea (cápsula densa). Septos dividem em ~250 lóbulos com 1-4 túbulos cada.",
       "Células de Sertoli: suporte físico e nutricional das células germinativas. Formam barreira hematotesticular (tight junctions — compartimentos basal e adluminal). Produzem ABP (proteína ligadora de andrógenos), inibina (feedback negativo sobre FSH), fluido tubular.",
@@ -240,6 +258,7 @@ export const summaries: Summary[] = [
     icon: "🌸",
     title: "Sistema Reprodutor Feminino",
     subtitle: "Ovário, útero, ciclo menstrual e mama",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     content: [
       "Ovário: córtex (folículos) + medula (vasos, TC). Folículos: primordial (oócito I + camada achatada) → primário (cúbico, zona pelúcida) → secundário (múltiplas camadas de granulosa, antro, teca interna/externa) → maduro/Graaf (antro grande, cumulus oophorus). Atresia: destino da maioria dos folículos.",
       "Ovulação: pico de LH → retomada da meiose I → ovulação do oócito II + corona radiata. Corpo lúteo: células granulosa-luteínicas (progesterona, maiores) + teca-luteínicas (estrogênio). Sem fecundação → corpo lúteo involui em ~14 dias → corpo albicans.",
