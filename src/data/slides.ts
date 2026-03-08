@@ -136,7 +136,7 @@ export const slides: HistologySlide[] = [
     tissue: "Músculo Liso — Intestino",
     stain: "H&E",
     description: "Corte transversal e longitudinal do músculo liso da parede intestinal mostrando células fusiformes com núcleo central.",
-    imageUrl: "https://histologyguide.com/slidebox/07-smooth-muscle.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-053-smooth-muscle/04-slide-1.html",
     structures: [
       { name: "Células fusiformes (corte longitudinal)", description: "Células alongadas com núcleo central ovoide, sem estriações visíveis", color: "#6366f1" },
       { name: "Núcleo central", description: "Único, alongado, pode apresentar aspecto de 'saca-rolhas' quando contraído", color: "#22c55e" },
