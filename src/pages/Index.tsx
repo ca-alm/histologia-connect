@@ -16,18 +16,18 @@ import { articles } from "@/data/articles";
 import { summaries } from "@/data/summaries";
 
 const tabs = [
-  { id: "updates", label: "Atualizações", icon: Newspaper },
-  { id: "activities", label: "Atividades", icon: Brain },
-  { id: "summaries", label: "Resumos", icon: BookOpen },
-  { id: "reminders", label: "Lembretes", icon: Bell },
-  { id: "slides", label: "Lâminas", icon: Eye },
-  { id: "cases", label: "Casos Clínicos", icon: Stethoscope },
-  { id: "games", label: "Jogos", icon: Gamepad2 },
-  { id: "escape", label: "Escape Room", icon: KeyRound },
-  { id: "calendar", label: "Calendário", icon: CalendarDays },
-  { id: "qa", label: "Dúvidas", icon: MessageCircle },
-  { id: "references", label: "Referências", icon: Library },
-] as const;
+{ id: "updates", label: "Atualizações", icon: Newspaper },
+{ id: "activities", label: "Atividades", icon: Brain },
+{ id: "summaries", label: "Resumos", icon: BookOpen },
+{ id: "reminders", label: "Lembretes", icon: Bell },
+{ id: "slides", label: "Lâminas", icon: Eye },
+{ id: "cases", label: "Casos Clínicos", icon: Stethoscope },
+{ id: "games", label: "Jogos", icon: Gamepad2 },
+{ id: "escape", label: "Escape Room", icon: KeyRound },
+{ id: "calendar", label: "Calendário", icon: CalendarDays },
+{ id: "qa", label: "Dúvidas", icon: MessageCircle },
+{ id: "references", label: "Referências", icon: Library }] as
+const;
 
 type TabId = (typeof tabs)[number]["id"];
 
@@ -46,13 +46,13 @@ const Index = () => {
           <div className="flex items-center justify-center gap-3 mb-4">
             <Microscope className="w-8 h-8 text-primary-foreground/90" />
             <span className="text-primary-foreground/80 font-sans text-sm font-semibold uppercase tracking-widest">
-              FMBRU-USP
+
             </span>
           </div>
-          <h1 className="font-serif text-3xl md:text-5xl font-black text-primary-foreground leading-tight mb-4">
+          <h1 className="text-3xl md:text-5xl font-black text-primary-foreground leading-tight mb-4 font-sans">
             HistoApp
           </h1>
-          <p className="text-primary-foreground/80 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+          <p className="text-primary-foreground/80 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed font-sans">
             Apoio pedagógico em Histologia — atualizações científicas, atividades interativas e resumos para a prática médica.
           </p>
         </div>
@@ -62,113 +62,113 @@ const Index = () => {
       <nav className="sticky top-0 z-20 bg-card/95 backdrop-blur-md border-b border-border">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex gap-1 overflow-x-auto scrollbar-hide">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-4 py-4 text-sm font-semibold transition-all border-b-2 whitespace-nowrap ${
-                  activeTab === tab.id
-                    ? "border-primary text-primary"
-                    : "border-transparent text-muted-foreground hover:text-foreground"
-                }`}
-              >
+            {tabs.map((tab) =>
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex items-center gap-2 px-4 py-4 text-sm font-semibold transition-all border-b-2 whitespace-nowrap ${
+              activeTab === tab.id ?
+              "border-primary text-primary" :
+              "border-transparent text-muted-foreground hover:text-foreground"}`
+              }>
+              
                 <tab.icon className="w-4 h-4" />
                 {tab.label}
               </button>
-            ))}
+            )}
           </div>
         </div>
       </nav>
 
       {/* Content */}
       <main className="max-w-5xl mx-auto px-6 py-10">
-        {activeTab === "updates" && (
-          <section>
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Atualizações Científicas</h2>
+        {activeTab === "updates" &&
+        <section>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Atualizações Científicas</h2>
             <p className="text-muted-foreground mb-8">Artigos recentes de alto impacto com relevância para a histologia e prática clínica.</p>
             <div className="grid gap-6 md:grid-cols-2">{articles.map((article, i) => <ArticleCard key={i} {...article} />)}</div>
           </section>
-        )}
+        }
 
-        {activeTab === "activities" && (
-          <section>
+        {activeTab === "activities" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Atividades Interativas</h2>
             <p className="text-muted-foreground mb-8">Teste seus conhecimentos nos temas abordados na disciplina de Histologia.</p>
             <QuizSection />
           </section>
-        )}
+        }
 
-        {activeTab === "summaries" && (
-          <section>
+        {activeTab === "summaries" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Resumos</h2>
             <p className="text-muted-foreground mb-8">Sínteses dos principais temas abordados na disciplina.</p>
             <div className="space-y-4">{summaries.map((summary, i) => <SummaryCard key={i} {...summary} />)}</div>
           </section>
-        )}
+        }
 
-        {activeTab === "reminders" && (
-          <section>
+        {activeTab === "reminders" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Lembretes</h2>
             <p className="text-muted-foreground mb-8">Resumos rápidos e mnemônicos para revisão antes das provas.</p>
             <RemindersSection />
           </section>
-        )}
+        }
 
-        {activeTab === "slides" && (
-          <section>
+        {activeTab === "slides" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Explorando Lâminas</h2>
             <p className="text-muted-foreground mb-8">Visualização detalhada de lâminas histológicas com identificação de estruturas.</p>
             <SlidesExplorer />
           </section>
-        )}
+        }
 
-        {activeTab === "cases" && (
-          <section>
+        {activeTab === "cases" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Casos Clínicos</h2>
             <p className="text-muted-foreground mb-8">Casos clínicos com correlação histopatológica para aplicação prática.</p>
             <ClinicalCasesSection />
           </section>
-        )}
+        }
 
-        {activeTab === "games" && (
-          <section>
+        {activeTab === "games" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Jogos Educativos</h2>
             <p className="text-muted-foreground mb-8">Aprenda histologia de forma divertida com jogos interativos e desafios.</p>
             <GamesSection />
           </section>
-        )}
+        }
 
-        {activeTab === "escape" && (
-          <section>
+        {activeTab === "escape" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">🔒 Escape Room</h2>
             <p className="text-muted-foreground mb-8">Resolva enigmas cronometrados sobre histologia e patologia para escapar! Mais de 100 cenários interativos.</p>
             <EscapeRoomSection />
           </section>
-        )}
+        }
 
-        {activeTab === "calendar" && (
-          <section>
+        {activeTab === "calendar" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Calendário</h2>
             <p className="text-muted-foreground mb-8">Organize provas, aulas e entregas da disciplina de Histologia.</p>
             <CalendarSection />
           </section>
-        )}
+        }
 
-        {activeTab === "qa" && (
-          <section>
+        {activeTab === "qa" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Tire suas Dúvidas</h2>
             <p className="text-muted-foreground mb-8">Envie mensagens para os criadores do HistoApp — anônimas ou identificadas.</p>
             <QASection />
           </section>
-        )}
+        }
 
-        {activeTab === "references" && (
-          <section>
+        {activeTab === "references" &&
+        <section>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Referências Bibliográficas</h2>
             <p className="text-muted-foreground mb-8">Fontes científicas e acadêmicas nas quais o conteúdo deste aplicativo se baseia.</p>
             <ReferencesSection />
           </section>
-        )}
+        }
       </main>
 
       {/* Footer */}
@@ -178,8 +178,8 @@ const Index = () => {
           <p className="text-xs text-muted-foreground/60 mt-1">Projeto de apoio pedagógico à disciplina de Histologia</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Index;
