@@ -170,6 +170,14 @@ const Index = () => {
             <ReferencesSection />
           </section>
         }
+
+        {activeTab === "about" &&
+        <section>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Saiba Mais</h2>
+            <p className="text-muted-foreground mb-8">Conheça o projeto HistoFMBRU, nossas redes sociais e a liga acadêmica parceira.</p>
+            <AboutSection />
+          </section>
+        }
       </main>
 
       {/* Footer */}
