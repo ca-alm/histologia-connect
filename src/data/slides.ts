@@ -177,7 +177,7 @@ export const slides: HistologySlide[] = [
     tissue: "Sangue — Esfregaço",
     stain: "May-Grünwald-Giemsa",
     description: "Esfregaço sanguíneo mostrando os elementos figurados do sangue periférico.",
-    imageUrl: "https://histologyguide.com/slidebox/05-blood-smear.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-033-blood-smear/07-slide-1.html",
     structures: [
       { name: "Eritrócitos", description: "Discos bicôncavos anucleados (7-8 μm), acidófilos, repletos de hemoglobina", color: "#ef4444" },
       { name: "Neutrófilo", description: "Núcleo multilobulado (3-5 lobos), grânulos finos neutrofílicos, 12-15 μm", color: "#6366f1" },
