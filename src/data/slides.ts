@@ -278,7 +278,7 @@ export const slides: HistologySlide[] = [
     tissue: "Pulmão — Parênquima",
     stain: "H&E",
     description: "Parênquima pulmonar mostrando alvéolos, bronquíolos e vasos.",
-    imageUrl: "https://histologyguide.com/slidebox/13-lung-parenchyma.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-138-lung/17-slide-1.html",
     structures: [
       { name: "Alvéolos", description: "Espaços aéreos delimitados por septos finos com pneumócitos I e II", color: "#6366f1" },
       { name: "Pneumócitos tipo I", description: "Células achatadas que formam 95% da superfície alveolar; trocas gasosas", color: "#22c55e" },
