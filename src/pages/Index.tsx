@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Newspaper, Brain, BookOpen, Microscope, Bell, Eye, Stethoscope, CalendarDays, MessageCircle, Gamepad2, Library, KeyRound } from "lucide-react";
+import { Newspaper, Brain, BookOpen, Microscope, Bell, Eye, Stethoscope, CalendarDays, MessageCircle, Gamepad2, Library, KeyRound, Info } from "lucide-react";
 import heroImage from "@/assets/hero-histology.jpg";
 import ArticleCard from "@/components/ArticleCard";
 import QuizSection from "@/components/QuizSection";
@@ -12,6 +12,7 @@ import QASection from "@/components/QASection";
 import GamesSection from "@/components/GamesSection";
 import EscapeRoomSection from "@/components/EscapeRoomSection";
 import ReferencesSection from "@/components/ReferencesSection";
+import AboutSection from "@/components/AboutSection";
 import { articles } from "@/data/articles";
 import { summaries } from "@/data/summaries";
 
@@ -26,7 +27,8 @@ const tabs = [
 { id: "escape", label: "Escape Room", icon: KeyRound },
 { id: "calendar", label: "Calendário", icon: CalendarDays },
 { id: "qa", label: "Dúvidas", icon: MessageCircle },
-{ id: "references", label: "Referências", icon: Library }] as
+{ id: "references", label: "Referências", icon: Library },
+{ id: "about", label: "Saiba Mais", icon: Info }] as
 const;
 
 type TabId = (typeof tabs)[number]["id"];
@@ -166,6 +168,14 @@ const Index = () => {
             <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Referências Bibliográficas</h2>
             <p className="text-muted-foreground mb-8">Fontes científicas e acadêmicas nas quais o conteúdo deste aplicativo se baseia.</p>
             <ReferencesSection />
+          </section>
+        }
+
+        {activeTab === "about" &&
+        <section>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Saiba Mais</h2>
+            <p className="text-muted-foreground mb-8">Conheça o projeto HistoFMBRU, nossas redes sociais e a liga acadêmica parceira.</p>
+            <AboutSection />
           </section>
         }
       </main>
