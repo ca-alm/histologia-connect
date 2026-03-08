@@ -301,7 +301,7 @@ export const reminders: Reminder[] = [
     id: 20,
     title: "Sistema Respiratório — Da Traqueia ao Alvéolo",
     category: "Sistema Respiratório",
-    emoji: "🫁",
+    emoji: "🌬️",
     source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Traqueia/brônquios: pseudoestratificado ciliado + caliciformes + cartilagem + glândulas",
