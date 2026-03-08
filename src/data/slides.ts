@@ -321,7 +321,7 @@ export const slides: HistologySlide[] = [
     tissue: "Linfonodo",
     stain: "H&E",
     description: "Corte de linfonodo mostrando córtex com folículos e medula com cordões medulares.",
-    imageUrl: "https://histologyguide.com/slidebox/09-lymph-node.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-076-077-078-lymph-node/10-slide-1.html",
     structures: [
       { name: "Folículos linfoides (córtex)", description: "Folículos primários (sem centro germinativo) e secundários (com centro germinativo)", color: "#6366f1" },
       { name: "Centro germinativo", description: "Área clara no folículo com linfócitos B em proliferação e seleção", color: "#22c55e" },
