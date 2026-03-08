@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Newspaper, Brain, BookOpen, Microscope, Bell, Eye, Stethoscope, CalendarDays, MessageCircle, Gamepad2, Library, KeyRound } from "lucide-react";
+import { Newspaper, Brain, BookOpen, Microscope, Bell, Eye, Stethoscope, CalendarDays, MessageCircle, Gamepad2, Library, KeyRound, Info } from "lucide-react";
 import heroImage from "@/assets/hero-histology.jpg";
 import ArticleCard from "@/components/ArticleCard";
 import QuizSection from "@/components/QuizSection";
