@@ -40,7 +40,6 @@ const Index = () => {
       <header className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImage} alt="Histologia microscópica" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 hero-gradient opacity-85" />
         </div>
         <div className="relative max-w-5xl mx-auto px-6 py-16 md:py-24 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
