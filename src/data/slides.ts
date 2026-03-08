@@ -192,7 +192,7 @@ export const slides: HistologySlide[] = [
     tissue: "Intestino Delgado — Jejuno",
     stain: "H&E",
     description: "Corte mostrando as vilosidades intestinais e criptas de Lieberkühn.",
-    imageUrl: "https://histologyguide.com/slidebox/11-small-intestine-jejunum.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-219-jejunum/14-slide-1.html",
     structures: [
       { name: "Vilosidades intestinais", description: "Projeções digitiformes da mucosa cobertas por epitélio absortivo", color: "#6366f1" },
       { name: "Enterócitos", description: "Células cilíndricas com borda em escova (microvilosidades), núcleo basal", color: "#22c55e" },
