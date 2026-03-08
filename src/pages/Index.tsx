@@ -49,7 +49,7 @@ const Index = () => {
             </span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black text-primary-foreground leading-tight mb-4 font-sans">
-            HistoApp
+            HistoFMBRU
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed font-sans">
             Apoio pedagógico em Histologia — atualizações científicas, atividades interativas e resumos para a prática médica.
@@ -173,7 +173,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border py-8 mt-8">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <p className="text-sm text-muted-foreground">HistoApp — Faculdade de Medicina de Bauru (FMBRU-USP)</p>
+          <p className="text-sm text-muted-foreground">HistoFMBRU</p>
           <p className="text-xs text-muted-foreground/60 mt-1">Projeto de apoio pedagógico à disciplina de Histologia</p>
         </div>
       </footer>
