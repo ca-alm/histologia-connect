@@ -394,7 +394,7 @@ export const slides: HistologySlide[] = [
     tissue: "Testículo",
     stain: "H&E",
     description: "Corte do testículo mostrando túbulos seminíferos com espermatogênese e tecido intersticial.",
-    imageUrl: "https://histologyguide.com/slidebox/16-testis.html",
+    imageUrl: "https://histologyguide.com/slideview/MHS-267-testis-and-epididymis/19-slide-1.html",
     structures: [
       { name: "Túbulos seminíferos", description: "Túbulos com epitélio germinativo estratificado: espermatogônias → espermatozoides", color: "#6366f1" },
       { name: "Células de Sertoli", description: "Células de suporte com núcleo claro e nucléolo; barreira hematotesticular", color: "#22c55e" },
