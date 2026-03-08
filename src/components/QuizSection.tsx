@@ -8,18 +8,9 @@ const topicSources: Record<string, string> = {
   "Tecido Conjuntivo": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
   "Tecido Muscular": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
   "Tecido Nervoso": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
-  "Sangue e Hematopoiese": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
   "Tecido Cartilaginoso": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
   "Tecido Ósseo": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
-  "Sistema Cardiovascular": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
-  "Sistema Respiratório": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
-  "Sistema Digestório": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
-  "Sistema Urinário": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
-  "Pele e Anexos": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
-  "Sistema Endócrino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
-  "Sistema Linfático": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Abbas, Imunologia Celular e Molecular, 10ª ed.",
-  "Sistema Reprodutor Masculino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
-  "Sistema Reprodutor Feminino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
+  "Sangue e Hematopoiese": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
 };
 
 function shuffleArray<T>(arr: T[]): T[] {
