@@ -52,7 +52,7 @@ export const summaries: Summary[] = [
     ],
   },
   {
-    icon: "🧬",
+    icon: "🔗",
     title: "Tecido Conjuntivo",
     subtitle: "Células, fibras, substância fundamental e variedades",
     source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
