@@ -211,7 +211,7 @@ export const reminders: Reminder[] = [
     id: 14,
     title: "Glândulas Endócrinas — Resumo de Hormônios",
     category: "Sistema Endócrino",
-    emoji: "🔴",
+    emoji: "🖊️",
     source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Adenohipófise: GH, PRL (acidófilas) | FSH, LH, TSH, ACTH (basófilas)",
