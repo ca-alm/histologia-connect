@@ -379,7 +379,7 @@ export const slides: HistologySlide[] = [
     tissue: "Pele Espessa (Grossa)",
     stain: "H&E",
     description: "Corte de pele espessa da palma da mão mostrando todas as cinco camadas epidérmicas.",
-    imageUrl: "https://histologyguide.com/slidebox/08-thick-skin.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-091-thick-skin/11-slide-1.html",
     structures: [
       { name: "Camada córnea", description: "Espessa, com células mortas anucleadas repletas de queratina", color: "#6366f1" },
       { name: "Camada granulosa", description: "Grânulos de querato-hialina; corpos lamelares (impermeabilização)", color: "#22c55e" },
