@@ -67,7 +67,7 @@ export const summaries: Summary[] = [
     ],
   },
   {
-    icon: "🦴",
+    icon: "🦵",
     title: "Tecido Cartilaginoso",
     subtitle: "Cartilagem hialina, elástica e fibrosa",
     source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
