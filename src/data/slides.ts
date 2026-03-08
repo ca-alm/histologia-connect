@@ -149,7 +149,7 @@ export const slides: HistologySlide[] = [
     tissue: "Nervo Periférico — Corte transversal",
     stain: "H&E e Azul de toluidina",
     description: "Corte transversal de nervo periférico mostrando fascículos de axônios mielinizados envolvidos por tecido conjuntivo.",
-    imageUrl: "https://histologyguide.com/slidebox/06-peripheral-nerve.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-052-peripheral-nerve/06-slide-1.html",
     structures: [
       { name: "Fibras nervosas mielinizadas", description: "Axônios envoltos por bainha de mielina (anel claro ao redor do axônio)", color: "#6366f1" },
       { name: "Endoneuro", description: "Conjuntivo frouxo entre fibras nervosas individuais", color: "#22c55e" },
