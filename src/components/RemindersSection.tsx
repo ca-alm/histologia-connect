@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, BookOpen } from "lucide-react";
 import { reminders } from "@/data/reminders";
 
 const RemindersSection = () => {
@@ -31,6 +31,12 @@ const RemindersSection = () => {
                     </li>
                   ))}
                 </ul>
+                {r.source && (
+                  <p className="text-xs text-muted-foreground/70 mt-4 flex items-center gap-1.5 italic pt-2 border-t border-border">
+                    <BookOpen className="w-3 h-3 shrink-0" />
+                    Fonte: {r.source}
+                  </p>
+                )}
               </div>
             </div>
           )}

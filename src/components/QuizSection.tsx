@@ -187,6 +187,12 @@ const QuizSection = () => {
         <div className="bg-secondary rounded-xl p-4 mb-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
           <p className="text-sm font-semibold text-secondary-foreground mb-1">💡 Explicação</p>
           <p className="text-sm text-secondary-foreground/80 leading-relaxed">{q.explanation}</p>
+          {topicSources[q.topic] && (
+            <p className="text-xs text-secondary-foreground/60 mt-3 flex items-center gap-1.5 italic">
+              <BookOpen className="w-3 h-3 shrink-0" />
+              Fonte: {topicSources[q.topic]}
+            </p>
+          )}
         </div>
       )}
 

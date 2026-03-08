@@ -4,6 +4,7 @@ export interface Reminder {
   category: string;
   emoji: string;
   items: string[];
+  source: string;
 }
 
 export const reminders: Reminder[] = [
@@ -12,6 +13,7 @@ export const reminders: Reminder[] = [
     title: "Diferenciação dos Tecidos Epiteliais",
     category: "Tecido Epitelial",
     emoji: "📌",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     items: [
       "Simples = 1 camada | Estratificado = múltiplas camadas | Pseudoestratificado = parece estratificado mas todos tocam a lâmina basal",
       "Pavimentoso = células achatadas | Cúbico = células cúbicas | Cilíndrico = células altas",
@@ -25,6 +27,7 @@ export const reminders: Reminder[] = [
     title: "Colorações Especiais — Quando Usar",
     category: "Microscopia",
     emoji: "🎨",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     items: [
       "H&E → rotina (núcleos roxos, citoplasma rosa)",
       "PAS → glicogênio, mucinas neutras, membranas basais (magenta)",
@@ -43,6 +46,7 @@ export const reminders: Reminder[] = [
     title: "Células da Glia — Resumo Rápido",
     category: "Tecido Nervoso",
     emoji: "🧠",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     items: [
       "Astrócitos → suporte, barreira hematoencefálica, captação de glutamato (GFAP+)",
       "Oligodendrócitos → mielina no SNC (1 célula = vários axônios)",
@@ -57,6 +61,7 @@ export const reminders: Reminder[] = [
     title: "Tipos de Colágeno — Os Mais Cobrados",
     category: "Tecido Conjuntivo",
     emoji: "🧬",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     items: [
       "Tipo I → o mais abundante: pele, osso, tendão, dentina (90% do colágeno corporal)",
       "Tipo II → cartilagem hialina e elástica, humor vítreo",
@@ -71,6 +76,7 @@ export const reminders: Reminder[] = [
     title: "Junções Celulares",
     category: "Tecido Epitelial",
     emoji: "🔗",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     items: [
       "Zônula de oclusão (tight junction) → vedação, impermeabilização (mais apical) — claudinas e ocludinas",
       "Zônula de adesão → adesão, ligada a actina (caderinas — E-caderina)",
@@ -85,6 +91,7 @@ export const reminders: Reminder[] = [
     title: "Músculo: Esquelético vs Cardíaco vs Liso",
     category: "Tecido Muscular",
     emoji: "💪",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     items: [
       "Esquelético: multinucleado, núcleos periféricos, estriado, voluntário",
       "Cardíaco: 1-2 núcleos centrais, estriado, involuntário, discos intercalares, ramificado",
@@ -99,6 +106,7 @@ export const reminders: Reminder[] = [
     title: "Ossificação — Intramembranosa vs Endocondral",
     category: "Tecido Ósseo",
     emoji: "🦴",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
     items: [
       "Intramembranosa: mesênquima → osso diretamente (ossos chatos do crânio, face, clavícula)",
       "Endocondral: molde de cartilagem hialina → substituído por osso (ossos longos, vértebras)",
@@ -113,6 +121,7 @@ export const reminders: Reminder[] = [
     title: "Células do Estômago — Mapa Rápido",
     category: "Sistema Digestório",
     emoji: "🍽️",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Células mucosas superficiais → muco protetor (todo o epitélio gástrico)",
       "Células parietais (oxínticas) → HCl + fator intrínseco (corpo/fundo) — bomba H⁺/K⁺ ATPase",
@@ -127,6 +136,7 @@ export const reminders: Reminder[] = [
     title: "Barreira de Filtração Glomerular",
     category: "Sistema Urinário",
     emoji: "🧪",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "3 camadas: endotélio fenestrado → membrana basal glomerular → podócitos (pedicelos + fendas de filtração)",
       "Endotélio fenestrado: poros de 70-100 nm, retém células sanguíneas",
@@ -141,6 +151,7 @@ export const reminders: Reminder[] = [
     title: "Camadas da Pele",
     category: "Pele e Anexos",
     emoji: "🧴",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Epiderme (ectoderma): basal → espinhosa → granulosa → (lúcida) → córnea",
       "Mnemônico: 'Brasileiros Espertos Ganham Louros Certos'",
@@ -155,6 +166,7 @@ export const reminders: Reminder[] = [
     title: "Vasos Sanguíneos — Comparação Rápida",
     category: "Sistema Cardiovascular",
     emoji: "❤️",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Artérias elásticas (aorta): lâminas elásticas na média, absorvem pulsação",
       "Artérias musculares: músculo liso na média, regulam fluxo regional",
@@ -169,6 +181,7 @@ export const reminders: Reminder[] = [
     title: "Intestino Delgado vs Grosso",
     category: "Sistema Digestório",
     emoji: "🔄",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Delgado: VILOSIDADES + criptas, enterócitos com microvilosidades, células de Paneth",
       "Grosso: SEM vilosidades, criptas profundas, MUITAS células caliciformes",
@@ -183,6 +196,7 @@ export const reminders: Reminder[] = [
     title: "Fígado — Organização e Células",
     category: "Sistema Digestório",
     emoji: "🫘",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Lóbulo hepático: hepatócitos em trabéculas ao redor da veia central",
       "Espaço porta (tríade): ramo da a. hepática + v. porta + ducto biliar",
@@ -198,6 +212,7 @@ export const reminders: Reminder[] = [
     title: "Glândulas Endócrinas — Resumo de Hormônios",
     category: "Sistema Endócrino",
     emoji: "🔴",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Adenohipófise: GH, PRL (acidófilas) | FSH, LH, TSH, ACTH (basófilas)",
       "Neurohipófise: armazena ADH (supraóptico) e ocitocina (paraventricular)",
@@ -213,6 +228,7 @@ export const reminders: Reminder[] = [
     title: "Sistema Linfático — Órgãos e Funções",
     category: "Sistema Linfático",
     emoji: "🛡️",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Abbas, Imunologia Celular e Molecular, 10ª ed.",
     items: [
       "Primários: medula óssea (B) + timo (T) → produção/maturação de linfócitos",
       "Secundários: linfonodos, baço, MALT → onde ocorre a resposta imune",
@@ -227,6 +243,7 @@ export const reminders: Reminder[] = [
     title: "Sistema Reprodutor Masculino — Estruturas-chave",
     category: "Sistema Reprodutor",
     emoji: "♂️",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Túbulo seminífero: Sertoli (suporte, barreira hematotesticular) + espermatogênese",
       "Interstício: células de Leydig = testosterona (sob LH)",
@@ -241,6 +258,7 @@ export const reminders: Reminder[] = [
     title: "Sistema Reprodutor Feminino — Ciclo e Estruturas",
     category: "Sistema Reprodutor",
     emoji: "♀️",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Folículos: primordial → primário → secundário (antral) → maduro (Graaf)",
       "Ovulação → corpo lúteo (progesterona) → corpo albicans",
@@ -255,6 +273,7 @@ export const reminders: Reminder[] = [
     title: "Cartilagens — Comparação Rápida",
     category: "Tecido Cartilaginoso",
     emoji: "🦵",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.",
     items: [
       "Hialina: colágeno II, mais comum (traqueia, articulações, septo nasal, placa epifisária)",
       "Elástica: colágeno II + fibras elásticas (orelha, epiglote, tuba auditiva) — nunca calcifica",
@@ -268,6 +287,7 @@ export const reminders: Reminder[] = [
     title: "Sangue — Leucócitos em Ordem",
     category: "Sangue e Hematopoiese",
     emoji: "🩸",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Neutrófilos (60-70%): fagocitose, núcleo multilobulado, primeira linha de defesa",
       "Linfócitos (20-30%): T (celular), B (humoral/anticorpos), NK (citotoxicidade inata)",
@@ -282,6 +302,7 @@ export const reminders: Reminder[] = [
     title: "Sistema Respiratório — Da Traqueia ao Alvéolo",
     category: "Sistema Respiratório",
     emoji: "🫁",
+    source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Traqueia/brônquios: pseudoestratificado ciliado + caliciformes + cartilagem + glândulas",
       "Bronquíolos: SEM cartilagem, SEM glândulas, epitélio cilíndrico simples, músculo liso, células de Clara",
