@@ -364,7 +364,7 @@ export const slides: HistologySlide[] = [
     tissue: "Pele Fina (Delgada)",
     stain: "H&E",
     description: "Corte de pele fina mostrando epiderme delgada e anexos cutâneos na derme.",
-    imageUrl: "https://histologyguide.com/slidebox/08-thin-skin.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-090-thin-skin/11-slide-1.html",
     structures: [
       { name: "Epiderme", description: "Epitélio estratificado pavimentoso queratinizado fino com poucas camadas", color: "#6366f1" },
       { name: "Derme papilar", description: "Conjuntivo frouxo com papilas dérmicas, capilares e corpúsculos de Meissner", color: "#22c55e" },
