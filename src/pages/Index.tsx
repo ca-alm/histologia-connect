@@ -43,8 +43,8 @@ const Index = () => {
         </div>
         <div className="relative max-w-5xl mx-auto px-6 py-16 md:py-24 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Microscope className="w-8 h-8 text-primary-foreground/90" />
-            <span className="text-primary-foreground/80 font-sans text-sm font-semibold uppercase tracking-widest">
+            <Microscope className="w-8 h-8 text-primary" />
+            <span className="text-primary font-sans text-sm font-semibold uppercase tracking-widest">
 
             </span>
           </div>
