@@ -195,7 +195,7 @@ export const reminders: Reminder[] = [
     id: 13,
     title: "Fígado — Organização e Células",
     category: "Sistema Digestório",
-    emoji: "🫘",
+    emoji: "🥩",
     source: "Junqueira & Carneiro, Histologia Básica, 16ª ed.; UpToDate",
     items: [
       "Lóbulo hepático: hepatócitos em trabéculas ao redor da veia central",
