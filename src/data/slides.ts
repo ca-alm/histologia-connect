@@ -207,7 +207,7 @@ export const slides: HistologySlide[] = [
     tissue: "Intestino Grosso — Cólon",
     stain: "H&E",
     description: "Corte do cólon mostrando criptas profundas ricas em células caliciformes e ausência de vilosidades.",
-    imageUrl: "https://histologyguide.com/slidebox/11-large-intestine-colon.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-123-colon/14-slide-1.html",
     structures: [
       { name: "Criptas de Lieberkühn", description: "Longas e retas, ricas em células caliciformes (muco protetor)", color: "#6366f1" },
       { name: "Células caliciformes", description: "Abundantes, conferindo aspecto claro ao epitélio críptico", color: "#22c55e" },
