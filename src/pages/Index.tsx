@@ -46,7 +46,7 @@ const Index = () => {
           <div className="flex items-center justify-center gap-3 mb-4">
             <Microscope className="w-8 h-8 text-primary-foreground/90" />
             <span className="text-primary-foreground/80 font-sans text-sm font-semibold uppercase tracking-widest">
-              MEDICINA USP BAURU
+
             </span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black text-primary-foreground leading-tight mb-4 font-sans">
@@ -92,7 +92,7 @@ const Index = () => {
 
         {activeTab === "activities" &&
         <section>
-            <h2 className="font-serif text-2xl font-bold text-foreground mb-2">Atividades Interativas</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-2 font-sans">Atividades Interativas</h2>
             <p className="text-muted-foreground mb-8">Teste seus conhecimentos nos temas abordados na disciplina de Histologia.</p>
             <QuizSection />
           </section>
