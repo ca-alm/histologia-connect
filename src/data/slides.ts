@@ -293,7 +293,7 @@ export const slides: HistologySlide[] = [
     tissue: "Tireoide",
     stain: "H&E",
     description: "Parênquima tireoidiano mostrando folículos preenchidos por coloide.",
-    imageUrl: "https://histologyguide.com/slidebox/14-thyroid.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-151-thyroid/13-slide-1.html",
     structures: [
       { name: "Folículos tireoidianos", description: "Unidades esféricas revestidas por epitélio simples cúbico/cilíndrico", color: "#6366f1" },
       { name: "Coloide", description: "Material eosinofílico (tireoglobulina) armazenado na luz dos folículos", color: "#22c55e" },
