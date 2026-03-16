@@ -268,4 +268,87 @@ export const summaries: Summary[] = [
       "Mama: glândula tubuloalveolar apócrina modificada. Lóbulos → ductos interlobulares → ducto lactífero → seio lactífero → papila. Na lactação: alvéolos secretores com gotículas lipídicas (apócrina) e proteínas (merócrina). Prolactina → produção de leite; ocitocina → ejeção.",
     ],
   },
+  // =============================================
+  // CITOLOGIA — Resumos
+  // =============================================
+  {
+    icon: "🧫",
+    title: "Membrana Plasmática e Transporte",
+    subtitle: "Modelo do mosaico fluido, composição, transporte passivo e ativo",
+    source: "Alberts et al., Biologia Molecular da Célula, 7ª ed.; Junqueira & Carneiro, Biologia Celular e Molecular, 10ª ed.",
+    content: [
+      "A membrana plasmática segue o modelo do mosaico fluido (Singer & Nicolson, 1972): bicamada de fosfolipídios (anfipáticos) com proteínas integrais (transmembranares) e periféricas distribuídas assimetricamente. O colesterol regula a fluidez — impede cristalização em baixas temperaturas e fluidez excessiva em altas temperaturas.",
+      "Glicocálix: camada de carboidratos (glicoproteínas e glicolipídios) na face externa. Funções: proteção, reconhecimento celular, adesão, determinação de grupos sanguíneos ABO. Lipid rafts: microdomínios ricos em esfingolipídios e colesterol que concentram proteínas de sinalização.",
+      "Transporte passivo: difusão simples (gases, moléculas hidrofóbicas), difusão facilitada (canais iônicos, transportadores GLUT — sem gasto de ATP, a favor do gradiente) e osmose (água via aquaporinas, a favor do gradiente osmótico).",
+      "Transporte ativo primário: Na⁺/K⁺-ATPase (3 Na⁺ para fora, 2 K⁺ para dentro por ciclo de ATP). Transporte ativo secundário (cotransporte): SGLT1 (simporte Na⁺/glicose no intestino), trocador Na⁺/H⁺ (antiporte).",
+      "Endocitose: fagocitose (partículas grandes — neutrófilos/macrófagos), pinocitose (líquidos), endocitose mediada por receptor (clatrina — LDL, transferrina). Exocitose: constitutiva (contínua) ou regulada (neurotransmissores, hormônios — dependente de Ca²⁺/estímulo). SNAREs mediam a fusão vesicular.",
+    ],
+  },
+  {
+    icon: "🔬",
+    title: "Organelas Citoplasmáticas",
+    subtitle: "RE, Golgi, lisossomos, peroxissomos, mitocôndrias e ribossomos",
+    source: "Alberts et al., Biologia Molecular da Célula, 7ª ed.; Junqueira & Carneiro, Biologia Celular e Molecular, 10ª ed.",
+    content: [
+      "Retículo endoplasmático rugoso (RER): ribossomos aderidos → síntese de proteínas com peptídeo-sinal (secretoras, lisossômicas, de membrana). N-glicosilação core inicia no RER (oligossacarídeo do dolicol → Asn). Controle de qualidade: chaperonas (BiP/GRP78), calnexina. Proteínas mal dobradas → ERAD (degradação associada ao RE).",
+      "Retículo endoplasmático liso (REL): síntese de lipídios/esteroides (adrenal, gônadas), desintoxicação (citocromo P450 no fígado), armazenamento/liberação de Ca²⁺ (retículo sarcoplasmático no músculo). REL hipertrofiado em hepatócitos de usuários de barbitúricos/álcool.",
+      "Complexo de Golgi: cis (entrada, do RE) → medial → trans (saída). Funções: O-glicosilação, modificação de N-glicanos, sulfatação, fosforilação de manose-6-fosfato (endereçamento lisossômico). Empacota proteínas em vesículas com destinos específicos. COP II: RE→Golgi. COP I: Golgi→RE (retrógrado).",
+      "Lisossomos: vesículas com ~60 hidrolases ácidas (fosfatase ácida = marcador), pH ~5 (bomba H⁺-ATPase). Degradam material endocitado (heterofagia) e componentes celulares (autofagia). Doenças de depósito lisossômico: Gaucher (glicocerebrosidase), Tay-Sachs (hexosaminidase A), Niemann-Pick (esfingomielinase), Fabry (α-galactosidase A), Pompe (maltase ácida).",
+      "Peroxissomos: catalase (decompõe H₂O₂), β-oxidação de AG de cadeia muito longa (>C22), metabolismo de ácido úrico. Biogênese requer peroxinas (PEX). Síndrome de Zellweger: defeito na biogênese peroxissômica → fatal.",
+      "Mitocôndrias: dupla membrana. Membrana interna (cristas): cadeia respiratória (complexos I-IV) + ATP sintase (V). Matriz: ciclo de Krebs, mtDNA circular (herança materna, 37 genes). Liberação de citocromo c → apoptose via intrínseca. Doenças mitocondriais: MELAS, MERRF, neuropatia óptica de Leber.",
+      "Ribossomos: 40S + 60S = 80S (eucariontes). Livres: proteínas citosólicas, nucleares, mitocondriais. Aderidos ao RER: proteínas secretoras. Polissomos: vários ribossomos no mesmo mRNA para tradução eficiente.",
+    ],
+  },
+  {
+    icon: "🧬",
+    title: "Citoesqueleto",
+    subtitle: "Microtúbulos, microfilamentos, filamentos intermediários e proteínas motoras",
+    source: "Alberts et al., Biologia Molecular da Célula, 7ª ed.; Junqueira & Carneiro, Biologia Celular e Molecular, 10ª ed.",
+    content: [
+      "Microfilamentos de actina (~7 nm): actina G → actina F (dupla hélice). Funções: microvilosidades, anel contrátil (citocinese), lamelipódios/filopódios (migração), contração muscular (com miosina II). Faloidina estabiliza; citocalasina despolimeriza.",
+      "Microtúbulos (~25 nm): dímeros α/β-tubulina, 13 protofilamentos, polarizados (+ e −). Funções: fuso mitótico, transporte intracelular, cílios/flagelos (axonema 9+2), forma celular. Centro organizador: centrossomo (γ-tubulina). Colchicina/vimblastina: despolimerizam. Taxol: estabiliza (impede despolimerização).",
+      "Proteínas motoras: cinesina (anterógrado, extremidade +), dineína (retrógrado, extremidade −) em microtúbulos. Miosina II (contração em actina). Dineína ciliar: motilidade de cílios (defeito → síndrome de Kartagener: situs inversus + bronquiectasias + sinusite + infertilidade).",
+      "Filamentos intermediários (~10 nm): sem polaridade, resistência mecânica. Tipos tecido-específicos: citoqueratinas (epitélio — marcador de carcinomas), vimentina (mesênquima), desmina (músculo), GFAP (astrócitos), neurofilamentos (neurônios), lâminas nucleares A/B/C (envelope nuclear — mutação lamina A → progéria).",
+      "Centrossomo: 2 centríolos + material pericentriolar (γ-tubulina). Principal centro organizador de microtúbulos (MTOC). Duplica na fase S. Na mitose, centrossomos migram para polos opostos e organizam o fuso mitótico.",
+    ],
+  },
+  {
+    icon: "🧪",
+    title: "Núcleo, Cromatina e Expressão Gênica",
+    subtitle: "Envelope nuclear, cromatina, nucléolo, transcrição e tradução",
+    source: "Alberts et al., Biologia Molecular da Célula, 7ª ed.; Lodish et al., Molecular Cell Biology, 9th ed.",
+    content: [
+      "Envelope nuclear: membrana dupla com poros nucleares (~3.000/núcleo). Complexo de poro: nucleoporinas. Transporte: importinas (proteínas com NLS → núcleo), exportinas (RNA, proteínas com NES → citoplasma), mediado por Ran-GTPase. Lâminas nucleares: rede de filamentos intermediários na face interna.",
+      "Cromatina: DNA + histonas. Nucleossomo: octâmero (H2A, H2B, H3, H4)₂ + 147 pb de DNA. Eucromatina: descondensada, ativa. Heterocromatina: condensada, inativa (constitutiva: centrômeros/telômeros; facultativa: corpúsculo de Barr = X inativado).",
+      "Epigenética: modificações de histonas (acetilação → ativa; metilação → ativa ou silencia dependendo do resíduo) e metilação de DNA (CpG → silenciamento). Código de histonas regula acessibilidade da cromatina. Alterações epigenéticas aberrantes contribuem para o câncer.",
+      "Nucléolo: transcrição de rRNA (RNA pol I), processamento e montagem de subunidades ribossômicas (40S e 60S). Região organizadora do nucléolo (NOR): genes de rRNA nos cromossomos acrocêntricos (13, 14, 15, 21, 22). Nucléolo proeminente = alta síntese proteica.",
+      "Tradução: iniciação (Met-tRNAi + 40S → AUG), elongação (aminoacil-tRNAs no sítio A → ligação peptídica → translocação), terminação (códons de parada: UAA, UAG, UGA). Chaperonas (Hsp70, Hsp60): dobramento correto. Proteassomo: degrada proteínas ubiquitinadas.",
+    ],
+  },
+  {
+    icon: "🔄",
+    title: "Ciclo Celular, Mitose e Meiose",
+    subtitle: "Fases, checkpoints, regulação por ciclinas/CDKs e divisão celular",
+    source: "Alberts et al., Biologia Molecular da Célula, 7ª ed.; Lodish et al., Molecular Cell Biology, 9th ed.",
+    content: [
+      "Ciclo celular: G1 (crescimento, ponto de restrição R) → S (replicação do DNA, 2n→4n conteúdo de DNA) → G2 (preparação, checkpoint de dano ao DNA) → M (mitose + citocinese). G0: quiescência (neurônios, cardiomiócitos — células permanentes em G0 irreversível). Células lábeis: divisão contínua (epitélio, MO). Estáveis: G0 reversível (hepatócitos).",
+      "Regulação: ciclinas (D, E, A, B) + CDKs (4, 6, 2, 1). Ciclina D/CDK4-6 → fosforila Rb → libera E2F → genes de fase S. Ciclina E/CDK2: transição G1/S. Ciclina A/CDK2: fase S. Ciclina B/CDK1 (MPF): entrada na mitose. CKIs: p21 (p53-dependente), p27, p16 (INK4a).",
+      "Checkpoints: G1/S (dano ao DNA → p53 → p21 → parada), G2/M (verificação de replicação completa), SAC (fuso mitótico — todos os cinetócoros ligados antes da anáfase). APC/C: ubiquitina securina → separase → clivagem de coesina → anáfase.",
+      "Mitose: prófase (condensação, despolimerização do envelope nuclear) → prometáfase (ligação cinetócoro-microtúbulo) → metáfase (alinhamento equatorial) → anáfase (separação de cromátides por separase) → telófase (descondensação, reforma do envelope) → citocinese (anel contrátil actina-miosina II).",
+      "Meiose: 2 divisões. Meiose I (reducional): prófase I (pareamento de homólogos, crossing-over no paquíteno, quiasmas), metáfase I (bivalentes alinhados), anáfase I (homólogos se separam). Meiose II (equacional): separa cromátides-irmãs. Resultado: 4 células haploides. Não-disjunção → aneuploidia (Down, Turner, Klinefelter).",
+    ],
+  },
+  {
+    icon: "📡",
+    title: "Sinalização Celular e Morte Celular",
+    subtitle: "Tipos de sinalização, vias intracelulares, apoptose e autofagia",
+    source: "Alberts et al., Biologia Molecular da Célula, 7ª ed.; Lodish et al., Molecular Cell Biology, 9th ed.",
+    content: [
+      "Tipos de sinalização: autócrina (própria célula), parácrina (vizinhas), endócrina (sangue), justácrina (contato direto — Notch). Receptores: tirosina-quinase (RTKs → Ras-MAPK), GPCRs (7-TM → Gs/Gi → cAMP ou Gq → PLC → IP3 + DAG), receptores nucleares (esteroides).",
+      "Via Ras-MAPK: RTK → Grb2/SOS → Ras-GTP → Raf → MEK → ERK. Controla proliferação. Ras mutado em ~30% dos cânceres. Via PI3K/Akt/mTOR: sobrevivência, crescimento. PTEN antagoniza (supressor tumoral). Via JAK-STAT: citocinas → fosforilação direta de fatores de transcrição.",
+      "Segundos mensageiros: cAMP (adenilil-ciclase), cGMP (guanilil-ciclase), IP3 (libera Ca²⁺ do RE), DAG (ativa PKC), Ca²⁺ (calmodulina). Fosfodiesterases degradam cAMP/cGMP.",
+      "Apoptose — via intrínseca (mitocondrial): estresse → Bax/Bak → poro na membrana mitocondrial → citocromo c → apoptossomo (Apaf-1) → caspase-9 → caspase-3 (efetora). Regulada por Bcl-2 (anti) vs Bax/Bak (pró). Via extrínseca: FasL/TNF/TRAIL → receptores de morte → FADD → caspase-8 → caspase-3.",
+      "Outras formas de morte celular: necrose (patológica, edema, inflamação, DAMPs), necroptose (necrose programada, RIP1/RIP3/MLKL), ferroptose (dependente de ferro, peroxidação lipídica, GPX4), piroptose (inflamatória, caspase-1/4/5, gasdermina D). Autofagia: autofagossomo → autolisossomo → reciclagem. Regulada por mTOR (inibe) e AMPK (ativa).",
+    ],
+  },
 ];

@@ -114,6 +114,50 @@ const matchSets: { title: string; pairs: MatchPair[] }[] = [
       { term: "Fibrinoide", definition: "Vasculites e reações autoimunes" },
     ],
   },
+  // --- CITOLOGIA ---
+  {
+    title: "Organelas e Funções",
+    pairs: [
+      { term: "RER", definition: "Síntese de proteínas de exportação" },
+      { term: "REL", definition: "Síntese de lipídios e desintoxicação" },
+      { term: "Golgi", definition: "O-glicosilação e endereçamento" },
+      { term: "Lisossomo", definition: "Digestão intracelular (fosfatase ácida)" },
+      { term: "Peroxissomo", definition: "Catalase e β-oxidação de AG longos" },
+      { term: "Mitocôndria", definition: "Produção de ATP e apoptose" },
+    ],
+  },
+  {
+    title: "Proteínas Motoras e Funções",
+    pairs: [
+      { term: "Cinesina", definition: "Transporte anterógrado (extremidade +)" },
+      { term: "Dineína citoplasmática", definition: "Transporte retrógrado (extremidade −)" },
+      { term: "Dineína ciliar", definition: "Motilidade de cílios (9+2)" },
+      { term: "Miosina II", definition: "Contração muscular e citocinese" },
+      { term: "Miosina V", definition: "Transporte vesicular em actina" },
+    ],
+  },
+  {
+    title: "Doenças de Depósito Lisossômico",
+    pairs: [
+      { term: "Gaucher", definition: "Deficiência de glicocerebrosidase" },
+      { term: "Tay-Sachs", definition: "Deficiência de hexosaminidase A" },
+      { term: "Niemann-Pick A", definition: "Deficiência de esfingomielinase" },
+      { term: "Fabry", definition: "Deficiência de α-galactosidase A" },
+      { term: "Pompe", definition: "Deficiência de maltase ácida" },
+      { term: "I-cell disease", definition: "Defeito na marcação M6P" },
+    ],
+  },
+  {
+    title: "Filamentos Intermediários e Tecidos",
+    pairs: [
+      { term: "Citoqueratina", definition: "Células epiteliais (carcinomas)" },
+      { term: "Vimentina", definition: "Células mesenquimais" },
+      { term: "Desmina", definition: "Células musculares" },
+      { term: "GFAP", definition: "Astrócitos" },
+      { term: "Neurofilamentos", definition: "Neurônios" },
+      { term: "Laminas A/B/C", definition: "Envelope nuclear" },
+    ],
+  },
 ];
 
 const MatchGame = () => {
@@ -265,6 +309,19 @@ const tfStatements: { statement: string; isTrue: boolean; explanation: string }[
   { statement: "O GIST é positivo para CD117 (c-KIT) na imunohistoquímica.", isTrue: true, explanation: "Mais de 95% dos GISTs expressam CD117 (c-KIT), o que auxilia no diagnóstico e indica alvo para imatinibe." },
   { statement: "O corpo lúteo da gravidez é mantido pelo FSH.", isTrue: false, explanation: "O corpo lúteo da gravidez é mantido pelo hCG (gonadotrofina coriônica humana) secretado pelo sinciciotrofoblasto." },
   { statement: "A crista neural origina os melanócitos.", isTrue: true, explanation: "Os melanócitos derivam da crista neural e migram para a epiderme durante o desenvolvimento embrionário." },
+  // --- CITOLOGIA V/F ---
+  { statement: "O colesterol aumenta a fluidez da membrana em todas as temperaturas.", isTrue: false, explanation: "O colesterol é um tampão de fluidez: REDUZ a fluidez em altas temperaturas e IMPEDE a cristalização em baixas temperaturas." },
+  { statement: "O mtDNA é circular e de herança materna.", isTrue: true, explanation: "O DNA mitocondrial é circular, com 37 genes, herdado exclusivamente da mãe (mitocôndrias do espermatozoide são eliminadas)." },
+  { statement: "A cinesina transporta cargas para a extremidade negativa dos microtúbulos.", isTrue: false, explanation: "A cinesina vai para a extremidade POSITIVA (+) = anterógrado. A dineína vai para a extremidade NEGATIVA (−) = retrógrado." },
+  { statement: "O proteassomo degrada proteínas marcadas com ubiquitina.", isTrue: true, explanation: "O proteassomo 26S reconhece cadeias de poliubiquitina (K48) e degrada a proteína em peptídeos. Regula ciclinas, p53, IκB." },
+  { statement: "A N-glicosilação inicia-se no complexo de Golgi.", isTrue: false, explanation: "A N-glicosilação CORE inicia-se no RER (oligossacarídeo do dolicol → Asn). O Golgi faz as modificações subsequentes." },
+  { statement: "Os peroxissomos contêm catalase.", isTrue: true, explanation: "A catalase decompõe H₂O₂ em H₂O + O₂. É a enzima-chave dos peroxissomos, protegendo contra dano oxidativo." },
+  { statement: "A doença de Tay-Sachs é causada por deficiência de glicocerebrosidase.", isTrue: false, explanation: "Tay-Sachs: deficiência de HEXOSAMINIDASE A → acúmulo de GM2. Glicocerebrosidase → Gaucher." },
+  { statement: "A colchicina estabiliza os microtúbulos, impedindo despolimerização.", isTrue: false, explanation: "A colchicina DESPOLIMERIZA microtúbulos, bloqueando a mitose em metáfase. O TAXOL é que estabiliza." },
+  { statement: "COP II transporta vesículas do RE para o Golgi.", isTrue: true, explanation: "COP II: transporte anterógrado RE → cis-Golgi. COP I: retrógrado Golgi → RE." },
+  { statement: "A via extrínseca da apoptose é iniciada por liberação de citocromo c.", isTrue: false, explanation: "Citocromo c inicia a via INTRÍNSECA (mitocondrial). A via extrínseca é iniciada por receptores de morte (Fas, TNF, TRAIL)." },
+  { statement: "Os filamentos intermediários são polarizados como microtúbulos e actina.", isTrue: false, explanation: "Filamentos intermediários NÃO são polarizados (sem extremidade + ou −). Conferem resistência mecânica sem atividade motora." },
+  { statement: "A progéria de Hutchinson-Gilford é causada por mutação no gene LMNA (lamina A).", isTrue: true, explanation: "Mutação em LMNA produz progerina (lamina A truncada) → deformação do envelope nuclear → envelhecimento prematuro acelerado." },
 ];
 
 const TrueFalseGame = () => {
@@ -459,6 +516,15 @@ const fillBlanks = [
   { text: "A via Wnt/β-catenina regula as células-tronco das criptas ___.", answer: "intestinais", options: ["gástricas", "esofágicas", "intestinais", "colônicas"] },
   { text: "A ___ é a causa mais comum de glomerulonefrite no mundo.", answer: "nefropatia por IgA", options: ["GNPE", "nefropatia por IgA", "nefropatia membranosa", "GESF"] },
   { text: "O carcinoma papilífero da tireoide apresenta núcleos em ___.", answer: "vidro fosco (Orphan Annie eyes)", options: ["relógio de areia", "vidro fosco (Orphan Annie eyes)", "sal e pimenta", "olhos de coruja"] },
+  // --- CITOLOGIA ---
+  { text: "O modelo do ___ descreve a membrana plasmática como bicamada fluida com proteínas.", answer: "mosaico fluido", options: ["mosaico fluido", "sanduíche lipídico", "dupla hélice", "revestimento celular"] },
+  { text: "A bomba Na⁺/K⁺-ATPase bombeia ___ Na⁺ para fora e 2 K⁺ para dentro.", answer: "3", options: ["1", "2", "3", "4"] },
+  { text: "As vesículas revestidas por ___ medeiam a endocitose mediada por receptor.", answer: "clatrina", options: ["COP I", "COP II", "clatrina", "caveolina"] },
+  { text: "O marcador enzimático dos lisossomos é a ___.", answer: "fosfatase ácida", options: ["catalase", "fosfatase ácida", "citocromo c", "peroxidase"] },
+  { text: "A ___ é a proteína motora que caminha para a extremidade + dos microtúbulos.", answer: "cinesina", options: ["dineína", "cinesina", "miosina", "actina"] },
+  { text: "A doença de Gaucher resulta do acúmulo de ___ em macrófagos.", answer: "glicocerebrosídeo", options: ["esfingomielina", "gangliosídeo GM2", "glicocerebrosídeo", "colesterol"] },
+  { text: "O ponto de restrição (R) ocorre no final da fase ___.", answer: "G1", options: ["S", "G1", "G2", "M"] },
+  { text: "A proteína ___ é o fator promotor da maturação (MPF) que inicia a mitose.", answer: "ciclina B/CDK1", options: ["ciclina D/CDK4", "ciclina E/CDK2", "ciclina B/CDK1", "p53/p21"] },
 ];
 
 const FillBlankGame = () => {
