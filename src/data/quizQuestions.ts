@@ -1,3 +1,5 @@
+import { cytologyQuestions } from "./cytologyQuestions";
+
 export interface Question {
   id: number;
   topic: string;
