@@ -309,6 +309,19 @@ const tfStatements: { statement: string; isTrue: boolean; explanation: string }[
   { statement: "O GIST é positivo para CD117 (c-KIT) na imunohistoquímica.", isTrue: true, explanation: "Mais de 95% dos GISTs expressam CD117 (c-KIT), o que auxilia no diagnóstico e indica alvo para imatinibe." },
   { statement: "O corpo lúteo da gravidez é mantido pelo FSH.", isTrue: false, explanation: "O corpo lúteo da gravidez é mantido pelo hCG (gonadotrofina coriônica humana) secretado pelo sinciciotrofoblasto." },
   { statement: "A crista neural origina os melanócitos.", isTrue: true, explanation: "Os melanócitos derivam da crista neural e migram para a epiderme durante o desenvolvimento embrionário." },
+  // --- CITOLOGIA V/F ---
+  { statement: "O colesterol aumenta a fluidez da membrana em todas as temperaturas.", isTrue: false, explanation: "O colesterol é um tampão de fluidez: REDUZ a fluidez em altas temperaturas e IMPEDE a cristalização em baixas temperaturas." },
+  { statement: "O mtDNA é circular e de herança materna.", isTrue: true, explanation: "O DNA mitocondrial é circular, com 37 genes, herdado exclusivamente da mãe (mitocôndrias do espermatozoide são eliminadas)." },
+  { statement: "A cinesina transporta cargas para a extremidade negativa dos microtúbulos.", isTrue: false, explanation: "A cinesina vai para a extremidade POSITIVA (+) = anterógrado. A dineína vai para a extremidade NEGATIVA (−) = retrógrado." },
+  { statement: "O proteassomo degrada proteínas marcadas com ubiquitina.", isTrue: true, explanation: "O proteassomo 26S reconhece cadeias de poliubiquitina (K48) e degrada a proteína em peptídeos. Regula ciclinas, p53, IκB." },
+  { statement: "A N-glicosilação inicia-se no complexo de Golgi.", isTrue: false, explanation: "A N-glicosilação CORE inicia-se no RER (oligossacarídeo do dolicol → Asn). O Golgi faz as modificações subsequentes." },
+  { statement: "Os peroxissomos contêm catalase.", isTrue: true, explanation: "A catalase decompõe H₂O₂ em H₂O + O₂. É a enzima-chave dos peroxissomos, protegendo contra dano oxidativo." },
+  { statement: "A doença de Tay-Sachs é causada por deficiência de glicocerebrosidase.", isTrue: false, explanation: "Tay-Sachs: deficiência de HEXOSAMINIDASE A → acúmulo de GM2. Glicocerebrosidase → Gaucher." },
+  { statement: "A colchicina estabiliza os microtúbulos, impedindo despolimerização.", isTrue: false, explanation: "A colchicina DESPOLIMERIZA microtúbulos, bloqueando a mitose em metáfase. O TAXOL é que estabiliza." },
+  { statement: "COP II transporta vesículas do RE para o Golgi.", isTrue: true, explanation: "COP II: transporte anterógrado RE → cis-Golgi. COP I: retrógrado Golgi → RE." },
+  { statement: "A via extrínseca da apoptose é iniciada por liberação de citocromo c.", isTrue: false, explanation: "Citocromo c inicia a via INTRÍNSECA (mitocondrial). A via extrínseca é iniciada por receptores de morte (Fas, TNF, TRAIL)." },
+  { statement: "Os filamentos intermediários são polarizados como microtúbulos e actina.", isTrue: false, explanation: "Filamentos intermediários NÃO são polarizados (sem extremidade + ou −). Conferem resistência mecânica sem atividade motora." },
+  { statement: "A progéria de Hutchinson-Gilford é causada por mutação no gene LMNA (lamina A).", isTrue: true, explanation: "Mutação em LMNA produz progerina (lamina A truncada) → deformação do envelope nuclear → envelhecimento prematuro acelerado." },
 ];
 
 const TrueFalseGame = () => {
