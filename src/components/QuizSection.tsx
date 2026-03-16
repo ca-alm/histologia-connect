@@ -22,6 +22,7 @@ const topicSources: Record<string, string> = {
   "Sistema Linfático e Imunológico": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
   "Sistema Reprodutor Masculino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
   "Sistema Reprodutor Feminino": "Junqueira & Carneiro, Histologia Básica, 16ª ed.; Ross & Pawlina, Histology: A Text and Atlas, 8th ed.; UpToDate",
+  "Citologia": "Alberts et al., Biologia Molecular da Célula, 7ª ed.; Junqueira & Carneiro, Biologia Celular e Molecular, 10ª ed.; Lodish et al., Molecular Cell Biology, 9th ed.",
 };
 
 function shuffleArray<T>(arr: T[]): T[] {
