@@ -738,5 +738,91 @@ function generateRemainingScenarios(): EscapeScenario[] {
     });
   }
 
+  // ===== CITOLOGIA (106-115) =====
+  const cytologyScenarios: { id: number; title: string; theme: string; diff: EscapeScenario["difficulty"]; time: number; puzzles: Puzzle[] }[] = [
+    { id: 106, title: "Membrana Plasmática", theme: "Citologia", diff: "Fácil", time: 60, puzzles: [
+      { type: "multiple_choice", question: "O modelo do mosaico fluido foi proposto por:", options: ["Watson e Crick", "Singer e Nicolson (1972)", "Robert Hooke", "Schleiden e Schwann"], correctAnswer: 1, explanation: "Singer e Nicolson: bicamada lipídica fluida com proteínas integrais e periféricas distribuídas assimetricamente." },
+      { type: "true_false", question: "O colesterol sempre aumenta a fluidez da membrana.", correctAnswer: "Falso", explanation: "O colesterol é um tampão de fluidez: reduz em altas temperaturas, impede cristalização em baixas." },
+      { type: "fill_blank", question: "A Na⁺/K⁺-ATPase bombeia ___ Na⁺ para fora por ciclo.", correctAnswer: "3", explanation: "3 Na⁺ para fora + 2 K⁺ para dentro, usando 1 ATP. Eletrogênica.", options: ["2", "3", "4", "1"] },
+      { type: "multiple_choice", question: "O glicocálix está na face:", options: ["Interna (citoplasmática)", "Externa da membrana plasmática", "Nuclear", "Mitocondrial"], correctAnswer: 1, explanation: "Glicocálix: cadeias de carboidratos na face EXTERNA. Proteção, reconhecimento celular, grupos ABO." },
+      { type: "true_false", question: "A endocitose mediada por receptor utiliza vesículas revestidas por clatrina.", correctAnswer: "Verdadeiro", explanation: "Clatrina forma fossas revestidas que se invaginam. Exemplo: captação de LDL." },
+    ]},
+    { id: 107, title: "Organelas Citoplasmáticas", theme: "Citologia", diff: "Médio", time: 90, puzzles: [
+      { type: "multiple_choice", question: "O marcador enzimático dos lisossomos é:", options: ["Catalase", "Fosfatase ácida", "Citocromo c oxidase", "Succinato desidrogenase"], correctAnswer: 1, explanation: "Fosfatase ácida: marcador clássico dos lisossomos, ativos em pH ~5." },
+      { type: "fill_blank", question: "O transporte vesicular RE → Golgi é mediado por vesículas ___.", correctAnswer: "COP II", explanation: "COP II: anterógrado (RE→Golgi). COP I: retrógrado (Golgi→RE).", options: ["COP I", "COP II", "clatrina", "caveolina"] },
+      { type: "true_false", question: "O REL é o principal sítio de síntese proteica de exportação.", correctAnswer: "Falso", explanation: "Síntese de proteínas de exportação ocorre no RER (rugoso). O REL sintetiza lipídios, esteroides e faz desintoxicação." },
+      { type: "multiple_choice", question: "A doença de Tay-Sachs resulta de deficiência de:", options: ["Glicocerebrosidase", "Hexosaminidase A", "Esfingomielinase", "Catalase"], correctAnswer: 1, explanation: "Tay-Sachs: acúmulo de gangliosídeo GM2 nos neurônios. Mancha vermelho-cereja." },
+      { type: "true_false", question: "Os peroxissomos contêm DNA próprio como as mitocôndrias.", correctAnswer: "Falso", explanation: "Peroxissomos NÃO contêm DNA. Suas proteínas são importadas do citoplasma via peroxinas (PEX)." },
+    ]},
+    { id: 108, title: "Citoesqueleto e Motores Moleculares", theme: "Citologia", diff: "Médio", time: 90, puzzles: [
+      { type: "multiple_choice", question: "A colchicina atua:", options: ["Estabilizando microtúbulos", "Despolimerizando microtúbulos, bloqueando mitose em metáfase", "Estabilizando actina", "Degradando filamentos intermediários"], correctAnswer: 1, explanation: "Colchicina liga-se à tubulina livre → impede polimerização. Usada na gota e cariotipagem." },
+      { type: "fill_blank", question: "A ___ é a proteína motora do transporte anterógrado nos microtúbulos.", correctAnswer: "cinesina", explanation: "Cinesina: extremidade + (anterógrado). Dineína: extremidade − (retrógrado).", options: ["dineína", "cinesina", "miosina", "actina"] },
+      { type: "true_false", question: "Os filamentos intermediários são polarizados.", correctAnswer: "Falso", explanation: "FI: sem polaridade, sem atividade motora. Conferem resistência mecânica." },
+      { type: "multiple_choice", question: "A síndrome de Kartagener é causada por defeito em:", options: ["Actina", "Dineína ciliar", "Queratina", "Cinesina"], correctAnswer: 1, explanation: "Defeito nos braços de dineína ciliar → imotilidade. Situs inversus + bronquiectasias + sinusite." },
+      { type: "order", question: "Ordene os filamentos do menor ao maior diâmetro: Actina → Filamento intermediário → Microtúbulo", correctAnswer: "Actina,Filamento intermediário,Microtúbulo", explanation: "Actina ~7 nm → FI ~10 nm → Microtúbulo ~25 nm." },
+    ]},
+    { id: 109, title: "Ciclo Celular e Checkpoints", theme: "Citologia", diff: "Difícil", time: 120, puzzles: [
+      { type: "multiple_choice", question: "O ponto de restrição (R) ocorre em:", options: ["Final de S", "Final de G1", "Início de M", "G2/M"], correctAnswer: 1, explanation: "Após R, a célula se compromete com a divisão independentemente de mitógenos." },
+      { type: "fill_blank", question: "A proteína ___ é conhecida como 'guardiã do genoma'.", correctAnswer: "p53", explanation: "p53: detecta dano ao DNA → p21 (parada G1) ou apoptose (Bax/PUMA). Mutada em >50% dos cânceres.", options: ["p53", "Rb", "Ras", "Myc"] },
+      { type: "true_false", question: "A ciclina B/CDK1 (MPF) é essencial para a entrada na fase S.", correctAnswer: "Falso", explanation: "Ciclina B/CDK1 = MPF → entrada na MITOSE (G2→M). Fase S: ciclina E/CDK2." },
+      { type: "multiple_choice", question: "O SAC (Spindle Assembly Checkpoint) verifica:", options: ["Replicação completa do DNA", "Todos os cinetócoros ligados aos microtúbulos antes da anáfase", "Integridade dos telômeros", "Tamanho celular"], correctAnswer: 1, explanation: "SAC: Mad/BubR1 inibem APC/C até biorientação completa dos cinetócoros." },
+      { type: "true_false", question: "Neurônios e cardiomiócitos maduros estão permanentemente em G0.", correctAnswer: "Verdadeiro", explanation: "Células permanentes: G0 irreversível. Não se dividem. Capacidade regenerativa mínima." },
+    ]},
+    { id: 110, title: "Mitose e Meiose", theme: "Citologia", diff: "Médio", time: 90, puzzles: [
+      { type: "order", question: "Ordene as fases da mitose: Prófase → Metáfase → Anáfase → Telófase", correctAnswer: "Prófase,Metáfase,Anáfase,Telófase", explanation: "Prófase (condensação) → metáfase (alinhamento) → anáfase (separação) → telófase (descondensação)." },
+      { type: "multiple_choice", question: "O crossing-over ocorre na:", options: ["Metáfase I", "Prófase I (paquíteno)", "Anáfase II", "Telófase I"], correctAnswer: 1, explanation: "Paquíteno: cromossomos homólogos pareados pelo complexo sinaptonemal → recombinação." },
+      { type: "fill_blank", question: "A citocinese em células animais usa um anel contrátil de actina e ___.", correctAnswer: "miosina II", explanation: "Anel contrátil de actina + miosina II no equador celular → sulco de clivagem → separação.", options: ["tubulina", "miosina II", "queratina", "cinesina"] },
+      { type: "true_false", question: "A não-disjunção meiótica causa trissomia 21 (síndrome de Down).", correctAnswer: "Verdadeiro", explanation: "Falha na separação de homólogos (meiose I) ou cromátides (meiose II) → aneuploidia." },
+      { type: "multiple_choice", question: "Na anáfase, a separase cliva:", options: ["Histonas", "Coesina (que une cromátides-irmãs)", "Tubulina", "Laminina"], correctAnswer: 1, explanation: "APC/C → degrada securina → libera separase → cliva coesina → cromátides se separam." },
+    ]},
+    { id: 111, title: "Sinalização Celular", theme: "Citologia", diff: "Difícil", time: 120, puzzles: [
+      { type: "multiple_choice", question: "A via Ras-MAPK é ativada por:", options: ["GPCRs", "Receptores tirosina-quinase (RTKs)", "Receptores nucleares", "Canais iônicos"], correctAnswer: 1, explanation: "RTK → Grb2/SOS → Ras-GTP → Raf → MEK → ERK. Ras mutado em ~30% dos cânceres." },
+      { type: "fill_blank", question: "Os GPCRs possuem ___ domínios transmembranares.", correctAnswer: "7", explanation: "GPCRs: 7-TM (serpentina). Maior família de receptores. Ativam proteínas G heterotriméricas.", options: ["3", "5", "7", "12"] },
+      { type: "true_false", question: "O cAMP é gerado pela fosfolipase C.", correctAnswer: "Falso", explanation: "cAMP é gerado pela ADENILIL-CICLASE. Fosfolipase C gera IP3 + DAG." },
+      { type: "multiple_choice", question: "PTEN é um supressor tumoral que antagoniza:", options: ["Ras", "PI3K/Akt/mTOR", "p53", "Rb"], correctAnswer: 1, explanation: "PTEN: fosfatase que desfosforila PIP3 → inibe via PI3K/Akt. Perda de PTEN → ativação constitutiva → crescimento tumoral." },
+      { type: "true_false", question: "A via Notch requer contato direto célula-célula.", correctAnswer: "Verdadeiro", explanation: "Notch: ligante transmembranar (Delta/Jagged) na célula vizinha → clivagem → NICD ao núcleo." },
+    ]},
+    { id: 112, title: "Apoptose e Morte Celular", theme: "Citologia", diff: "Difícil", time: 120, puzzles: [
+      { type: "multiple_choice", question: "A via intrínseca da apoptose é iniciada por:", options: ["Receptores Fas/TNF", "Liberação de citocromo c da mitocôndria", "Caspase-8", "Complemento"], correctAnswer: 1, explanation: "Citocromo c + Apaf-1 → apoptossomo → caspase-9 → caspase-3 (efetora). Regulada por Bcl-2 vs Bax/Bak." },
+      { type: "fill_blank", question: "A ___ é uma forma de morte celular dependente de ferro e peroxidação lipídica.", correctAnswer: "ferroptose", explanation: "Ferroptose: independente de caspases. GPX4 protege. Relevante em neurodegeneração e câncer.", options: ["apoptose", "necroptose", "ferroptose", "piroptose"] },
+      { type: "true_false", question: "A necrose causa inflamação intensa, diferente da apoptose.", correctAnswer: "Verdadeiro", explanation: "Necrose: edema, ruptura de membrana, DAMPs → inflamação aguda. Apoptose: silenciosa, sem inflamação." },
+      { type: "multiple_choice", question: "As caspases efetoras da apoptose são:", options: ["Caspase-8 e -9", "Caspase-3, -6 e -7", "Caspase-1 e -4", "Caspase-12"], correctAnswer: 1, explanation: "Caspases efetoras (3, 6, 7): clivam substratos celulares → fragmentação DNA, blebbing, corpos apoptóticos." },
+      { type: "true_false", question: "A autofagia é sempre uma forma de morte celular.", correctAnswer: "Falso", explanation: "Autofagia é primariamente um mecanismo de SOBREVIVÊNCIA (reciclagem). Pode levar à morte apenas em condições extremas." },
+    ]},
+    { id: 113, title: "Núcleo e Cromatina", theme: "Citologia", diff: "Fácil", time: 60, puzzles: [
+      { type: "multiple_choice", question: "O nucléolo é o sítio de:", options: ["Replicação do DNA", "Transcrição de rRNA e montagem de subunidades ribossômicas", "Síntese de mRNA", "Degradação de proteínas"], correctAnswer: 1, explanation: "Nucléolo: rRNA (RNA pol I) → processamento → montagem com proteínas → subunidades 40S e 60S." },
+      { type: "true_false", question: "A eucromatina é condensada e transcripcionalmente inativa.", correctAnswer: "Falso", explanation: "Eucromatina: DESCONDENSADA e ativa. Heterocromatina: condensada e inativa." },
+      { type: "fill_blank", question: "O corpúsculo de Barr é um cromossomo ___ inativado.", correctAnswer: "X", explanation: "Barr = X inativado (lyonização). Nº de Barr = nº de X − 1. Visível na periferia do núcleo.", options: ["X", "Y", "21", "13"] },
+      { type: "multiple_choice", question: "As histonas empacotam DNA em:", options: ["Microtúbulos", "Nucleossomos (octâmero H2A, H2B, H3, H4)", "Ribossomos", "Centrômeros"], correctAnswer: 1, explanation: "Nucleossomo: octâmero de histonas com ~147 pb de DNA. Unidade fundamental da cromatina." },
+      { type: "true_false", question: "A acetilação de histonas ativa a transcrição gênica.", correctAnswer: "Verdadeiro", explanation: "Acetilação neutraliza cargas positivas → relaxa DNA-histona → eucromatina → transcrição ativa." },
+    ]},
+    { id: 114, title: "Transporte Intracelular", theme: "Citologia", diff: "Médio", time: 90, puzzles: [
+      { type: "multiple_choice", question: "O peptídeo-sinal direciona proteínas ao:", options: ["Núcleo", "RER via partícula SRP", "Peroxissomo", "Mitocôndria"], correctAnswer: 1, explanation: "Peptídeo-sinal hidrofóbico N-terminal → reconhecido por SRP → ribossomo ancorado no RER → translocação." },
+      { type: "fill_blank", question: "As proteínas ___ são GTPases que regulam fusão de vesículas.", correctAnswer: "Rab", explanation: "Rab-GTPases: >60 membros. Cada Rab marca compartimentos específicos e regula tráfego vesicular.", options: ["Rab", "Ras", "Ran", "Rho"] },
+      { type: "true_false", question: "A toxina botulínica cliva proteínas SNARE.", correctAnswer: "Verdadeiro", explanation: "Botulínica: cliva SNARE (VAMP/sinaptobrevina, SNAP-25) → impede liberação de acetilcolina → paralisia flácida." },
+      { type: "multiple_choice", question: "A marcação com manose-6-fosfato (M6P) direciona enzimas para:", options: ["Membrana plasmática", "Lisossomos", "Peroxissomos", "Núcleo"], correctAnswer: 1, explanation: "M6P: adicionado no cis-Golgi. Receptor de M6P no trans-Golgi → vesículas → lisossomos. Defeito: I-cell disease." },
+      { type: "true_false", question: "O complexo SNARE medeia a fusão de vesículas com membranas-alvo.", correctAnswer: "Verdadeiro", explanation: "v-SNARE (vesícula) + t-SNARE (alvo) → aproximação e fusão das membranas. NSF recicla SNAREs." },
+    ]},
+    { id: 115, title: "Mitocôndrias e Metabolismo Energético", theme: "Citologia", diff: "Médio", time: 90, puzzles: [
+      { type: "multiple_choice", question: "O ciclo de Krebs ocorre na:", options: ["Membrana interna", "Matriz mitocondrial", "Citoplasma", "Membrana externa"], correctAnswer: 1, explanation: "Ciclo de Krebs: matriz mitocondrial. Oxida acetil-CoA gerando NADH, FADH₂ e GTP." },
+      { type: "fill_blank", question: "A cadeia respiratória está na membrana ___ da mitocôndria.", correctAnswer: "interna", explanation: "Complexos I-IV + ATP sintase (V) na membrana interna (cristas). Gradiente de H⁺ → ATP.", options: ["externa", "interna", "nuclear", "plasmática"] },
+      { type: "true_false", question: "O mtDNA codifica todas as proteínas mitocondriais.", correctAnswer: "Falso", explanation: "O mtDNA codifica apenas 13 proteínas + 22 tRNAs + 2 rRNAs. A maioria das proteínas mitocondriais (~1500) é codificada pelo DNA nuclear." },
+      { type: "multiple_choice", question: "A liberação de citocromo c mitocondrial ativa:", options: ["Síntese de ATP", "Apoptose via caspase-9 (via intrínseca)", "Glicólise", "Replicação de mtDNA"], correctAnswer: 1, explanation: "Citocromo c → Apaf-1 → apoptossomo → caspase-9 → caspase-3 → apoptose." },
+      { type: "true_false", question: "MELAS e MERRF são doenças mitocondriais de herança materna.", correctAnswer: "Verdadeiro", explanation: "Mutações no mtDNA (herança materna): MELAS (encefalopatia + acidose lática + episódios stroke-like), MERRF (epilepsia mioclônica + fibras vermelhas rasgadas)." },
+    ]},
+  ];
+
+  for (const s of cytologyScenarios) {
+    scenarios.push({
+      id: s.id,
+      title: s.title,
+      theme: s.theme,
+      difficulty: s.diff,
+      timeSeconds: s.time,
+      description: `Desvende os enigmas de citologia sobre ${s.title.toLowerCase()} para escapar!`,
+      puzzles: s.puzzles,
+    });
+  }
+
   return scenarios;
 }
