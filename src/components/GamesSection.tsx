@@ -516,6 +516,15 @@ const fillBlanks = [
   { text: "A via Wnt/β-catenina regula as células-tronco das criptas ___.", answer: "intestinais", options: ["gástricas", "esofágicas", "intestinais", "colônicas"] },
   { text: "A ___ é a causa mais comum de glomerulonefrite no mundo.", answer: "nefropatia por IgA", options: ["GNPE", "nefropatia por IgA", "nefropatia membranosa", "GESF"] },
   { text: "O carcinoma papilífero da tireoide apresenta núcleos em ___.", answer: "vidro fosco (Orphan Annie eyes)", options: ["relógio de areia", "vidro fosco (Orphan Annie eyes)", "sal e pimenta", "olhos de coruja"] },
+  // --- CITOLOGIA ---
+  { text: "O modelo do ___ descreve a membrana plasmática como bicamada fluida com proteínas.", answer: "mosaico fluido", options: ["mosaico fluido", "sanduíche lipídico", "dupla hélice", "revestimento celular"] },
+  { text: "A bomba Na⁺/K⁺-ATPase bombeia ___ Na⁺ para fora e 2 K⁺ para dentro.", answer: "3", options: ["1", "2", "3", "4"] },
+  { text: "As vesículas revestidas por ___ medeiam a endocitose mediada por receptor.", answer: "clatrina", options: ["COP I", "COP II", "clatrina", "caveolina"] },
+  { text: "O marcador enzimático dos lisossomos é a ___.", answer: "fosfatase ácida", options: ["catalase", "fosfatase ácida", "citocromo c", "peroxidase"] },
+  { text: "A ___ é a proteína motora que caminha para a extremidade + dos microtúbulos.", answer: "cinesina", options: ["dineína", "cinesina", "miosina", "actina"] },
+  { text: "A doença de Gaucher resulta do acúmulo de ___ em macrófagos.", answer: "glicocerebrosídeo", options: ["esfingomielina", "gangliosídeo GM2", "glicocerebrosídeo", "colesterol"] },
+  { text: "O ponto de restrição (R) ocorre no final da fase ___.", answer: "G1", options: ["S", "G1", "G2", "M"] },
+  { text: "A proteína ___ é o fator promotor da maturação (MPF) que inicia a mitose.", answer: "ciclina B/CDK1", options: ["ciclina D/CDK4", "ciclina E/CDK2", "ciclina B/CDK1", "p53/p21"] },
 ];
 
 const FillBlankGame = () => {
