@@ -114,6 +114,50 @@ const matchSets: { title: string; pairs: MatchPair[] }[] = [
       { term: "Fibrinoide", definition: "Vasculites e reações autoimunes" },
     ],
   },
+  // --- CITOLOGIA ---
+  {
+    title: "Organelas e Funções",
+    pairs: [
+      { term: "RER", definition: "Síntese de proteínas de exportação" },
+      { term: "REL", definition: "Síntese de lipídios e desintoxicação" },
+      { term: "Golgi", definition: "O-glicosilação e endereçamento" },
+      { term: "Lisossomo", definition: "Digestão intracelular (fosfatase ácida)" },
+      { term: "Peroxissomo", definition: "Catalase e β-oxidação de AG longos" },
+      { term: "Mitocôndria", definition: "Produção de ATP e apoptose" },
+    ],
+  },
+  {
+    title: "Proteínas Motoras e Funções",
+    pairs: [
+      { term: "Cinesina", definition: "Transporte anterógrado (extremidade +)" },
+      { term: "Dineína citoplasmática", definition: "Transporte retrógrado (extremidade −)" },
+      { term: "Dineína ciliar", definition: "Motilidade de cílios (9+2)" },
+      { term: "Miosina II", definition: "Contração muscular e citocinese" },
+      { term: "Miosina V", definition: "Transporte vesicular em actina" },
+    ],
+  },
+  {
+    title: "Doenças de Depósito Lisossômico",
+    pairs: [
+      { term: "Gaucher", definition: "Deficiência de glicocerebrosidase" },
+      { term: "Tay-Sachs", definition: "Deficiência de hexosaminidase A" },
+      { term: "Niemann-Pick A", definition: "Deficiência de esfingomielinase" },
+      { term: "Fabry", definition: "Deficiência de α-galactosidase A" },
+      { term: "Pompe", definition: "Deficiência de maltase ácida" },
+      { term: "I-cell disease", definition: "Defeito na marcação M6P" },
+    ],
+  },
+  {
+    title: "Filamentos Intermediários e Tecidos",
+    pairs: [
+      { term: "Citoqueratina", definition: "Células epiteliais (carcinomas)" },
+      { term: "Vimentina", definition: "Células mesenquimais" },
+      { term: "Desmina", definition: "Células musculares" },
+      { term: "GFAP", definition: "Astrócitos" },
+      { term: "Neurofilamentos", definition: "Neurônios" },
+      { term: "Laminas A/B/C", definition: "Envelope nuclear" },
+    ],
+  },
 ];
 
 const MatchGame = () => {
