@@ -40,9 +40,7 @@ const PuzzleRenderer = ({ puzzle, onAnswer, answered, userAnswer }: {
     return null;
   }, [puzzle]);
 
-  const isCorrect = userAnswer !== null && String(userAnswer) === String(
-    shuffledData ? shuffledData.correctIndex : puzzle.correctAnswer
-  );
+  const isCorrect = userAnswer !== null && String(userAnswer) === String(puzzle.correctAnswer);
 
   if (puzzle.type === "multiple_choice" || puzzle.type === "image_identify") {
     const opts = shuffledData!.options;
