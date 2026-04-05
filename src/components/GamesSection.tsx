@@ -416,8 +416,18 @@ const FlashQuiz = () => {
   const [selected, setSelected] = useState<number | null>(null);
   const [started, setStarted] = useState(false);
 
+  const shuffleArr = <T,>(arr: T[]): T[] => {
+    const s = [...arr];
+    for (let i = s.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [s[i], s[j]] = [s[j], s[i]]; }
+    return s;
+  };
+
   const start = () => {
-    const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, 10);
+    const shuffled = shuffleArr([...questions]).slice(0, 10).map((q) => {
+      const indices = q.options.map((_, i) => i);
+      const si = shuffleArr(indices);
+      return { ...q, options: si.map((i) => q.options[i]), correctIndex: si.indexOf(q.correctIndex) };
+    });
     setGameQuestions(shuffled);
     setCurrent(0);
     setScore(0);
