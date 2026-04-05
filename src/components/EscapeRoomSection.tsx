@@ -1,8 +1,14 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { Lock, Unlock, Timer, Trophy, RotateCcw, ArrowRight, Star, Zap, Brain, Shield, Flame, AlertTriangle, CheckCircle2, XCircle, ChevronDown, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { escapeScenarios, type EscapeScenario, type Puzzle } from "@/data/escapeRoomScenarios";
+
+function shuffleArr<T>(arr: T[]): T[] {
+  const s = [...arr];
+  for (let i = s.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [s[i], s[j]] = [s[j], s[i]]; }
+  return s;
+}
 
 const difficultyConfig = {
   "Fácil": { color: "text-emerald-500", bg: "bg-emerald-500/10 border-emerald-500/30", icon: Star, label: "⭐" },
@@ -20,29 +26,47 @@ const PuzzleRenderer = ({ puzzle, onAnswer, answered, userAnswer }: {
   answered: boolean;
   userAnswer: string | number | null;
 }) => {
+  // Shuffle options for multiple choice, memoized per puzzle
+  const shuffledData = useMemo(() => {
+    if ((puzzle.type === "multiple_choice" || puzzle.type === "image_identify") && puzzle.options) {
+      const indices = puzzle.options.map((_, i) => i);
+      const si = shuffleArr(indices);
+      return {
+        options: si.map((i) => puzzle.options![i]),
+        correctIndex: si.indexOf(puzzle.correctAnswer as number),
+        indexMap: si, // shuffledPos -> originalPos
+      };
+    }
+    return null;
+  }, [puzzle]);
+
   const isCorrect = userAnswer !== null && String(userAnswer) === String(puzzle.correctAnswer);
 
   if (puzzle.type === "multiple_choice" || puzzle.type === "image_identify") {
+    const opts = shuffledData!.options;
+    const correctIdx = shuffledData!.correctIndex;
     return (
       <div className="space-y-3">
         <p className="font-serif text-lg font-bold text-foreground leading-relaxed">{puzzle.question}</p>
         {puzzle.hint && <p className="text-sm text-muted-foreground italic">💡 Dica: {puzzle.hint}</p>}
         <div className="space-y-2">
-          {puzzle.options?.map((opt, i) => {
+          {opts.map((opt, i) => {
+            const origIdx = shuffledData!.indexMap[i];
+            const userShuffledIdx = userAnswer !== null ? shuffledData!.indexMap.indexOf(userAnswer as number) : null;
             let cls = "w-full text-left p-4 rounded-xl border-2 text-sm font-medium transition-all duration-200 ";
             if (!answered) cls += "border-border hover:border-primary/50 cursor-pointer hover:shadow-md";
-            else if (i === puzzle.correctAnswer) cls += "border-emerald-500 bg-emerald-500/10";
-            else if (i === userAnswer) cls += "border-red-500 bg-red-500/10";
+            else if (i === correctIdx) cls += "border-emerald-500 bg-emerald-500/10";
+            else if (i === userShuffledIdx) cls += "border-red-500 bg-red-500/10";
             else cls += "border-border opacity-40";
             return (
-              <button key={i} className={cls} onClick={() => !answered && onAnswer(i)} disabled={answered}>
+              <button key={i} className={cls} onClick={() => !answered && onAnswer(origIdx)} disabled={answered}>
                 <div className="flex items-center gap-3">
                   <span className="w-7 h-7 rounded-full border-2 border-current flex items-center justify-center text-xs font-bold shrink-0">
                     {String.fromCharCode(65 + i)}
                   </span>
                   <span className="flex-1">{opt}</span>
-                  {answered && i === puzzle.correctAnswer && <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />}
-                  {answered && i === userAnswer && i !== puzzle.correctAnswer && <XCircle className="w-5 h-5 text-red-500 shrink-0" />}
+                  {answered && i === correctIdx && <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />}
+                  {answered && i === userShuffledIdx && i !== correctIdx && <XCircle className="w-5 h-5 text-red-500 shrink-0" />}
                 </div>
               </button>
             );
