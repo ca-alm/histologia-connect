@@ -48,7 +48,15 @@ const QuizSection = () => {
 
   const startQuiz = () => {
     const filtered = selectedTopic === "Todos" ? questions : questions.filter((q) => q.topic === selectedTopic);
-    const shuffled = shuffleArray(filtered).slice(0, 10);
+    const shuffled = shuffleArray(filtered).slice(0, 10).map((q) => {
+      const indices = q.options.map((_, i) => i);
+      const shuffledIndices = shuffleArray(indices);
+      return {
+        ...q,
+        options: shuffledIndices.map((i) => q.options[i]),
+        correctIndex: shuffledIndices.indexOf(q.correctIndex),
+      };
+    });
     setQuizQuestions(shuffled);
     setCurrentQ(0);
     setSelected(null);
