@@ -26,18 +26,36 @@ const PuzzleRenderer = ({ puzzle, onAnswer, answered, userAnswer }: {
   answered: boolean;
   userAnswer: string | number | null;
 }) => {
-  const isCorrect = userAnswer !== null && String(userAnswer) === String(puzzle.correctAnswer);
+  // Shuffle options for multiple choice, memoized per puzzle
+  const shuffledData = useMemo(() => {
+    if ((puzzle.type === "multiple_choice" || puzzle.type === "image_identify") && puzzle.options) {
+      const indices = puzzle.options.map((_, i) => i);
+      const si = shuffleArr(indices);
+      return {
+        options: si.map((i) => puzzle.options![i]),
+        correctIndex: si.indexOf(puzzle.correctAnswer as number),
+        indexMap: si, // shuffledPos -> originalPos
+      };
+    }
+    return null;
+  }, [puzzle]);
+
+  const isCorrect = userAnswer !== null && String(userAnswer) === String(
+    shuffledData ? shuffledData.correctIndex : puzzle.correctAnswer
+  );
 
   if (puzzle.type === "multiple_choice" || puzzle.type === "image_identify") {
+    const opts = shuffledData!.options;
+    const correctIdx = shuffledData!.correctIndex;
     return (
       <div className="space-y-3">
         <p className="font-serif text-lg font-bold text-foreground leading-relaxed">{puzzle.question}</p>
         {puzzle.hint && <p className="text-sm text-muted-foreground italic">💡 Dica: {puzzle.hint}</p>}
         <div className="space-y-2">
-          {puzzle.options?.map((opt, i) => {
+          {opts.map((opt, i) => {
             let cls = "w-full text-left p-4 rounded-xl border-2 text-sm font-medium transition-all duration-200 ";
             if (!answered) cls += "border-border hover:border-primary/50 cursor-pointer hover:shadow-md";
-            else if (i === puzzle.correctAnswer) cls += "border-emerald-500 bg-emerald-500/10";
+            else if (i === correctIdx) cls += "border-emerald-500 bg-emerald-500/10";
             else if (i === userAnswer) cls += "border-red-500 bg-red-500/10";
             else cls += "border-border opacity-40";
             return (
@@ -47,8 +65,8 @@ const PuzzleRenderer = ({ puzzle, onAnswer, answered, userAnswer }: {
                     {String.fromCharCode(65 + i)}
                   </span>
                   <span className="flex-1">{opt}</span>
-                  {answered && i === puzzle.correctAnswer && <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />}
-                  {answered && i === userAnswer && i !== puzzle.correctAnswer && <XCircle className="w-5 h-5 text-red-500 shrink-0" />}
+                  {answered && i === correctIdx && <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />}
+                  {answered && i === userAnswer && i !== correctIdx && <XCircle className="w-5 h-5 text-red-500 shrink-0" />}
                 </div>
               </button>
             );
