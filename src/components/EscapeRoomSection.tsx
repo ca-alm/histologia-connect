@@ -1,8 +1,14 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { Lock, Unlock, Timer, Trophy, RotateCcw, ArrowRight, Star, Zap, Brain, Shield, Flame, AlertTriangle, CheckCircle2, XCircle, ChevronDown, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { escapeScenarios, type EscapeScenario, type Puzzle } from "@/data/escapeRoomScenarios";
+
+function shuffleArr<T>(arr: T[]): T[] {
+  const s = [...arr];
+  for (let i = s.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [s[i], s[j]] = [s[j], s[i]]; }
+  return s;
+}
 
 const difficultyConfig = {
   "Fácil": { color: "text-emerald-500", bg: "bg-emerald-500/10 border-emerald-500/30", icon: Star, label: "⭐" },
