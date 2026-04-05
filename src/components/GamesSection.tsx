@@ -544,8 +544,17 @@ const FillBlankGame = () => {
   const [selected, setSelected] = useState<string | null>(null);
   const [started, setStarted] = useState(false);
 
+  const shuffleArr = <T,>(arr: T[]): T[] => {
+    const s = [...arr];
+    for (let i = s.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [s[i], s[j]] = [s[j], s[i]]; }
+    return s;
+  };
+
   const start = () => {
-    const shuffled = [...fillBlanks].sort(() => Math.random() - 0.5).slice(0, 10);
+    const shuffled = shuffleArr([...fillBlanks]).slice(0, 10).map((item) => ({
+      ...item,
+      options: shuffleArr(item.options),
+    }));
     setGameItems(shuffled);
     setCurrent(0);
     setScore(0);
