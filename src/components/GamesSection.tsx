@@ -366,6 +366,17 @@ const tfStatements: { statement: string; isTrue: boolean; explanation: string }[
   { statement: "A via extrínseca da apoptose é iniciada por liberação de citocromo c.", isTrue: false, explanation: "Citocromo c inicia a via INTRÍNSECA (mitocondrial). A via extrínseca é iniciada por receptores de morte (Fas, TNF, TRAIL)." },
   { statement: "Os filamentos intermediários são polarizados como microtúbulos e actina.", isTrue: false, explanation: "Filamentos intermediários NÃO são polarizados (sem extremidade + ou −). Conferem resistência mecânica sem atividade motora." },
   { statement: "A progéria de Hutchinson-Gilford é causada por mutação no gene LMNA (lamina A).", isTrue: true, explanation: "Mutação em LMNA produz progerina (lamina A truncada) → deformação do envelope nuclear → envelhecimento prematuro acelerado." },
+  // --- COMPONENTES CELULARES V/F ---
+  { statement: "Os corpúsculos de Nissl estão presentes no axônio dos neurônios.", isTrue: false, explanation: "Os corpúsculos de Nissl (RER + polirribossomos) estão no pericário e dendritos, mas AUSENTES no cone axonal e axônio." },
+  { statement: "A cardiolipina é um fosfolipídeo exclusivo da membrana interna mitocondrial.", isTrue: true, explanation: "A cardiolipina é essencial para a função dos complexos da cadeia respiratória. Auto-anticorpos anti-cardiolipina: síndrome antifosfolipídica." },
+  { statement: "Na I-cell disease, as enzimas lisossomais estão BAIXAS no soro.", isTrue: false, explanation: "Na I-cell disease, as enzimas lisossomais estão ELEVADAS no soro (são secretadas) porque não recebem marcação M6P e não são direcionadas aos lisossomos." },
+  { statement: "O retículo sarcoplasmático é uma forma especializada de RER.", isTrue: false, explanation: "O retículo sarcoplasmático é REL (sem ribossomos). Armazena Ca²⁺. Liberação de Ca²⁺ → contração muscular." },
+  { statement: "A ricina inibe a síntese proteica atuando na subunidade 60S do ribossomo.", isTrue: true, explanation: "Ricina: N-glicosilase que despurina o rRNA 28S da subunidade 60S → impede ligação de aminoacil-tRNA → bloqueia tradução." },
+  { statement: "A dinamina é a GTPase que cliva o pescoço da vesícula revestida por clatrina.", isTrue: true, explanation: "A dinamina forma anéis ao redor do pescoço da fosseta revestida → hidrólise de GTP → clivagem mecânica → vesícula se destaca." },
+  { statement: "Na esferocitose hereditária, os eritrócitos apresentam aumento da palidez central.", isTrue: false, explanation: "Esferócitos são hipercrômicos e SEM palidez central (perderam membrana → menos bicôncavos → esféricos)." },
+  { statement: "Os plasmalógenos são sintetizados nos lisossomos.", isTrue: false, explanation: "Os plasmalógenos (éterfosfolipídeos, componentes da mielina) são sintetizados nos PEROXISSOMOS. Deficientes na síndrome de Zellweger." },
+  { statement: "A toxina tetânica e a botulínica clivam proteínas SNARE diferentes.", isTrue: false, explanation: "Ambas clivam SNAREs, mas a TETÂNICA atua em interneurônios inibitórios (espasmo) e a BOTULÍNICA na junção neuromuscular (paralisia flácida). Ambas clivam sinaptobrevina." },
+  { statement: "A lipofuscina é um pigmento de desgaste acumulado em corpos residuais lisossômicos.", isTrue: true, explanation: "Lipofuscina: material lipídico não digerido em lisossomos de células pós-mitóticas (neurônios, cardiomiócitos). Aumenta com a idade." },
 ];
 
 const TrueFalseGame = () => {
