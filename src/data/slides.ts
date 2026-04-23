@@ -482,7 +482,7 @@ export const slides: HistologySlide[] = [
     tissue: "Célula — Retículo Endoplasmático Rugoso (RER)",
     stain: "MET (Microscopia Eletrônica de Transmissão)",
     description: "Ultraestrutura do RER mostrando cisternas achatadas com ribossomos aderidos à face citoplasmática.",
-    imageUrl: "https://histologyguide.com/slideview/MHS-262-rough-endoplasmic-reticulum/02-slide-1.html",
+    imageUrl: "https://histologyguide.com/EM-view/EM-304-endoplasmic-reticulum/01-photo-1.html",
     structures: [
       { name: "Cisternas do RER", description: "Sacos membranosos achatados com lúmen onde ocorre dobramento e N-glicosilação de proteínas", color: "#6366f1" },
       { name: "Ribossomos aderidos", description: "Polissomos na face citoplasmática (80S), sintetizam proteínas de exportação, membrana e lisossomais", color: "#22c55e" },
@@ -496,7 +496,7 @@ export const slides: HistologySlide[] = [
     tissue: "Célula — Complexo de Golgi",
     stain: "MET",
     description: "Ultraestrutura do complexo de Golgi mostrando as pilhas de cisternas achatadas com vesículas de transporte.",
-    imageUrl: "https://histologyguide.com/slideview/MHS-263-golgi-complex/02-slide-1.html",
+    imageUrl: "https://histologyguide.com/EM-view/EM-008-golgi-apparatus/01-photo-1.html",
     structures: [
       { name: "Face cis (entrada)", description: "Recebe vesículas COP II do RE. Rede cis-Golgi (CGN) para triagem inicial", color: "#6366f1" },
       { name: "Cisternas mediais", description: "Processamento de oligossacarídeos: remoção de manose, adição de GlcNAc", color: "#22c55e" },
@@ -510,7 +510,7 @@ export const slides: HistologySlide[] = [
     tissue: "Célula — Mitocôndria",
     stain: "MET",
     description: "Ultraestrutura mitocondrial mostrando membrana dupla, cristas e matriz.",
-    imageUrl: "https://histologyguide.com/slideview/MHS-264-mitochondria/02-slide-1.html",
+    imageUrl: "https://histologyguide.com/slideview/MH-010-mitochondria/01-slide-1.html",
     structures: [
       { name: "Membrana externa", description: "Permeável a moléculas <5 kDa via porinas (VDAC). Contém complexo TOM (importação de proteínas)", color: "#6366f1" },
       { name: "Membrana interna (cristas)", description: "Impermeável a íons — contém complexos I-IV da cadeia respiratória + ATP sintase (complexo V). Cardiolipina exclusiva", color: "#22c55e" },
@@ -524,7 +524,7 @@ export const slides: HistologySlide[] = [
     tissue: "Célula — Lisossomos e Autofagossomos",
     stain: "Fosfatase ácida / MET",
     description: "Lisossomos primários e secundários (corpos residuais), além de autofagossomos em diferentes estágios.",
-    imageUrl: "https://histologyguide.com/slideview/MHS-265-lysosomes/02-slide-1.html",
+    imageUrl: "https://histologyguide.com/EM-view/EM-014-mast-cell/01-photo-1.html",
     structures: [
       { name: "Lisossomo primário", description: "Recém-formado do TGN, contém ~60 hidrolases ácidas inativas, membrana com LAMP-1/2 e bomba H⁺-ATPase (pH ~5)", color: "#6366f1" },
       { name: "Lisossomo secundário (fagolisossomo)", description: "Fusão com fagossomo ou endossomo tardio, digestão ativa do conteúdo", color: "#22c55e" },
@@ -538,7 +538,7 @@ export const slides: HistologySlide[] = [
     tissue: "Célula — Citoesqueleto (Microfilamentos e Microtúbulos)",
     stain: "Imunofluorescência / MET",
     description: "Visualização do citoesqueleto por imunofluorescência mostrando redes de actina, microtúbulos e filamentos intermediários.",
-    imageUrl: "https://histologyguide.com/slideview/MHS-266-cytoskeleton/02-slide-1.html",
+    imageUrl: "https://histologyguide.com/EM-view/EM-004-cell-structures/01-photo-1.html",
     structures: [
       { name: "Microfilamentos de actina (7 nm)", description: "Rede cortical submembranar, microvilosidades, anel contrátil na citocinese, lamelipódios", color: "#6366f1" },
       { name: "Microtúbulos (25 nm)", description: "Irradiam do centrossomo (MTOC), formam fuso mitótico, trilhos para transporte (cinesina/dineína)", color: "#22c55e" },
@@ -552,7 +552,7 @@ export const slides: HistologySlide[] = [
     tissue: "Célula — Membrana Plasmática e Glicocálix",
     stain: "PAS / MET / Vermelho de Rutênio",
     description: "Ultraestrutura da membrana plasmática com o glicocálix na superfície externa, visualizado por vermelho de rutênio.",
-    imageUrl: "https://histologyguide.com/slideview/MHS-267-cell-membrane/02-slide-1.html",
+    imageUrl: "https://histologyguide.com/EM-view/EM-010-plasma-membrane/01-photo-1.html",
     structures: [
       { name: "Bicamada fosfolipídica", description: "Fosfolipídeos com cabeças polares e caudas apolares. Modelo do mosaico fluido (Singer & Nicolson, 1972)", color: "#6366f1" },
       { name: "Proteínas integrais (transmembranares)", description: "Atravessam a membrana: canais iônicos, transportadores, receptores (GPCRs, RTKs)", color: "#22c55e" },
@@ -566,7 +566,7 @@ export const slides: HistologySlide[] = [
     tissue: "Célula — Núcleo e Envelope Nuclear",
     stain: "MET / H&E",
     description: "Ultraestrutura nuclear mostrando envelope nuclear com poros, cromatina e nucléolo.",
-    imageUrl: "https://histologyguide.com/slideview/MHS-268-nucleus/02-slide-1.html",
+    imageUrl: "https://histologyguide.com/EM-view/EM-007-nucleus/01-photo-1.html",
     structures: [
       { name: "Envelope nuclear", description: "Membrana dupla com ~3000 complexos de poro (nucleoporinas). Membrana externa contínua com o RER", color: "#6366f1" },
       { name: "Lâmina nuclear", description: "Rede de filamentos intermediários (laminas A/B/C) na face interna — suporte e organização da cromatina", color: "#22c55e" },
@@ -580,7 +580,7 @@ export const slides: HistologySlide[] = [
     tissue: "Célula — Peroxissomos",
     stain: "DAB (catalase) / MET",
     description: "Peroxissomos visualizados por reação com DAB para catalase em microscopia eletrônica.",
-    imageUrl: "https://histologyguide.com/slideview/MHS-269-peroxisomes/02-slide-1.html",
+    imageUrl: "https://histologyguide.com/EM-view/EM-306-adrenal-cortex/01-photo-1.html",
     structures: [
       { name: "Membrana do peroxissomo", description: "Membrana simples com peroxinas (PEX) para importação de proteínas via sinal PTS1/PTS2", color: "#6366f1" },
       { name: "Matriz peroxissomal", description: "Catalase (decompõe H₂O₂), enzimas de β-oxidação de ácidos graxos de cadeia muito longa (VLCFA)", color: "#22c55e" },
