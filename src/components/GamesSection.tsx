@@ -158,6 +158,50 @@ const matchSets: { title: string; pairs: MatchPair[] }[] = [
       { term: "Laminas A/B/C", definition: "Envelope nuclear" },
     ],
   },
+  // --- COMPONENTES CELULARES ---
+  {
+    title: "RER vs REL — Funções",
+    pairs: [
+      { term: "RER", definition: "Síntese de proteínas de exportação" },
+      { term: "REL", definition: "Síntese de lipídios e esteroides" },
+      { term: "Corpúsculos de Nissl", definition: "RER em neurônios" },
+      { term: "Retículo sarcoplasmático", definition: "REL no músculo (Ca²⁺)" },
+      { term: "N-glicosilação", definition: "Inicia no RER (asparagina)" },
+      { term: "Citocromo P450", definition: "REL hepático (desintoxicação)" },
+    ],
+  },
+  {
+    title: "Vesículas de Transporte",
+    pairs: [
+      { term: "COP II", definition: "RE → Golgi (anterógrado)" },
+      { term: "COP I", definition: "Golgi → RE (retrógrado)" },
+      { term: "Clatrina", definition: "TGN → endossomos / endocitose" },
+      { term: "Dinamina", definition: "GTPase que cliva vesícula" },
+      { term: "v-SNARE + t-SNARE", definition: "Fusão de membranas" },
+      { term: "Rab-GTPases", definition: "Especificidade do tráfego" },
+    ],
+  },
+  {
+    title: "Defeitos de Membrana e Doenças",
+    pairs: [
+      { term: "Esferocitose hereditária", definition: "Defeito em anquirina/espectrina" },
+      { term: "HPN", definition: "Defeito na âncora GPI" },
+      { term: "Fibrose cística", definition: "Defeito no canal CFTR (Cl⁻)" },
+      { term: "Hipercolesterolemia familiar", definition: "Defeito no receptor de LDL" },
+      { term: "Diabetes insipidus nefrogênico", definition: "Defeito em AQP2" },
+    ],
+  },
+  {
+    title: "Toxinas e Alvos Celulares",
+    pairs: [
+      { term: "Toxina botulínica", definition: "Cliva SNAREs (paralisia flácida)" },
+      { term: "Toxina tetânica", definition: "Cliva VAMP inibitório (espasmo)" },
+      { term: "Colchicina", definition: "Despolimeriza microtúbulos" },
+      { term: "Taxol (paclitaxel)", definition: "Estabiliza microtúbulos" },
+      { term: "Faloidina", definition: "Estabiliza filamentos de actina" },
+      { term: "Ricina", definition: "Inibe subunidade 60S ribossomal" },
+    ],
+  },
 ];
 
 const MatchGame = () => {
