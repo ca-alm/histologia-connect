@@ -590,6 +590,17 @@ const fillBlanks = [
   { text: "A doença de Gaucher resulta do acúmulo de ___ em macrófagos.", answer: "glicocerebrosídeo", options: ["esfingomielina", "gangliosídeo GM2", "glicocerebrosídeo", "colesterol"] },
   { text: "O ponto de restrição (R) ocorre no final da fase ___.", answer: "G1", options: ["S", "G1", "G2", "M"] },
   { text: "A proteína ___ é o fator promotor da maturação (MPF) que inicia a mitose.", answer: "ciclina B/CDK1", options: ["ciclina D/CDK4", "ciclina E/CDK2", "ciclina B/CDK1", "p53/p21"] },
+  // --- COMPONENTES CELULARES ---
+  { text: "O ___ é o fosfolipídeo exclusivo da membrana interna mitocondrial.", answer: "cardiolipina", options: ["fosfatidiletanolamina", "esfingomielina", "cardiolipina", "fosfatidilcolina"] },
+  { text: "A síntese de esteroides ocorre no retículo endoplasmático ___.", answer: "liso (REL)", options: ["rugoso (RER)", "liso (REL)", "nuclear", "mitocondrial"] },
+  { text: "A ___ é a proteína que reconhece o peptídeo-sinal e direciona o ribossomo ao RER.", answer: "SRP (partícula de reconhecimento de sinal)", options: ["SRP (partícula de reconhecimento de sinal)", "clatrina", "dinamina", "Ran-GTPase"] },
+  { text: "As proteínas LAMP-1 e LAMP-2 protegem a membrana dos ___.", answer: "lisossomos", options: ["peroxissomos", "lisossomos", "endossomos", "mitocôndrias"] },
+  { text: "Na síndrome de Zellweger, há ausência completa de ___.", answer: "peroxissomos", options: ["lisossomos", "mitocôndrias", "peroxissomos", "ribossomos"] },
+  { text: "A ___ é a enzima-chave dos peroxissomos que decompõe H₂O₂.", answer: "catalase", options: ["peroxidase", "superóxido dismutase", "catalase", "glutationa redutase"] },
+  { text: "A toxina ___ causa paralisia flácida ao clivar proteínas SNARE.", answer: "botulínica", options: ["tetânica", "botulínica", "diftérica", "colérica"] },
+  { text: "Os macrófagos de Gaucher possuem citoplasma com aspecto de ___.", answer: "papel amassado", options: ["célula espumosa", "papel amassado", "vidro fosco", "grãos de areia"] },
+  { text: "A ___ é o pigmento de desgaste acumulado em lisossomos de células envelhecidas.", answer: "lipofuscina", options: ["hemossiderina", "melanina", "lipofuscina", "bilirrubina"] },
+  { text: "Na esferocitose hereditária, o defeito mais comum é na proteína ___.", answer: "anquirina", options: ["espectrina", "anquirina", "banda 3", "glicoforina"] },
 ];
 
 const FillBlankGame = () => {
