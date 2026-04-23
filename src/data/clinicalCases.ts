@@ -296,4 +296,62 @@ export const clinicalCases: ClinicalCase[] = [
     ],
     keyPoints: ["Carcinoma ductal invasivo (CDI) é o tipo histológico mais comum (70-80% dos cânceres de mama)", "A perda da camada mioepitelial (p63-/CK5/6-) é o marcador de invasão estromal", "Classificação molecular: Luminal A (RE+/HER2-/Ki-67 baixo), Luminal B, HER2-enriched, Basal-like (triplo-negativo)", "Grau histológico de Nottingham (Elston-Ellis): formação tubular + pleomorfismo nuclear + contagem mitótica", "Espiculação mamográfica corresponde à reação desmoplásica estromal (fibrose induzida pelo tumor)"],
   },
+  // ===== CITOLOGIA — Componentes Celulares =====
+  {
+    id: 26,
+    title: "Doença de Gaucher — Esplenomegalia e Dor Óssea",
+    category: "Citologia",
+    scenario: "Paciente de 28 anos, descendência Ashkenazi, apresenta esplenomegalia maciça, hepatomegalia, pancitopenia (Hb 9,2, leucócitos 2.800, plaquetas 65.000) e dor óssea crônica em fêmures. Sem acometimento neurológico. Fosfatase ácida tartrato-resistente elevada. Biópsia de medula óssea realizada.",
+    histologicalFindings: "Medula óssea infiltrada por numerosos macrófagos grandes (20-100 μm) com citoplasma abundante de aspecto fibrilar — classicamente descrito como 'papel amassado' ou 'papel de seda amarrotado'. Núcleo excêntrico. PAS-positivos. Coloração de Azul de Luxol positiva para lipídios. Microscopia eletrônica revela inclusões tubulares no citoplasma (depósito de glicocerebrosídeo nos lisossomos).",
+    questions: [
+      { question: "Qual enzima lisossômica está deficiente na doença de Gaucher?", options: ["Hexosaminidase A", "Esfingomielinase", "Glicocerebrosidase (β-glicosidase ácida)", "α-galactosidase A"], correctIndex: 2, explanation: "A doença de Gaucher tipo 1 (não-neuropática, a mais comum) resulta da deficiência de glicocerebrosidase → acúmulo de glicocerebrosídeo nos lisossomos de macrófagos. É a doença de depósito lisossômico mais prevalente." },
+      { question: "Qual é o aspecto citológico característico dos macrófagos na doença de Gaucher?", options: ["Células espumosas com vacúolos claros", "Citoplasma com aspecto de 'papel amassado' (fibrilar, estriado)", "Grânulos azurófilos citoplasmáticos", "Inclusões cristalinas birrefringentes"], correctIndex: 1, explanation: "Os 'macrófagos de Gaucher' possuem citoplasma com aparência fibrilar/estriada (papel amassado) devido ao acúmulo de glicocerebrosídeo em lisossomos expandidos, dispostos em pilhas tubulares visíveis à ME." },
+    ],
+    keyPoints: ["A doença de Gaucher tipo 1 é a forma mais comum (94%), sem envolvimento neurológico", "Tratamento: terapia de reposição enzimática (imiglicerase/velaglicerase) — paradigma das doenças de depósito", "Diagnóstico: dosagem de atividade da glicocerebrosidase em leucócitos + análise molecular do gene GBA", "Complicações ósseas: deformidade em frasco de Erlenmeyer no fêmur distal, osteonecrose, fraturas patológicas", "Biomarcador: quitotriosidase sérica elevada (produzida por macrófagos ativados)"],
+  },
+  {
+    id: 27,
+    title: "MELAS — Miopatia Mitocondrial",
+    category: "Citologia",
+    scenario: "Adolescente de 16 anos apresenta episódios recorrentes de cefaleia intensa, vômitos, hemiparesia transitória e crises convulsivas focais. RM cerebral mostra lesões corticais que não respeitam territórios vasculares ('stroke-like episodes'). Lactato sérico e liquórico elevados. Mãe com surdez neurossensorial e diabetes. Biópsia muscular realizada.",
+    histologicalFindings: "Biópsia do músculo esquelético (tríceps braquial) processada com cortes de congelação: coloração tricrômico de Gomori modificado revela acúmulo de mitocôndrias anormais no subsarcolema das fibras musculares, formando agregados vermelhos irregulares — as clássicas 'fibras vermelhas rasgadas' (ragged red fibers — RRF). Reação de SDH (succinato desidrogenase) mostra 'vasos azuis fortemente positivos' (strongly SDH-reactive blood vessels — SSV), indicando proliferação mitocondrial nas paredes vasculares. COX (citocromo c oxidase) mostra fibras COX-negativas intercaladas.",
+    questions: [
+      { question: "Qual é o achado histopatológico clássico na biópsia muscular de miopatias mitocondriais?", options: ["Fibras em alvo (target fibers)", "Fibras vermelhas rasgadas (ragged red fibers) no tricrômico de Gomori", "Infiltrado linfocitário endomisial", "Corpos nemalínicos subsarcolemais"], correctIndex: 1, explanation: "As 'ragged red fibers' são fibras musculares com acúmulo subsarcolemal de mitocôndrias anormais e proliferativas, visíveis como agregados vermelhos irregulares no tricrômico de Gomori modificado. São o hallmark das citopatias mitocondriais." },
+      { question: "Qual é a herança do DNA mitocondrial?", options: ["Autossômica dominante", "Autossômica recessiva", "Ligada ao X", "Materna exclusiva (matrilinear)"], correctIndex: 3, explanation: "O mtDNA é herdado exclusivamente da mãe (as mitocôndrias do espermatozoide são eliminadas após a fecundação). MELAS é causada mais comumente pela mutação m.3243A>G no gene MT-TL1 (tRNA-Leu)." },
+    ],
+    keyPoints: ["MELAS: Encefalopatia Mitocondrial com Acidose Lática e Episódios Stroke-like", "Mutação mais comum: m.3243A>G (tRNA de leucina) — presente em >80% dos casos", "Herança materna: mãe pode ter diabetes, surdez ou ser oligossintomática (heteroplasmia)", "Fibras vermelhas rasgadas + vasos SDH-fortemente reativos + fibras COX-negativas = tríade diagnóstica na biópsia", "Heteroplasmia: coexistência de mtDNA normal e mutante na mesma célula — determina gravidade clínica"],
+  },
+  {
+    id: 28,
+    title: "Síndrome de Zellweger — Defeito Peroxissomal",
+    category: "Citologia",
+    scenario: "Recém-nascido a termo apresenta hipotonia grave, dismorfismo craniofacial (fronte ampla, fontanelas grandes, fissuras palpebrais oblíquas), convulsões neonatais, hepatomegalia e cistos renais corticais. Ácidos graxos de cadeia muito longa (VLCFA) plasmáticos muito elevados. Plasmalógenos eritrocitários ausentes. Biópsia hepática realizada.",
+    histologicalFindings: "Hepatócitos com esteatose microvesicular difusa e fibrose portal. Microscopia eletrônica dos hepatócitos revela AUSÊNCIA COMPLETA de peroxissomos (organelas de membrana simples normalmente numerosas em hepatócitos). Mitocôndrias com alterações morfológicas secundárias. Acúmulo de lipídios no citoplasma.",
+    questions: [
+      { question: "Qual é o defeito fundamental na síndrome de Zellweger?", options: ["Deficiência de uma enzima peroxissomal isolada", "Defeito na biogênese de peroxissomos (mutações em genes PEX)", "Defeito mitocondrial primário", "Deficiência de enzima lisossômica"], correctIndex: 1, explanation: "A síndrome de Zellweger é o protótipo das doenças de biogênese peroxissomal. Mutações em genes PEX (mais comumente PEX1) impedem a formação de peroxissomos funcionais → acúmulo de VLCFA, ácido fitânico e ácido pristânico + deficiência de plasmalógenos." },
+    ],
+    keyPoints: ["A síndrome de Zellweger é a forma mais grave do espectro de doenças peroxissomais (SZSD)", "Peroxissomos: β-oxidação de VLCFA, síntese de plasmalógenos (mielina), metabolismo de ácido fitânico", "Diagnóstico: VLCFA plasmáticos elevados + plasmalógenos ausentes + análise molecular de genes PEX", "Sobrevida geralmente <1 ano na forma clássica", "Diferente da X-ALD (adrenoleucodistrofia): defeito no transportador ABCD1 (não na biogênese), peroxissomos presentes mas com β-oxidação de VLCFA comprometida"],
+  },
+  {
+    id: 29,
+    title: "Esferocitose Hereditária — Defeito de Membrana",
+    category: "Citologia",
+    scenario: "Criança de 6 anos com anemia hemolítica crônica (Hb 8,5g/dL, reticulócitos 12%), icterícia intermitente, esplenomegalia e história familiar positiva (mãe esplenectomizada). Esfregaço de sangue periférico e teste de fragilidade osmótica realizados.",
+    histologicalFindings: "Esfregaço de sangue periférico (coloração Wright-Giemsa): numerosos esferócitos (eritrócitos pequenos, esféricos, hipercrômicos, SEM palidez central). Policromasia (reticulócitos elevados). Eritroblastos ocasionais. Teste de fragilidade osmótica: aumento da fragilidade em meio hipotônico. Citometria de fluxo: redução de eosina-5-maleimida (EMA) ligada à membrana eritrocitária.",
+    questions: [
+      { question: "Qual é o defeito molecular mais comum na esferocitose hereditária?", options: ["Deficiência de glicose-6-fosfato desidrogenase", "Mutação na cadeia β da hemoglobina", "Defeito em proteínas do citoesqueleto da membrana eritrocitária (espectrina, anquirina, banda 3, proteína 4.2)", "Deficiência de piruvato quinase"], correctIndex: 2, explanation: "A esferocitose hereditária resulta de defeitos nas proteínas que ancoram o citoesqueleto de espectrina à bicamada lipídica: anquirina (mais comum, ~60%), espectrina, banda 3 ou proteína 4.2. A perda de interação citoesqueleto-membrana → perda de fragmentos de membrana (vesiculação) → redução da relação superfície/volume → esferócito." },
+    ],
+    keyPoints: ["Esferócitos: eritrócitos que perderam membrana sem perder volume → relação superfície/volume diminuída → forma esférica", "O citoesqueleto eritrocitário (espectrina-actina-anquirina-banda 3) é essencial para a deformabilidade do eritrócito", "Esferócitos são retidos e destruídos no baço (hemólise extravascular) → esplenomegalia e icterícia", "Teste de EMA (citometria de fluxo) substituiu largamente o teste de fragilidade osmótica no diagnóstico", "Esplenectomia corrige a anemia mas não o defeito de membrana — esferócitos persistem no sangue periférico"],
+  },
+  {
+    id: 30,
+    title: "I-Cell Disease — Defeito no Endereçamento Lisossômico",
+    category: "Citologia",
+    scenario: "Lactente de 8 meses com atraso do desenvolvimento neuropsicomotor, fácies grosseira, gengivas hiperplásicas, hepatomegalia e rigidez articular progressiva. Enzimas lisossomais séricas muito elevadas (10-20x o normal). Fibroblastos em cultura mostram inclusões citoplasmáticas densas.",
+    histologicalFindings: "Fibroblastos cultivados da biópsia de pele mostram numerosas inclusões citoplasmáticas densas visíveis por microscopia de fase — as 'inclusion cells' (I-cells) que dão nome à doença. Microscopia eletrônica: vacúolos citoplasmáticos grandes preenchidos com material heterogêneo não digerido (lipídios, mucopolissacarídeos, oligossacarídeos). Lisossomos vazios ou escassos. Golgi proeminente.",
+    questions: [
+      { question: "Qual é o defeito bioquímico na I-cell disease (mucolipidose tipo II)?", options: ["Deficiência de uma hidrolase lisossômica específica", "Defeito na GlcNAc-1-fosfotransferase → falha na marcação com manose-6-fosfato (M6P)", "Defeito na bomba H⁺ lisossômica", "Mutação nos genes PEX (peroxinas)"], correctIndex: 1, explanation: "Na I-cell disease, a GlcNAc-1-fosfotransferase do cis-Golgi está defeituosa → as enzimas lisossomais NÃO recebem a marcação M6P → não são reconhecidas pelo receptor de M6P no trans-Golgi → são secretadas para o extracelular em vez de direcionadas aos lisossomos. Resultado: lisossomos vazios de enzimas + acúmulo de substratos não digeridos." },
+    ],
+    keyPoints: ["A I-cell disease demonstra a importância crucial do endereçamento M6P para o tráfego de enzimas lisossomais", "Enzimas lisossomais elevadas no SORO (porque são secretadas) + deficientes DENTRO das células", "Fenótipo clínico semelhante a Hurler (MPS I), mas com enzimas séricas elevadas (diagnóstico diferencial)", "A via de endereçamento M6P: cis-Golgi (fosforilação) → receptor M6P no TGN → vesículas com clatrina → endossomo tardio → lisossomo", "Doença autossômica recessiva, gene GNPTAB"],
+  },
 ];

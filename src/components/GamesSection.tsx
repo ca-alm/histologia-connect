@@ -158,6 +158,50 @@ const matchSets: { title: string; pairs: MatchPair[] }[] = [
       { term: "Laminas A/B/C", definition: "Envelope nuclear" },
     ],
   },
+  // --- COMPONENTES CELULARES ---
+  {
+    title: "RER vs REL — Funções",
+    pairs: [
+      { term: "RER", definition: "Síntese de proteínas de exportação" },
+      { term: "REL", definition: "Síntese de lipídios e esteroides" },
+      { term: "Corpúsculos de Nissl", definition: "RER em neurônios" },
+      { term: "Retículo sarcoplasmático", definition: "REL no músculo (Ca²⁺)" },
+      { term: "N-glicosilação", definition: "Inicia no RER (asparagina)" },
+      { term: "Citocromo P450", definition: "REL hepático (desintoxicação)" },
+    ],
+  },
+  {
+    title: "Vesículas de Transporte",
+    pairs: [
+      { term: "COP II", definition: "RE → Golgi (anterógrado)" },
+      { term: "COP I", definition: "Golgi → RE (retrógrado)" },
+      { term: "Clatrina", definition: "TGN → endossomos / endocitose" },
+      { term: "Dinamina", definition: "GTPase que cliva vesícula" },
+      { term: "v-SNARE + t-SNARE", definition: "Fusão de membranas" },
+      { term: "Rab-GTPases", definition: "Especificidade do tráfego" },
+    ],
+  },
+  {
+    title: "Defeitos de Membrana e Doenças",
+    pairs: [
+      { term: "Esferocitose hereditária", definition: "Defeito em anquirina/espectrina" },
+      { term: "HPN", definition: "Defeito na âncora GPI" },
+      { term: "Fibrose cística", definition: "Defeito no canal CFTR (Cl⁻)" },
+      { term: "Hipercolesterolemia familiar", definition: "Defeito no receptor de LDL" },
+      { term: "Diabetes insipidus nefrogênico", definition: "Defeito em AQP2" },
+    ],
+  },
+  {
+    title: "Toxinas e Alvos Celulares",
+    pairs: [
+      { term: "Toxina botulínica", definition: "Cliva SNAREs (paralisia flácida)" },
+      { term: "Toxina tetânica", definition: "Cliva VAMP inibitório (espasmo)" },
+      { term: "Colchicina", definition: "Despolimeriza microtúbulos" },
+      { term: "Taxol (paclitaxel)", definition: "Estabiliza microtúbulos" },
+      { term: "Faloidina", definition: "Estabiliza filamentos de actina" },
+      { term: "Ricina", definition: "Inibe subunidade 60S ribossomal" },
+    ],
+  },
 ];
 
 const MatchGame = () => {
@@ -322,6 +366,17 @@ const tfStatements: { statement: string; isTrue: boolean; explanation: string }[
   { statement: "A via extrínseca da apoptose é iniciada por liberação de citocromo c.", isTrue: false, explanation: "Citocromo c inicia a via INTRÍNSECA (mitocondrial). A via extrínseca é iniciada por receptores de morte (Fas, TNF, TRAIL)." },
   { statement: "Os filamentos intermediários são polarizados como microtúbulos e actina.", isTrue: false, explanation: "Filamentos intermediários NÃO são polarizados (sem extremidade + ou −). Conferem resistência mecânica sem atividade motora." },
   { statement: "A progéria de Hutchinson-Gilford é causada por mutação no gene LMNA (lamina A).", isTrue: true, explanation: "Mutação em LMNA produz progerina (lamina A truncada) → deformação do envelope nuclear → envelhecimento prematuro acelerado." },
+  // --- COMPONENTES CELULARES V/F ---
+  { statement: "Os corpúsculos de Nissl estão presentes no axônio dos neurônios.", isTrue: false, explanation: "Os corpúsculos de Nissl (RER + polirribossomos) estão no pericário e dendritos, mas AUSENTES no cone axonal e axônio." },
+  { statement: "A cardiolipina é um fosfolipídeo exclusivo da membrana interna mitocondrial.", isTrue: true, explanation: "A cardiolipina é essencial para a função dos complexos da cadeia respiratória. Auto-anticorpos anti-cardiolipina: síndrome antifosfolipídica." },
+  { statement: "Na I-cell disease, as enzimas lisossomais estão BAIXAS no soro.", isTrue: false, explanation: "Na I-cell disease, as enzimas lisossomais estão ELEVADAS no soro (são secretadas) porque não recebem marcação M6P e não são direcionadas aos lisossomos." },
+  { statement: "O retículo sarcoplasmático é uma forma especializada de RER.", isTrue: false, explanation: "O retículo sarcoplasmático é REL (sem ribossomos). Armazena Ca²⁺. Liberação de Ca²⁺ → contração muscular." },
+  { statement: "A ricina inibe a síntese proteica atuando na subunidade 60S do ribossomo.", isTrue: true, explanation: "Ricina: N-glicosilase que despurina o rRNA 28S da subunidade 60S → impede ligação de aminoacil-tRNA → bloqueia tradução." },
+  { statement: "A dinamina é a GTPase que cliva o pescoço da vesícula revestida por clatrina.", isTrue: true, explanation: "A dinamina forma anéis ao redor do pescoço da fosseta revestida → hidrólise de GTP → clivagem mecânica → vesícula se destaca." },
+  { statement: "Na esferocitose hereditária, os eritrócitos apresentam aumento da palidez central.", isTrue: false, explanation: "Esferócitos são hipercrômicos e SEM palidez central (perderam membrana → menos bicôncavos → esféricos)." },
+  { statement: "Os plasmalógenos são sintetizados nos lisossomos.", isTrue: false, explanation: "Os plasmalógenos (éterfosfolipídeos, componentes da mielina) são sintetizados nos PEROXISSOMOS. Deficientes na síndrome de Zellweger." },
+  { statement: "A toxina tetânica e a botulínica clivam proteínas SNARE diferentes.", isTrue: false, explanation: "Ambas clivam SNAREs, mas a TETÂNICA atua em interneurônios inibitórios (espasmo) e a BOTULÍNICA na junção neuromuscular (paralisia flácida). Ambas clivam sinaptobrevina." },
+  { statement: "A lipofuscina é um pigmento de desgaste acumulado em corpos residuais lisossômicos.", isTrue: true, explanation: "Lipofuscina: material lipídico não digerido em lisossomos de células pós-mitóticas (neurônios, cardiomiócitos). Aumenta com a idade." },
 ];
 
 const TrueFalseGame = () => {
@@ -535,6 +590,17 @@ const fillBlanks = [
   { text: "A doença de Gaucher resulta do acúmulo de ___ em macrófagos.", answer: "glicocerebrosídeo", options: ["esfingomielina", "gangliosídeo GM2", "glicocerebrosídeo", "colesterol"] },
   { text: "O ponto de restrição (R) ocorre no final da fase ___.", answer: "G1", options: ["S", "G1", "G2", "M"] },
   { text: "A proteína ___ é o fator promotor da maturação (MPF) que inicia a mitose.", answer: "ciclina B/CDK1", options: ["ciclina D/CDK4", "ciclina E/CDK2", "ciclina B/CDK1", "p53/p21"] },
+  // --- COMPONENTES CELULARES ---
+  { text: "O ___ é o fosfolipídeo exclusivo da membrana interna mitocondrial.", answer: "cardiolipina", options: ["fosfatidiletanolamina", "esfingomielina", "cardiolipina", "fosfatidilcolina"] },
+  { text: "A síntese de esteroides ocorre no retículo endoplasmático ___.", answer: "liso (REL)", options: ["rugoso (RER)", "liso (REL)", "nuclear", "mitocondrial"] },
+  { text: "A ___ é a proteína que reconhece o peptídeo-sinal e direciona o ribossomo ao RER.", answer: "SRP (partícula de reconhecimento de sinal)", options: ["SRP (partícula de reconhecimento de sinal)", "clatrina", "dinamina", "Ran-GTPase"] },
+  { text: "As proteínas LAMP-1 e LAMP-2 protegem a membrana dos ___.", answer: "lisossomos", options: ["peroxissomos", "lisossomos", "endossomos", "mitocôndrias"] },
+  { text: "Na síndrome de Zellweger, há ausência completa de ___.", answer: "peroxissomos", options: ["lisossomos", "mitocôndrias", "peroxissomos", "ribossomos"] },
+  { text: "A ___ é a enzima-chave dos peroxissomos que decompõe H₂O₂.", answer: "catalase", options: ["peroxidase", "superóxido dismutase", "catalase", "glutationa redutase"] },
+  { text: "A toxina ___ causa paralisia flácida ao clivar proteínas SNARE.", answer: "botulínica", options: ["tetânica", "botulínica", "diftérica", "colérica"] },
+  { text: "Os macrófagos de Gaucher possuem citoplasma com aspecto de ___.", answer: "papel amassado", options: ["célula espumosa", "papel amassado", "vidro fosco", "grãos de areia"] },
+  { text: "A ___ é o pigmento de desgaste acumulado em lisossomos de células envelhecidas.", answer: "lipofuscina", options: ["hemossiderina", "melanina", "lipofuscina", "bilirrubina"] },
+  { text: "Na esferocitose hereditária, o defeito mais comum é na proteína ___.", answer: "anquirina", options: ["espectrina", "anquirina", "banda 3", "glicoforina"] },
 ];
 
 const FillBlankGame = () => {
